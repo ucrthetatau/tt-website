@@ -1,7 +1,9 @@
+import Navbar from './Navbar'
 
 const Home = () => {
     return (
-        <h1>theta tau.</h1>
+        <Navbar /> 
+
     ); 
 
 
