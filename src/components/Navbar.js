@@ -4,13 +4,12 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
         <header className={classes.head}>
-            <div className={classes.title}>ucr theta tau</div>
-            <div className={classes.subhead}>sigma delta chapter</div>
             <nav> 
+            <div className={classes.title}>ucr theta tau | sigma delta chapter</div>
                 <ul className={classes.links}>
-                    <li>Home</li> | 
-                    <li>Members</li> | 
-                    <li>About</li>
+                    <li className={classes.active}>Home</li> | 
+                    <li className={classes.active}>Members</li> | 
+                    <li className={classes.active}>About</li>
                 </ul>
             </nav>
         </header> 

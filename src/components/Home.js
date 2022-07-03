@@ -2,7 +2,8 @@ import Navbar from './Navbar'
 
 const Home = () => {
     return (
-        <Navbar /> 
+       <div>yas</div>   
+
 
     ); 
 
