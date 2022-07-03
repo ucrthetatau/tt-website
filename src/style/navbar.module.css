@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
 .head { 
-    padding: 2em; 
-    font-family: 'Major Mono Display', monospace; 
-    list-style-type: none; 
-
-
+    margin: 0.75em; 
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
 }
 
 .subhead { 
-    font-size: 1em; 
+    font-size: 1.5em;
+    letter-spacing: 1em; 
+
 }
 .title { 
     font-size: 3em; 
-    text-align: center; 
+    margin: 0.25em;
+}
+
+.links { 
+    font-size: 1.25em; 
+    list-style-type: none;
+    display: inline-flex; 
+    text-align: center;
+
+}
+
+.links:hover { 
+    color: blue;
 }

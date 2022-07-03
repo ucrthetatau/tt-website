@@ -4,15 +4,12 @@ import { NavLink } from 'react-router-dom'
 const Navbar = () => {
     return (
         <header className={classes.head}>
-            <div className={classes.title}>ucR tHetA tAu <br/> 
-            <div className={classes.subhead}>
-            siGMA delta cHApteR
-                </div> 
-           </div>
+            <div className={classes.title}>ucr theta tau</div>
+            <div className={classes.subhead}>sigma delta chapter</div>
             <nav> 
-                <ul>
-                    <li>Home</li>
-                    <li>Members</li>
+                <ul className={classes.links}>
+                    <li>Home</li> | 
+                    <li>Members</li> | 
                     <li>About</li>
                 </ul>
             </nav>
