@@ -1,12 +1,22 @@
+import classes from '../style/navbar.module.css'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <div> 
-        UCR Theta Tau | Sigma Delta Chapter 
-        <a href="/">Home</a> 
-        <a href="/members">Members</a>
-        <a href="/about">About</a>
-        </div> 
+        <header className={classes.head}>
+            <div className={classes.title}>ucR tHetA tAu <br/> 
+            <div className={classes.subhead}>
+            siGMA delta cHApteR
+                </div> 
+           </div>
+            <nav> 
+                <ul>
+                    <li>Home</li>
+                    <li>Members</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </header> 
     
     )
 
