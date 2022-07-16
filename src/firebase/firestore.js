@@ -30,7 +30,7 @@ const useFirestore = (filter) => {
     }
  }, [filter])
   
-  return { docs };
+  return () => members();
 }
 
 export default useFirestore;

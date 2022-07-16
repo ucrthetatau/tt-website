@@ -2,6 +2,9 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
+import Members from './components/Members'
+import About from './components/About'
+
 
 
 function App() {
@@ -10,7 +13,9 @@ function App() {
       <Navbar/> 
       <main> 
         <Routes>
-          <Route index element={<Home/>}/>
+          <Route path="/" component={<Home />}/>
+          <Route path="/members" component={<Members />}/>
+          <Route path="/about" component={<About />}/>    
         </Routes>
       </main>
 

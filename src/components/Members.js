@@ -1,6 +1,10 @@
-const Members = () => {
+import useFirestore from "../firebase/firestore";
+import React from 'react'; 
 
-    <div className="members">
+const Members = () => {
+    const { docs } = useFirestore('members'); 
+    console.log(docs); 
+    <div className="memberpg">
         images
     </div>
  }; 

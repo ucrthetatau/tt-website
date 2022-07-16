@@ -1,6 +1,6 @@
-import * as firebase from 'firebase/app'; 
-import 'firebase/storage'; 
-import 'firebase/firestore'; 
+import firebase from 'firebase/compat/app'; 
+import 'firebase/compat/storage'; 
+import 'firebase/compat/firestore'; 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -21,7 +21,6 @@ const firebaseConfig = {
 //const analytics = getAnalytics(app);
 
 firebase.initializeApp(firebaseConfig); 
-const storage = firebase.storage(); 
 const firestore = firebase.firestore(); 
 
-export { storage, firestore }; 
+export {firestore, firebase as default}; 
