@@ -3,7 +3,7 @@ import React from 'react';
 
 const Members = () => {
     const { docs } = useFirestore('members'); 
-    console.log(docs); 
+    //console.log(docs); 
     <div className="memberpg">
         images
     </div>

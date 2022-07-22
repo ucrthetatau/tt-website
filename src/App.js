@@ -13,9 +13,9 @@ function App() {
       <Navbar/> 
       <main> 
         <Routes>
-          <Route path="/" component={<Home />}/>
-          <Route path="/members" component={<Members />}/>
-          <Route path="/about" component={<About />}/>    
+          <Route path="/" element={<Home />}/>
+          <Route path="/members" element={<Members />}/>
+          <Route path="/about" element={<About />}/>    
         </Routes>
       </main>
 
