@@ -1,12 +1,15 @@
-import useFirestore from "../firebase/firestore";
-import React from 'react'; 
+import LoadMembers from '../firebase/LoadMembers'
 
 const Members = () => {
-    const { docs } = useFirestore('members'); 
-    //console.log(docs); 
-    <div className="memberpg">
-        images
-    </div>
- }; 
+    const mems = LoadMembers(''); 
+    console.log(mems); 
+
+    return (
+        <div>
+            images 
+        </div> 
+    )
+
+}; 
 
 export default Members; 
