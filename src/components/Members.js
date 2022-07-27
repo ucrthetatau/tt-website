@@ -1,13 +1,16 @@
 import LoadMembers from '../firebase/LoadMembers'
+import Member from './Member'
+ import { useEffect, useState } from'react'; 
 
 const Members = () => {
-    const mems = LoadMembers(''); 
-    console.log(mems); 
-
+    const curr = LoadMembers(''); 
+    console.log(curr); 
     return (
         <div>
-            images 
-        </div> 
+            duck
+
+
+        </div>
     )
 
 }; 

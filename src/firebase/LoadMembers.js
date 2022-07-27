@@ -1,28 +1,30 @@
 import firestore from './config'; 
-import { collection, getDocs } from 'firebase/firestore'; 
+import { collection, doc, getDocs } from 'firebase/firestore'; 
 import { useState, useEffect } from 'react';
 
 const LoadMembers = (filter) => {
   const [docs, setDocs] = useState([]);
- useEffect(() => {
-   
-   async function getData() { 
+    async function getData() { 
     const membersRef = collection(firestore, 'members'); 
-    const members = await getDocs(membersRef); 
+    const members = await getDocs(membersRef).catch(err => {
+        console.log(err);
+    }); 
     let documents = []; 
     members.forEach((doc) => {
         documents.push({...doc.data(), id: doc.id}); 
     }); 
 
-    setDocs(documents); 
-
+    setDocs(documents);
    } 
 
+
+ useEffect(() => {
    getData(); 
 
- }, [filter])
+ }, [filter]); 
   
- return { docs }; 
+ return docs; 
+
 }
 
 export default LoadMembers;
