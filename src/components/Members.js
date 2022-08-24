@@ -1,13 +1,25 @@
 import { useEffect, useState } from 'react';
 import LoadMembers from '../firebase/LoadMembers'
-import Member from './Member'
 
 const Members = () => {
-    const { docs } = LoadMembers('');
+    const { docs }  = LoadMembers('');
+    const [render, setRender] = useState(false); 
     console.log(docs); 
     
+     useEffect(() => {
+        if (!render){
+            setRender(true); 
+        } 
+     }); 
+
     return (
         <div>
+            {docs && docs.map(doc => (
+                <div key={doc.id}>
+                    {doc.name}
+                    <img src={doc.photo}></img>
+                </div>
+            ))}
     
         </div>
     )
