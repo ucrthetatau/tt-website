@@ -17,9 +17,10 @@ const Members = () => {
     return (
         <div className={classes.memberlist}>
             {docs && docs.map(doc => (
-                <div key={doc.id} className="member-card">
+                <div key={doc.id} className={classes.membercard}>
+                    <img src={doc.photo} className={classes.memberphoto}></img> 
                     {doc.name}
-                    <img src={doc.photo}></img>
+                    
                 </div>
             ))}
         </div>

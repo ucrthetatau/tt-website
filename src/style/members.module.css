@@ -1,4 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
+
 .memberlist { 
     margin: 4em;
+    display: grid;
+    grid-column-gap: 50px; 
+    grid-row-gap: 20px; 
+    grid-template-columns: auto auto auto;
+    align-content: center; 
+    
+}
+
+.membercard { 
+    background-color: #a82b3f; 
+    border-radius: 10px; 
+    display: flex; 
+    font-family: 'Darker Grotesque'; 
+    font-size: 30px; 
+    justify-content: center;
+
+}
+
+.memberphoto { 
+    border-radius: 10px;
+    max-height: 250px; 
+    display: block;
+    margin: 20px; 
 
 }
