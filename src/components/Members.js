@@ -15,6 +15,10 @@ const Members = () => {
      }); 
 
     return (
+        <div> 
+        <p>Members</p>
+
+
         <div className={classes.memberlist}>
             {docs && docs.map(doc => (
                 <div key={doc.id} className={classes.membercard}>
@@ -24,6 +28,7 @@ const Members = () => {
                 </div>
             ))}
         </div>
+        </div> 
     )
 
 }; 
