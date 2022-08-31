@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Dropdown from './Dropdown';
 import LoadMembers from '../firebase/LoadMembers'
 import classes from '../style/members.module.css'
 
@@ -17,7 +18,7 @@ const Members = () => {
     return (
         <div> 
         <p>Members</p>
-
+        <Dropdown /> 
 
         <div className={classes.memberlist}>
             {docs && docs.map(doc => (
