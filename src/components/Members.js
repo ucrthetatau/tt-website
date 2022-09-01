@@ -5,17 +5,16 @@ import classes from '../style/members.module.css'
 
 const Members = () => {
     const [render, setRender] = useState(false); 
-    const [memberSelect, selectMember] = useState('sigma'); 
+    const [memberSelect, selectMember] = useState('founding'); 
     const { docs }  = LoadMembers(memberSelect);
-    console.log(docs); 
+  //  console.log(docs); 
 
-    function handleSubmit(e) {
-        selectMember(e.target.value);
-    }
 
+  
     function handleChange(e) {
         selectMember(e.target.value);
-        console.log(memberSelect); 
+        docs = LoadMembers(memberSelect); 
+        e.preventDefault(); 
     }
     
      useEffect(() => {
@@ -27,9 +26,10 @@ const Members = () => {
     return (
         <div> 
         <p>Members</p>
-        <form onSubmit={handleSubmit}>
+        <form>
           <label>
             <select value={memberSelect} onChange={handleChange}>
+            <option value="founding">Founding</option>
               <option value="alpha">Alpha</option>
               <option value="beta">Beta</option>
               <option value="gamma">Gamma</option>
@@ -49,7 +49,6 @@ const Members = () => {
               <option value="sigma">Sigma</option>
             </select>
           </label>
-          <input type="submit" value="Submit" />
         </form>
 
         <div className={classes.memberlist}>
