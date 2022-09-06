@@ -7,8 +7,7 @@ const Members = () => {
     const [render, setRender] = useState(false); 
     const [memberSelect, selectMember] = useState('founding'); 
     const { docs }  = LoadMembers(memberSelect);
-  //  console.log(docs); 
-
+  //  console.log(docs);
 
   
     function handleChange(e) {
@@ -25,8 +24,8 @@ const Members = () => {
 
     return (
         <div> 
-        <p>Members</p>
-        <form>
+        <p className={classes.head}>{memberSelect} Class</p>
+        <form className={classes.dropdown}>
           <label>
             <select value={memberSelect} onChange={handleChange}>
             <option value="founding">Founding</option>

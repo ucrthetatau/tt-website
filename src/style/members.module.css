@@ -1,19 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
 
 .memberlist { 
-    margin: 4em;
+    margin: 7em;
     display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 600px 600px 600px;
+    grid-gap: 50px;
+    grid-template-columns: 300px 300px 300px;
     align-content: center; 
     
 }
 
-.membercard { 
-    
+.membercard {
     border-radius: 10px; 
     display: grid; 
-    text-align: left;
+    text-align: center;
     font-family: 'Darker Grotesque'; 
     font-size: 30px; 
     justify-content: center;
@@ -23,11 +22,24 @@
 .memberphoto { 
     border: 10px solid #8a2c33; 
     border-radius: 10px;
-    height: 400px; 
-    width: 400px; 
+    height: 250px; 
+    width: 250px; 
     object-fit: cover; 
     max-width: 400px;
     display: block;
   
+
+}
+
+.head { 
+    text-transform: uppercase; 
+
+}
+.dropdown { 
+    background-color: red; 
+    display: flex; 
+    font: 'Darker Grotesque';
+    align-content: center; 
+    box-shadow: inset 1px 1px #b1bd15, inset -1px 0 #b1bd15, inset 0 -1px #b1bd15
 
 }
