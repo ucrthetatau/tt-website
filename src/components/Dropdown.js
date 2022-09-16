@@ -1,60 +1,79 @@
-import React, { useState } from "react";
-import Button from "@material-ui/core/Button";
-import Menu from "@material-ui/core/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import { makeStyles } from "@material-ui/core/styles";
+import * as React from 'react';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+import MenuItem from '@mui/material/MenuItem';
+import Menu from '@mui/material/Menu';
+import setMember from './Members'; 
+const options = [
+  'Members',
+  'founding', 
+   'alpha',
+  'beta'
+];
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%",
-    maxWidth: 360,
-    backgroundColor: theme.palette.background.paper
-  }
-}));
-
-export default function SimpleMenu() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [visval, setVisval] = useState("Open Menu");
-
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+export default function Dropdown({setMember}) {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [selectedIndex, setSelectedIndex] = React.useState(1);
+  const open = Boolean(anchorEl);
+  const handleClickListItem = (event) => {
     setAnchorEl(event.currentTarget);
-    //console.log(event.currentTarget);
+  
+   
+  };
+
+  const handleMenuItemClick = (event, index, option) => {
+    setSelectedIndex(index);
+    setMember(option); 
+    setAnchorEl(null);
   };
 
   const handleClose = () => {
     setAnchorEl(null);
   };
 
-  const classes = useStyles();
-  const [selectedValue, setSelectedValue] = React.useState("founding");
-
-  const handleListItemClick = (event, index) => {
-    setSelectedIndex(index);
-    handleClose();
-    //console.log(index);
-
-  };
-
   return (
     <div>
-      <Button
-        aria-controls="simple-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
+      <List
+        component="nav"
+        aria-label="Device settings"
+        sx={{ bgcolor: 'background.paper' }}
       >
-        {visval}
-      </Button>
+        <ListItem
+          button
+          id="lock-button"
+          aria-haspopup="listbox"
+          aria-controls="lock-menu"
+          aria-label="when device is locked"
+          aria-expanded={open ? 'true' : undefined}
+          onClick={handleClickListItem}
+        >
+          <ListItemText
+            primary="When device is locked"
+            secondary={options[selectedIndex]}
+          />
+        </ListItem>
+      </List>
       <Menu
-        id="simple-menu"
+        id="lock-menu"
         anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
+        open={open}
         onClose={handleClose}
+        MenuListProps={{
+          'aria-labelledby': 'lock-button',
+          role: 'listbox',
+        }}
       >
-        <MenuItem
-          selected={value == "founding"}
-          onClick={(event) => handleListItemClick(event, "founding")}
-        />
+        {options.map((option, index) => (
+          <MenuItem
+            key={option}
+            disabled={index === 0}
+            selected={index === selectedIndex}
+            onClick={(event) => handleMenuItemClick(event, index, option)}
+          >
+            {option}
+          </MenuItem>
+        ))}
       </Menu>
     </div>
   );

@@ -1,54 +1,29 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import LoadMembers from '../firebase/LoadMembers'
 import classes from '../style/members.module.css'
+import Dropdown from './Dropdown'
 
 
 const Members = () => {
     const [render, setRender] = useState(false); 
-    const [memberSelect, selectMember] = useState('founding'); 
-    const { docs }  = LoadMembers(memberSelect);
+    const [member, setMember] = useState('founding'); 
+    const { docs }  = LoadMembers(member);
   //  console.log(docs);
 
-  
-    function handleChange(e) {
-        selectMember(e.target.value);
-        docs = LoadMembers(memberSelect); 
-        e.preventDefault(); 
-    }
-    
+
+
      useEffect(() => {
         if (!render){
+            console.log(member); 
             setRender(true); 
         } 
      }); 
 
     return (
-        <div> 
-        <p className={classes.head}>{memberSelect} Class</p>
-        <form className={classes.dropdown}>
-          <label>
-            <select value={memberSelect} onChange={handleChange}>
-            <option value="founding">Founding</option>
-              <option value="alpha">Alpha</option>
-              <option value="beta">Beta</option>
-              <option value="gamma">Gamma</option>
-              <option value="delta">Delta</option>
-              <option value="zeta">Zeta</option>
-              <option value="eta">Eta</option>
-              <option value="theta">Theta</option>
-              <option value="iota">Iota</option>
-              <option value="kappa">Kappa</option>
-              <option value="lambda">Lamda</option>
-              <option value="mu">Mu</option>
-              <option value="nu">Nu</option>
-              <option value="xi">Xi</option>
-              <option value="omicron">Omicron</option>
-              <option value="pi">Pi</option>
-              <option value="rho">Rho</option>
-              <option value="sigma">Sigma</option>
-            </select>
-          </label>
-        </form>
+          <div>
+
+            
+          <Dropdown setMember={setMember}/> 
 
         <div className={classes.memberlist}>
             {docs && docs.map(doc => (
