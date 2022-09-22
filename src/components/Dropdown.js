@@ -5,12 +5,41 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import setMember from './Members'; 
+import { makeStyles } from "@material-ui/core/styles"; 
+
+
 const options = [
   'Members',
   'founding', 
    'alpha',
-  'beta'
+  'beta', 
+  'gamma', 
+  'delta', 
+  'epsilon', 
+  'zeta', 
+  'eta', 
+  'theta', 
+  'iota', 
+  'kappa', 
+   'lambda', 
+   'mu', 
+   'nu', 
+   'xi', 
+   'omicron', 
+   'pi', 
+   'rho', 
+   'sigma'
 ];
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+    maxWidth: 360,
+    backgroundColor: theme.palette.background.paper
+  }
+}));
+
+
+
 
 export default function Dropdown({setMember}) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -21,6 +50,7 @@ export default function Dropdown({setMember}) {
   
    
   };
+  const classes = useStyles(); 
 
   const handleMenuItemClick = (event, index, option) => {
     setSelectedIndex(index);
@@ -44,12 +74,12 @@ export default function Dropdown({setMember}) {
           id="lock-button"
           aria-haspopup="listbox"
           aria-controls="lock-menu"
-          aria-label="when device is locked"
+          aria-label="Members"
           aria-expanded={open ? 'true' : undefined}
           onClick={handleClickListItem}
         >
           <ListItemText
-            primary="When device is locked"
+            primary="Members"
             secondary={options[selectedIndex]}
           />
         </ListItem>
