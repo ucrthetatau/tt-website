@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
+
+.head { 
+    font-family: 'Major Mono Display';     
+    text-align: center; 
+    font-size: 6em; 
+
+
+}
+
+.container { 
+    margin: 4em; 
+}
+
+.content { 
+    display: flex; 
+    flex-direction: column;
+
+}
+
+.pic{ 
+    text-justify: center;
+    max-width: 800px; 
+
+}
+
