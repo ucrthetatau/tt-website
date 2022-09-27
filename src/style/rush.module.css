@@ -11,17 +11,46 @@
 
 .container { 
     margin: 4em; 
+    text-align: center;
+
 }
 
 .content { 
     display: flex; 
     flex-direction: column;
+    font-family: 'Darker Grotesque'; 
 
 }
 
 .pic{ 
     text-justify: center;
-    max-width: 800px; 
+    margin: 0em 3.5em 1.5em 3.5em; 
+    border-radius: 10px; 
+    border: 10px solid #8a2c33; 
 
 }
 
+.body{ 
+    font-size: 1.5em; 
+    margin: inherit; 
+    text-align: center; 
+
+}
+
+.button { 
+    background-color: #8a2c33; 
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: 'Darker Grotesque'; 
+    font-size: 10em; 
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px; 
+    margin: inherit; 
+    font-size: 32px; 
+    padding: 0.25em; 
+    border:  10px solid #ffcc00
+    ; 
+
+}
