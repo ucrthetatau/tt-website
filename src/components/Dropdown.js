@@ -1,60 +1,50 @@
+// import Dropdown from 'react-dropdown';
+// import Dropdown from 'react-bootstrap';
 import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import setMember from './Members'; 
-import { makeStyles } from "@material-ui/core/styles"; 
-
 
 const options = [
   'Members',
-  'founding', 
-   'alpha',
-  'beta', 
-  'gamma', 
-  'delta', 
-  'epsilon', 
-  'zeta', 
-  'eta', 
-  'theta', 
-  'iota', 
-  'kappa', 
-   'lambda', 
-   'mu', 
-   'nu', 
-   'xi', 
-   'omicron', 
-   'pi', 
-   'rho', 
-   'sigma'
+  'Founding',
+  'Alpha',
+  'Beta',
+  'Gamma',
+  'Delta',
+  'Epsilon',
+  'Zeta',
+  'Eta',
+  'Theta',
+  'Iota',
+  'Kappa',
+  'Lambda',
+  'Mu',
+  'Nu',
+  'Xi',
+  'Omicron',
+  'Pi',
+  'Rho',
+  'Sigma',
+  'Tau'
 ];
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%",
-    maxWidth: 360,
-    backgroundColor: theme.palette.background.paper
-  }
-}));
 
 
-
-
-export default function Dropdown({setMember}) {
+export default function Dropdown({ setMember }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [selectedIndex, setSelectedIndex] = React.useState(1);
   const open = Boolean(anchorEl);
   const handleClickListItem = (event) => {
     setAnchorEl(event.currentTarget);
-  
-   
+
+
   };
-  const classes = useStyles(); 
 
   const handleMenuItemClick = (event, index, option) => {
     setSelectedIndex(index);
-    setMember(option); 
+    setMember(option);
     setAnchorEl(null);
   };
 
@@ -80,7 +70,7 @@ export default function Dropdown({setMember}) {
         >
           <ListItemText
             primary="Members"
-            secondary={options[selectedIndex]}
+            secondary={options[1]}
           />
         </ListItem>
       </List>
