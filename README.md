@@ -1,3 +1,9 @@
+# Getting set up
+1. git clone the repo into your local repo
+2. use this as a reference https://www.figma.com/file/fXhLPwrUgQPiEFud56J0gf/TT-Website?node-id=6-330&t=D3FawQ52jfUnU2bF-0
+3. use npm start in project directory
+4. use localhost:3000 to view in browswer
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
