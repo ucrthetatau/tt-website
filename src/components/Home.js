@@ -127,9 +127,38 @@ const Home = () => {
             </div>
             <div class="home">
                 <div class="container">
-                    <div class="pic">
-                        Hello
-                        <img src={brotherhood} class="pic"></img>
+                    <div class="pillar">
+                        <div class="pic">
+                            <img src={brotherhood} class="pic"></img>
+                        </div>
+                        <div class="subtitle">
+                            Brotherhood
+                        </div>
+                        <div>
+                            We develop lifelong bonds of fraternal fellowship between our members through unique and memorable experiences. We stay supportive and honest with each other to promote a brotherhood that goes beyond school and work.
+                        </div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pic">
+                            <img src={brotherhood} class="pic"></img>
+                        </div>
+                        <div class="subtitle">
+                            Professionalism
+                        </div>
+                        <div>
+                            We aim to build  and refine the professional abilities of our members so that they succeed in their careers and endeavors. We emphasize professional characteristics such as communication, presentation, and innovation.
+                        </div>
+                    </div>
+                    <div class="pillar">
+                        <div class="pic">
+                            <img src={brotherhood} class="pic"></img>
+                        </div>
+                        <div class="subtitle">
+                            Service
+                        </div>
+                        <div>
+                            We believe that it is important to excel in our respective fields as well as give back to the community. Our members strive to lead by example and stay true through volunteering, work, and contribution to the school and community.
+                        </div>
                     </div>
                 </div>
             </div>
