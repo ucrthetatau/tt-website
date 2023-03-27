@@ -1,29 +1,26 @@
-import firestore from './config'; 
-import { collection, query, onSnapshot, where } from 'firebase/firestore'; 
+import firestore from './config';
+import { collection, query, onSnapshot, where, getDocs, QuerySnapshot } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
-
 
 const LoadMembers = (filter) => {
   const [docs, setDocs] = useState([]);
 
- useEffect(() => {
-  const q = query(collection(firestore, 'members'), where("class", "==", filter));
+  useEffect(() => {
+    const q = query(collection(firestore, 'members'), where("Class", "==", filter));
+    // const q = query(collection(firestore, filter));
     const unsub = onSnapshot(q, (querySnapshot) => {
-      let docs = []; 
+      let docs = [];
       querySnapshot.forEach((doc) => {
-        docs.push({...doc.data(), id: doc.id}); 
-      }); 
-      setDocs(docs); 
-      console.log(docs); 
- 
+        docs.push({ ...doc.data(), id: doc.id });
+      });
+      setDocs(docs);
+    });
+    return () => unsub();
 
-    }); 
-    return () => unsub(); 
-    
 
- }, [filter]); 
- 
- return { docs }; 
+  }, [filter]);
+
+  return { docs };
 
 }
 

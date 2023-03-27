@@ -6,6 +6,8 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import dropdown from "../styles/dropdown.css";
+import { color } from '@mui/system';
 
 const options = [
   'Members',
@@ -53,11 +55,14 @@ export default function Dropdown({ setMember }) {
   };
 
   return (
-    <div>
+    <>
+    <div class="dropdown">
       <List
         component="nav"
         aria-label="Device settings"
-        sx={{ bgcolor: 'background.paper' }}
+        // sx={{ bgcolor: 'background.paper' }}
+        style = {{    
+          bgcolor: '#880000'}}
       >
         <ListItem
           button
@@ -70,7 +75,9 @@ export default function Dropdown({ setMember }) {
         >
           <ListItemText
             primary="Members"
-            secondary={options[1]}
+            secondary={options[selectedIndex]}
+            style={{
+            }}
           />
         </ListItem>
       </List>
@@ -90,11 +97,14 @@ export default function Dropdown({ setMember }) {
             disabled={index === 0}
             selected={index === selectedIndex}
             onClick={(event) => handleMenuItemClick(event, index, option)}
+            style= {{
+              fontFamily: 'Farro'}}
           >
             {option}
           </MenuItem>
         ))}
       </Menu>
     </div>
+    </>
   );
 }

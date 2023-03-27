@@ -2,11 +2,12 @@
 
 .memberlist { 
     margin: 7em;
+    margin-top: 1em;
     display: grid;
     grid-gap: 50px;
     grid-template-columns: 300px 300px 300px;
-    align-content: center; 
-    
+    justify-content: center;
+    /* border: 1px solid green; */
 }
 
 .membercard {
@@ -27,19 +28,16 @@
     object-fit: cover; 
     max-width: 400px;
     display: block;
-  
-
 }
 
 .head { 
     text-transform: uppercase; 
-
 }
+
 .dropdown { 
-    background-color: red; 
     display: flex; 
     font: 'Darker Grotesque';
     align-content: center; 
-    box-shadow: inset 1px 1px #b1bd15, inset -1px 0 #b1bd15, inset 0 -1px #b1bd15
-
+    box-shadow: inset 1px 1px #b1bd15, inset -1px 0 #b1bd15, inset 0 -1px #b1bd15;
+    background-color: gray;
 }
