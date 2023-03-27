@@ -10,18 +10,17 @@ import Rush from './components/Rush'
 
 function App() {
   return (
-    <div>
-      <Navbar/> 
-      <main> 
+    <>
+      <Navbar />
+      <div>
         <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/members" element={<Members />}/>
-          <Route path="/about" element={<About />}/>    
-          <Route path="/rush" element={<Rush />}/> 
+          <Route path="/" element={<Home />} />
+          <Route path="/members" element={<Members />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/rush" element={<Rush />} />
         </Routes>
-      </main>
-
-    </div>
+      </div>
+    </>
   );
 }
 
