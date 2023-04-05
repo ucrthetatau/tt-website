@@ -1,18 +1,22 @@
 .rush-container {
-    width: 100%;
+    width: 90%;
     display: flex;
     overflow: hidden;
-    padding: 1em;
+    padding-left: 70px;
+    /* padding-top: -60px; */
     /* padding-right: 5em; */
     justify-content: space-between;
     column-gap: 40px;
-    margin: 0 auto;
     border: 0px solid #F00;
+    /* background-color: #F00; */
 }
 
-.rush-container > p {
+.rush-text {
+    text-align: center;
+}
+
+.rush-text > p {
     border: 0px solid #F00;
-    width: 30%;
     /* height: fit-content; */
     display: flex;
     flex-wrap: wrap;
@@ -21,19 +25,18 @@
     align-content: center; */
     font-family: 'Poppins', sans-serif;
     font-style: normal;
+    text-align: left;
 }
 
-.rush-container > h1 {
-    text-align: center;
+.rush-text > h1 {
     margin: auto;
 }
 
 .pic {
-    /* text-justify: right; */
-    width: 600px;
+    /* text-justify: left; */
+    width: 700px;
     /* position: fixed; */
     border-radius: 40px;
-    padding-right: 60px;
     /* border: 1px solid #F00; */
 }
 
@@ -52,8 +55,12 @@
     padding-top: 5em;
 }
 
-.rush-bttn {
+.rush-button {
     text-align: center;
+    padding: 20px;
+}
+
+.rush-bttn {
     font-family: 'Poppins', sans-serif;
     border: none;
     font-size: 28px;
@@ -64,8 +71,9 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
-    margin: 100px;
-    top: -150px;
+    border-radius: 20px;
+    /* margin: 60px; */
+    /* top: 20px; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
@@ -84,15 +92,34 @@
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -20px;
+    right: -25px;
     transition: 0.5s;
 }
 
 .rush-bttn:hover span{
-    padding-right: 40px;
+    padding-right: 30px;
 }
 
 .rush-bttn:hover span:after{
     opacity: 1;
     right: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .pic {
+        /* text-justify: left; */
+        width: 400px;
+        /* position: fixed; */
+        border-radius: 40px;
+        /* border: 1px solid #F00; */
+    }
+}
+@media screen and (max-width: 768px) {
+    .pic {
+        /* text-justify: left; */
+        width: 400px;
+        /* position: fixed; */
+        border-radius: 40px;
+        /* border: 1px solid #F00; */
+    }
 }
