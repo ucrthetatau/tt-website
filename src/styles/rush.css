@@ -1,14 +1,8 @@
 .rush-container {
     width: 90%;
     display: flex;
-    overflow: hidden;
     padding-left: 70px;
-    /* padding-top: -60px; */
-    /* padding-right: 5em; */
-    justify-content: space-between;
     column-gap: 40px;
-    border: 0px solid #F00;
-    /* background-color: #F00; */
 }
 
 .rush-text {
@@ -16,13 +10,6 @@
 }
 
 .rush-text > p {
-    border: 0px solid #F00;
-    /* height: fit-content; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    /* align-items: center;
-    align-content: center; */
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     text-align: left;
@@ -33,26 +20,8 @@
 }
 
 .pic {
-    /* text-justify: left; */
     width: 700px;
-    /* position: fixed; */
     border-radius: 40px;
-    /* border: 1px solid #F00; */
-}
-
-.half {
-    /* border: 1px solid #F00; */
-    width: 47.5%;
-    text-align: center;
-
-    /* background-color: gray; */
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    /* position: relative; */
-    vertical-align: bottom;
-    align-items: center;
-    padding-top: 5em;
 }
 
 .rush-button {
@@ -62,27 +31,22 @@
 
 .rush-bttn {
     font-family: 'Poppins', sans-serif;
-    border: none;
+    /* border: none; */
     font-size: 28px;
     padding: 20px;
     width: 200px;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
-    display: inline-block;
-    position: relative;
     transition: 0.5s;
     border-radius: 20px;
-    /* margin: 60px; */
-    /* top: 20px; */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     
 }
 
 .rush-bttn span{
-    cursor: pointer;
     display: inline-block;
     position: relative;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     transition: 0.5s;
 }
 
@@ -106,20 +70,21 @@
 }
 
 @media screen and (max-width: 960px) {
+    .rush-container {
+        padding-left: 40px;
+    }
     .pic {
-        /* text-justify: left; */
-        width: 400px;
-        /* position: fixed; */
+        text-align: center;
+        width: 450px;
         border-radius: 40px;
-        /* border: 1px solid #F00; */
     }
 }
 @media screen and (max-width: 768px) {
+    .rush-container {
+        display: block;
+    }
     .pic {
-        /* text-justify: left; */
-        width: 400px;
-        /* position: fixed; */
+        width: 100%;
         border-radius: 40px;
-        /* border: 1px solid #F00; */
     }
 }
