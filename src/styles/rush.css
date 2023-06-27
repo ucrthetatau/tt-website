@@ -3,6 +3,7 @@
     display: flex;
     padding-left: 70px;
     column-gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .rush-text {
@@ -10,7 +11,6 @@
 }
 
 .rush-text > p {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     text-align: left;
 }
@@ -19,7 +19,7 @@
     margin: auto;
 }
 
-.pic {
+.rush-pic {
     width: 600px;
     border-radius: 40px;
 }
@@ -30,7 +30,6 @@
 }
 
 .rush-bttn {
-    font-family: 'Roboto', sans-serif;
     /* border: none; */
     font-size: 20px;
     padding: 15px;
@@ -57,7 +56,7 @@
     content: '\00bb';
     position: absolute;
     opacity: 0;
-    top: -10px;
+    margin-top: -11px;
     right: -25px;
     transition: 0.5s;
 }
@@ -71,21 +70,43 @@
     right: 0;
 }
 
+.rush-floating1 {
+    position: fixed;
+    transform: rotate(-90deg);
+    text-align: right;
+    bottom: 15%; 
+    left: -40px;
+}
+
+.rush-floating2 {
+    position: fixed;
+    transform: rotate(-90deg);
+    text-align: right;
+    top: 45%; 
+    right: -40px;
+}
+
 @media screen and (max-width: 960px) {
     .rush-container {
         padding-left: 40px;
     }
-    .pic {
+    .rush-pic {
         text-align: center;
         width: 450px;
         border-radius: 40px;
+    }
+    .rush-floating1 {
+        left: -50px;
+    }
+    .rush-floating2 {
+        right: -50px;
     }
 }
 @media screen and (max-width: 768px) {
     .rush-container {
         display: block;
     }
-    .pic {
+    .rush-pic {
         width: 100%;
         border-radius: 40px;
     }
