@@ -1,63 +1,113 @@
-.pic {
-    /* text-justify: right; */
-    width: 100%;
-    /* position: fixed; */
-    border-radius: 40px;
-    /* border: 1px solid #F00; */
-}
-
-.rush>.container {
+.rush-container {
     width: 90%;
-
     display: flex;
-    overflow: hidden;
-    padding: 1em;
-    /* padding-right: 5em; */
-    justify-content: space-between;
+    padding-left: 70px;
     column-gap: 40px;
-    margin: 0 auto;
-    border: 1px solid #F00;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.text {
-    border: 1px solid #F00;
-    width: 100%;
-    height: fit-content;
-    font-family: 'Sorts Mill Goudy';
-    align-items: center;
-}
-
-.half {
-    /* border: 1px solid #F00; */
-    width: 47.5%;
+.rush-text {
     text-align: center;
-
-    /* background-color: gray; */
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    /* position: relative; */
-    vertical-align: bottom;
-    align-items: center;
-    padding-top: 5em;
 }
 
-.left {
-    width: 45%;
+.rush-text > p {
+    font-style: normal;
+    text-align: left;
 }
 
-.buttonContainer {
+.rush-text > h1 {
+    margin: auto;
+}
+
+.rush-pic {
+    width: 600px;
+    border-radius: 40px;
+}
+
+.rush-buttons {
     text-align: center;
-    padding-top: 10%;
+    padding: 20px;
 }
 
-button {
-    width: auto;
-    align-items: center;
-    font-family: matcha;
-    padding: 1em;
-    /* border:0ch; */
-    /* border-color: #F00; */
-    background-color: white;
-    border-radius: 2px;
+.rush-bttn {
+    /* border: none; */
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    margin: 10px 10px; /*first value adjusts the margin above and below. Secon value adjusts the margin to the right and left of the buttons.*/
+    background-color: #4d4d4d;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 15px;
+    box-shadow: 8px 8px 5px 0 rgba(0,0,0,0.5);
+    
+}
+
+.rush-bttn span{
+    display: inline-block;
+    position: relative;
+    /* background-color: #ffffff; */
+    transition: 0.5s;
+}
+
+.rush-bttn span:after{
+    font-size: 35px;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    margin-top: -11px;
+    right: -25px;
+    transition: 0.5s;
+}
+
+.rush-bttn:hover span{
+    padding-right: 30px;
+}
+
+.rush-bttn:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.rush-floating1 {
+    position: fixed;
+    transform: rotate(-90deg);
+    text-align: right;
+    bottom: 15%; 
+    left: -40px;
+}
+
+.rush-floating2 {
+    position: fixed;
+    transform: rotate(-90deg);
+    text-align: right;
+    top: 45%; 
+    right: -40px;
+}
+
+@media screen and (max-width: 960px) {
+    .rush-container {
+        padding-left: 40px;
+    }
+    .rush-pic {
+        text-align: center;
+        width: 450px;
+        border-radius: 40px;
+    }
+    .rush-floating1 {
+        left: -50px;
+    }
+    .rush-floating2 {
+        right: -50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .rush-container {
+        display: block;
+    }
+    .rush-pic {
+        width: 100%;
+        border-radius: 40px;
+    }
 }
