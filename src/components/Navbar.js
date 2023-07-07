@@ -43,58 +43,54 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => (
     <>
-    <div class="banner">
-        <headerTitle > 
-            <p> Theta Tau </p>
-        </headerTitle>
-        <headerSubtitle> 
-            <p>
-                SIGMA DELTA CHAPTER AT UC RIVERSIDE 
-            </p>
-        </headerSubtitle>
-    </div>
-    <div class="sub">
-        <subtitle>
-            <p> CO-ED PROFESSIONAL ENGINEERING FRATERNITY </p>
-        </subtitle>
-    </div>
-    <div class="bar">
-        <div class="half">
-            <NavLink
-                to="/"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Home
-            </NavLink>
-            <NavLink
-                to="/About"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                About
-            </NavLink>
-            <NavLink
-                to="/Rush"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Rush
-            </NavLink>
+    <div class="header">
+        <div class="banner">
+            <div class="title"> 
+                <p>Theta Tau</p>
+            </div>
+            <div class="subtitle"> 
+                <p>CO-ED PROFESSIONAL ENGINEERING FRATERNITY</p>
+                <p>SIGMA DELTA CHAPTER AT UC RIVERSIDE</p>
+            </div>
         </div>
-        <div class="crest">
-            <img src={coatOfArms} className="crestImage"/>
-        </div>
-        <div class="half">
-            <NavLink
-                to="/Members"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Members
-            </NavLink>
-            <NavLink
-                to="/Officers"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Officers
-            </NavLink>
-            <NavLink
-                to="/Contact"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Contact
-            </NavLink>
+        <div class="bar">
+            <div class="half">
+                <NavLink
+                    to="/"
+                    className={({isActive}) => isActive ? "active" : ""} > 
+                    Home
+                </NavLink>
+                <NavLink
+                    to="/About"
+                    className={({isActive}) => isActive ? "active" : ""} > 
+                    About
+                </NavLink>
+                <NavLink
+                    to="/Rush"
+                    className={({isActive}) => isActive ? "active" : ""} > 
+                    Rush
+                </NavLink>
+            </div>
+            <div class="crest">
+                <img src={coatOfArms}/>
+            </div>
+            <div class="half">
+                <NavLink
+                    to="/Members"
+                    className={({isActive}) => isActive ? "active" : ""} > 
+                    Members
+                </NavLink>
+                <NavLink
+                    to="/Officers"
+                    className={({isActive}) => isActive ? "active" : ""} > 
+                    Officers
+                </NavLink>
+                <NavLink
+                    to="/Contact"
+                    className={({isActive}) => isActive ? "active" : ""} > 
+                    Contact
+                </NavLink>
+            </div>
         </div>
     </div>
     

@@ -1,62 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
+.header {
+    position: fixed;
+}
+
 .banner {
     height: 5em;
-
-    text-align: center;
-    line-height: 10em;
     background: #880000;
     color: white;
-    /* display: block; */
-    position: fixed;
-    z-index: 1;
     width: 100%;
-    /* border: 1px solid #F00; */
+    display: flex;
 }
 
-headerTitle {
-    font-family: 'matcha';
-    font-style: normal;
-    font-weight: 400;
+.banner .title {
+    font-family: 'Farro';
     font-size: 48px;
-    line-height: 54px;
-}
-
-headerSubtitle {
-    font-family: 'Farro';
-    font-style: normal;
+    margin: auto auto auto 50px;
+    /* font-family: 'Farro';
     font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    text-align: center;
+    font-style: normal; */
 }
 
-bar {
-    background-color: white;
-    padding-bottom: 1em;
-}
-
-subtitle {
+.banner .subtitle {
+    height: 5em;
     font-family: 'Farro';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 16px;
-    text-align: center;
-    padding: 1px;
-    color: #880000;
-}
-
-.sub {
-    padding-top: 5em;
-    width: 100%;
-    /* border: 1px solid #F00; */
+    text-align: right;
+    margin-left: auto;
+    margin: auto 50px auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+    /* font-style: normal; */
 }
 
 .crest {
+    border: 1px solid blue;
+
     display: inline-flex;
     justify-content: center;
     object-fit: contain;
@@ -64,37 +49,35 @@ subtitle {
     height: auto;
 }
 
-.crestImage {
+/* .crestImage {
+
     width: 100%;
     height: auto;
     justify-content: center;
     object-fit: contain;
-}
-
-.bar {
-    /* border: 1px solid green; */
+} */
+/* .bar {
+    border: 1px solid green;
     display: flex;
     justify-content: center;
     height: 7em;
     padding-bottom: 2em;
-}
+} */
 
-.half {
-    /* border: 1px solid #F00; */
+
+/* .half {
     width: 47.5%;
     text-align: center;
 
-    /* background-color: gray; */
     display: flex;
     overflow: hidden;
     justify-content: center;
-    /* position: relative; */
     vertical-align: bottom;
     align-items: center;
     padding-top: 5em;
-}
+} */
 
-.half a {
+/* .half a {
     padding-left: 10%;
     padding-right: 10%;
     color: black;
@@ -106,17 +89,19 @@ subtitle {
     font-size: 24px;
     line-height: 24px;
     text-decoration: none;
-}
+} */
 
-.half a.active{
+
+
+/* .half a.active{
     color: #880000;
 }
 
 #navbar a.active {
     color: #880000;
-}
+} */
 
-#navbar a {
+/* #navbar a {
     padding-left: 10%;
     padding-right: 10%;
     color: black;
@@ -128,4 +113,4 @@ subtitle {
     font-size: 24px;
     line-height: 24px;
     text-decoration: none;
-}
+} */
