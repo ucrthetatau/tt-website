@@ -45,54 +45,49 @@ const Navbar = () => (
     <>
     <div class="header">
         <div class="banner">
-            <div class="title"> 
-                <p>Theta Tau</p>
-            </div>
-            <div class="subtitle"> 
-                <p>CO-ED PROFESSIONAL ENGINEERING FRATERNITY</p>
+            <headerTitle> 
+                <img src={coatOfArms} class="crestImage"/>
+                <p id="TT">Theta Tau</p>
+            </headerTitle>
+            <headerSubtitle> 
                 <p>SIGMA DELTA CHAPTER AT UC RIVERSIDE</p>
-            </div>
+                <p>WE ARE ENGINEERS. WE ARE LEADERS. WE ARE BROTHERS.</p>
+            </headerSubtitle>
         </div>
         <div class="bar">
-            <div class="half">
-                <NavLink
-                    to="/"
-                    className={({isActive}) => isActive ? "active" : ""} > 
-                    Home
-                </NavLink>
-                <NavLink
-                    to="/About"
-                    className={({isActive}) => isActive ? "active" : ""} > 
-                    About
-                </NavLink>
-                <NavLink
-                    to="/Rush"
-                    className={({isActive}) => isActive ? "active" : ""} > 
-                    Rush
-                </NavLink>
-            </div>
-            <div class="crest">
-                <img src={coatOfArms}/>
-            </div>
-            <div class="half">
-                <NavLink
-                    to="/Members"
-                    className={({isActive}) => isActive ? "active" : ""} > 
-                    Members
-                </NavLink>
-                <NavLink
-                    to="/Officers"
-                    className={({isActive}) => isActive ? "active" : ""} > 
-                    Officers
-                </NavLink>
-                <NavLink
-                    to="/Contact"
-                    className={({isActive}) => isActive ? "active" : ""} > 
-                    Contact
-                </NavLink>
-            </div>
+            <NavLink
+                to="/"
+                className={({isActive}) => isActive ? "active" : ""} > 
+                Home
+            </NavLink>
+            <NavLink
+                to="/About"
+                className={({isActive}) => isActive ? "active" : ""} > 
+                About
+            </NavLink>
+            <NavLink
+                to="/Rush"
+                className={({isActive}) => isActive ? "active" : ""} > 
+                Rush
+            </NavLink>
+            <NavLink
+                to="/Members"
+                className={({isActive}) => isActive ? "active" : ""} > 
+                Members
+            </NavLink>
+            <NavLink
+                to="/Officers"
+                className={({isActive}) => isActive ? "active" : ""} > 
+                Officers
+            </NavLink>
+            <NavLink
+                to="/Contact"
+                className={({isActive}) => isActive ? "active" : ""} > 
+                Contact
+            </NavLink>
         </div>
     </div>
+    <div class="dummy"></div>
     
     </>
   );

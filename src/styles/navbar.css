@@ -5,7 +5,13 @@
     margin: 0;
 }
 
+.dummy {
+    height: 8em;
+    width: 100%;
+}
+
 .header {
+    width: 100%;
     position: fixed;
 }
 
@@ -17,100 +23,57 @@
     display: flex;
 }
 
-.banner .title {
-    font-family: 'Farro';
-    font-size: 48px;
+.banner headerTitle {
     margin: auto auto auto 50px;
-    /* font-family: 'Farro';
-    font-weight: 400;
+    display: flex;
+}
+
+.crestImage {
+    height: 75px;
+    margin-right: 10px;
+    /* width: 100%;
+    height: auto;
+    justify-content: center;
+    object-fit: contain; */
+}
+
+#TT{
+    font-family: 'Farro';
+    font-size: 40px;
+    margin: auto auto auto 0;
+    /* font-weight: 400;
     font-style: normal; */
 }
 
-.banner .subtitle {
-    height: 5em;
-    font-family: 'Farro';
-    font-size: 16px;
-    text-align: right;
-    margin-left: auto;
-    margin: auto 50px auto auto;
+.banner headerSubtitle {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;  
+    height: 100%;
+    font-family: 'Farro';
+    font-size: 16px;
+    text-align: right;
+    margin: auto 50px auto auto;
     /* font-style: normal; */
 }
 
-.crest {
-    border: 1px solid blue;
-
-    display: inline-flex;
-    justify-content: center;
-    object-fit: contain;
-    width: 10%;
-    height: auto;
+.bar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 1em;
+    padding: 1em 0;
+    background-color: white;
 }
 
-/* .crestImage {
-
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    object-fit: contain;
-} */
-/* .bar {
-    border: 1px solid green;
-    display: flex;
-    justify-content: center;
-    height: 7em;
-    padding-bottom: 2em;
-} */
-
-
-/* .half {
-    width: 47.5%;
-    text-align: center;
-
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    vertical-align: bottom;
-    align-items: center;
-    padding-top: 5em;
-} */
-
-/* .half a {
-    padding-left: 10%;
-    padding-right: 10%;
-    color: black;
-
-    font-size: 17px;
+.bar a {
     font-family: 'Farro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 16px;
     text-decoration: none;
-} */
-
-
-
-/* .half a.active{
-    color: #880000;
+    color: black;
+    /* font-weight: 400;
+    font-style: normal; */
 }
 
-#navbar a.active {
+.bar a.active{
     color: #880000;
-} */
-
-/* #navbar a {
-    padding-left: 10%;
-    padding-right: 10%;
-    color: black;
-
-    font-size: 17px;
-    font-family: 'Farro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-    text-decoration: none;
-} */
+}
