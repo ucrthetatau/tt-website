@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Members from './components/Members'
 import About from './components/About'
 import Rush from './components/Rush'
+import Footer from './components/Footer'
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/rush" element={<Rush />} />
         </Routes>
       </div>
+      <Footer />
     </>
   );
 }
