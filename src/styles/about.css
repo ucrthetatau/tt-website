@@ -2,7 +2,8 @@
     width: 90%;
     padding-left: 70px;
     column-gap: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica;
+
 }
 
 .head-info {
@@ -10,27 +11,36 @@
 }
 
 .about-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
     border-radius: 40px;
 }
 
-.head-info > h1 {
+.head-info > p {
     color: rgb(180, 0, 0);
-    width: 30%;
+    font-family: "Times New Roman", Times, serif;
     text-align: right;
-    font-size: 100px;
-    padding: 40px 0px;
+    font-size: 150px;
+    width: 50%;
+    position: absolute;
+    /* font-family: Verdana, sans-serif; */
+    top: 450px;
+    right: 110px;
 }
 
 .pic-info {
     color: rgb(120, 120, 120);
-    margin-left: 30px;
-    font-family: 'Poppins', sans-serif;
+    margin-left: 190px;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 .about-text {
-    margin-left: 30px;
-    margin-top: 30px;
+    /* margin-left: 30px;
+    margin-top: 30px; */
+    margin: auto;
+    width: 70%;
     /* background-color: red; */
 }
 
@@ -38,7 +48,7 @@
     text-align: center;
 }
 
-.about-text >p {
+.about-text > p {
     font-style: normal;
 }
 
@@ -47,7 +57,7 @@
     transform: rotate(-90deg);
     text-align: right;
     bottom: 15%; 
-    left: -50px;
+    left: -170px;
 }
 
 .about-floating2 {
@@ -55,7 +65,7 @@
     transform: rotate(-90deg);
     text-align: right;
     top: 45%; 
-    right: -50px;
+    right: -170px;
 }
 
 

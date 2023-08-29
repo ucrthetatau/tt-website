@@ -7,14 +7,16 @@ const About = () => {
         <>
         <div class = "about-container">
             <div class = "about-floating1">
-                ABOUT ABOUT ABOUT
+                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
             </div>
             <div class = "about-floating2">
-                ABOUT ABOUT ABOUT
+                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
+            </div>
+            <div>
+                <img src={s23} class="about-pic"></img>
             </div>
             <div class = "head-info">
-                <img src={s23} class="about-pic"></img>
-                <h1>About Theta Tau</h1>
+            {/* <p>About Theta Tau</p> */}
             </div>
             <div class = "pic-info">
                 Winter 2023
