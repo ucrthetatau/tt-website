@@ -1,5 +1,5 @@
-import Navbar from './Navbar'
-import Slider from "react-slick"
+// import Navbar from './Navbar'
+// import Slider from "react-slick"
 import { Chart } from "react-google-charts"
 import '../styles/home.css'
 import brotherhood from '../static/brotherhood.png'
@@ -40,26 +40,26 @@ export const majorColors = {
     position: "static"
 };
 
-export const genderData = [
-    ['Gender', 'Number of People'],
-    ['Female', 11],
-    ['Male', 16],
-];
+// export const genderData = [
+//     ['Gender', 'Number of People'],
+//     ['Female', 11],
+//     ['Male', 16],
+// ];
 
-export const genderColors = {
-    colors: ['#989898', '#dcdcdc'],
-    backgroundColor: "transparent"
-};
+// export const genderColors = {
+//     colors: ['#989898', '#dcdcdc'],
+//     backgroundColor: "transparent"
+// };
 
 
 const Home = () => {
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    };
+    // var settings = {
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    // };
     return (
         <>
             {/* <div>
@@ -84,8 +84,10 @@ const Home = () => {
                     </div>
                 </Slider>
             </div> */}
-            <div class="title">
-                Chapter Breakdown
+            <div class ="title-container"> 
+                <div class="title">
+                    Chapter Breakdown
+                </div>
             </div>
             <div class="home">
                 <div class="container">
@@ -110,7 +112,7 @@ const Home = () => {
                             />
                         </div>
                     </div>
-                    <div class="card">
+                    {/* <div class="card">
                         <div>Gender</div>
                         <div>
                             <Chart
@@ -119,45 +121,59 @@ const Home = () => {
                                 options={genderColors}
                             />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
-            <div class="title">
-                Our Pillars
+            <div class ="title-container"> 
+                <div class="title">
+                    Our Pillars
+                </div>
             </div>
             <div class="home">
                 <div class="container">
                     <div class="pillar">
                         <div class="pic">
-                            <img src={brotherhood} class="pic"></img>
+                            <img src={brotherhood} alt="BrotherhoodIcon" class="pic"></img>
                         </div>
                         <div class="subtitle">
                             Brotherhood
                         </div>
-                        <div>
+                        <div class="border-with-diamonds">
+                        </div>
+                        <div class="caption">
                             We develop lifelong bonds of fraternal fellowship between our members through unique and memorable experiences. We stay supportive and honest with each other to promote a brotherhood that goes beyond school and work.
+                        </div>
+                        <div class="border-with-diamonds">
                         </div>
                     </div>
                     <div class="pillar">
                         <div class="pic">
-                            <img src={brotherhood} class="pic"></img>
+                            <img src={professionalism} alt="ProfessionalismIcon=" class="pic"></img>
                         </div>
                         <div class="subtitle">
                             Professionalism
                         </div>
-                        <div>
+                        <div class="border-with-diamonds">
+                        </div>
+                        <div class="caption">
                             We aim to build  and refine the professional abilities of our members so that they succeed in their careers and endeavors. We emphasize professional characteristics such as communication, presentation, and innovation.
+                        </div>
+                        <div class="border-with-diamonds">
                         </div>
                     </div>
                     <div class="pillar">
                         <div class="pic">
-                            <img src={brotherhood} class="pic"></img>
+                            <img src={service} alt="ServiceIcon" class="pic"></img>
                         </div>
                         <div class="subtitle">
                             Service
                         </div>
-                        <div>
+                        <div class="border-with-diamonds">
+                        </div>
+                        <div class="caption">
                             We believe that it is important to excel in our respective fields as well as give back to the community. Our members strive to lead by example and stay true through volunteering, work, and contribution to the school and community.
+                        </div>
+                        <div class="border-with-diamonds">
                         </div>
                     </div>
                 </div>

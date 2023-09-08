@@ -1,29 +1,44 @@
+.home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.title-container {
+    /* border: 1px solid #F00; */
+    padding: 75px;
+    text-align: center;
+    width: 100%;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+}
+
 .title {
-    font-family: 'matcha';
+    /* font-family: 'Charmini Extra Light'; */
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 250%;
     line-height: 54px;
     display: flex;
     align-items: center;
 }
 
-.home>.container {
+.container {
     /* border: 1px solid #F00; */
     height: 23em;
     width: 90%;
-    margin: 7em;
-    display: grid;
+    display: flex;
     grid-gap: 50px;
     grid-template-columns: 28% 28% 28%;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .card {
+    /* border: 1px solid #F00; */
     width: auto;
     height: 353px;
     background: #FFFAFA;
-    /* background: gray; */
     mix-blend-mode: normal;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 35px;
@@ -32,41 +47,107 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-
     box-shadow: 0px 4px 4px 0px #00000040;
-    /* border: 1px solid #F00; */
-}
-
-.container>.pic {
-    border: 1px solid #F00;
-    background-color: gray;
-}
-
-.pillar>.pic {
-    background-color: gray;
-    width: 40%;
-    height: fit-content;
-    justify-content: center;
 }
 
 .pillar {
-    /* justify-content: center; */
+    /* border: 1px solid #F00; */
+    position: relative; 
+    justify-content: center;
+    flex: 1;
     align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px; 
+    overflow: visible;
 }
 
-.pillar>.subtitle {
-    font-family: 'Farro';
+.subtitle {
+    font-family: "Charmini Extra Light";
     font-style: normal;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 24px;
     padding: 1em;
 }
 
-.pillar>.description {
-    font-family: 'Inria Sans';
+.caption {
+    /* font-family: 'Charmini Extra Light'; */
     font-style: normal;
-    color: black;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 1em;
+}
+
+.pic {
+    /* border: 1px solid #F00; */
+    width: 60%; 
+    height: 60%; 
+    height: fit-content;
+    justify-content: center;
+}
+
+.description {
+    font-family: 'Charmini Extra Light';
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+
+.border-with-diamonds {
+    position: relative;
+    width: 90%; 
+    min-height: 2px; 
+    background-color: rgb(0, 0, 0); 
+    margin: 10px auto; 
+    text-align: center; 
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: -1.5px; 
+        width: 5px; 
+        height: 5px; 
+        background-color: black;
+        transform: rotate(45deg);
+    }
+
+    &::before {
+        left: -5px; 
+    }
+
+    &::after {
+        right: -5px; 
+    }
+} 
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .pillar {
+        flex: auto; 
+        margin-bottom: 10px;
+    }
+
+    .border-with-diamonds {
+        width: 100%;
+    }
+}
+
+/* @font-face {
+    font-family: "Charmini Extra Light";
+    src: '../static/LDCharmini-Light.woff' format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'charminilight';
+    src: url('ldcharmini-light-webfont.woff2') format('woff2'),
+         url('ldcharmini-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
