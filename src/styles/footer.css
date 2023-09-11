@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #8B0000;
+    color: white;
+    font-family: "Helvetica Neue", san-serif;
+}
+
+.column {
+    margin: 20px 0 30px;
+    width: 260px;
+}
+
+#col1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.crest {
+    height: 90px;
+    margin-right: 10px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 45px;
+    padding-bottom: 3px;
+    border-bottom: solid white;
+    border-width: 1px;
+}
+
+h4 {
+    padding-top: 5px;
+    font-weight: normal;
+    font-size: 21px;
+
+}
+
+h5 {
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: solid 1px white;
+    padding: 20px 0;
+
+}
+
+#col2 p {
+    max-width: 11em;
+    text-align: center;
+    margin: 1em auto;
+    overflow-wrap: break-word;
+    line-height: 1.25em;
+}
+
+#contact {
+    margin: 1em 0;
+}
+
+#icon {
+    margin-right: 10px;
+}
+
+#contact > * {
+    display: flex;
+    margin: 0 auto;
+    padding: 4px 7px;
+    border-radius: 5px;
+    width: fit-content;
+    text-decoration: none;
+    align-items: center;
+}
+
+a {
+    color: white;
+}
+
+#names {
+    display: flex;
+    width: 100%;
+    margin: 1em auto;
+}
+
+#left {
+    width: 60%;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#right {
+    width: 40%;
+    text-align: left;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .footer {
+        flex-direction: column;
+    }
+
+    .column {
+        margin: 2em auto 1em;
+    }
+
+    #col1 {
+        padding: 0;
+    }
+
+    h5 {
+        padding: 5px 0;
+        margin-bottom: 0.5em;
+    }
+
+    #col2 p {
+        padding: 0;
+        margin: 0 auto;
+        line-height: 1.25;
+    }
+
+    #contact {
+        margin: 0;
+    }
+
+    #contact > * {
+        margin: 0 auto;
+        padding: 2px 7px;
+        border-radius: 5px;
+    }
+
+    #col4 {
+        margin-bottom: 2em;
+    }
+    
+    #names {
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    #left {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: auto;
+    }
+    
+    #right {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: auto;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .column {
+        margin: 2em auto 1em;
+    }
+
+}
