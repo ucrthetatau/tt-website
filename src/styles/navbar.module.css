@@ -1,30 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
-.head { 
-    margin: 0.75em; 
-    font-family: 'Major Mono Display', monospace;
-    text-align: center;
-    position: sticky; 
-    padding-bottom: 3em; 
+.head {
+  margin: 0.75em;
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
+  position: sticky;
+  padding-bottom: 3em;
 }
 
-.title { 
-    font-size: 1.5em; 
-    margin-top: 0.25em;
-    float: left; 
-    display: inline; 
+.title {
+  font-size: 1.5em;
+  margin-top: 0.25em;
+  float: left;
+  display: inline;
 }
 
-.links { 
-    font-size: 1.55em;
-    list-style-type: none;
-    display: inline-flex;
-    float: right;  
-   
-
+.links {
+  font-size: 1.55em;
+  list-style-type: none;
+  display: inline-flex;
+  float: right;
 }
 
-.active:hover { 
-    color: #8a1e1e; 
+.active:hover {
+  color: #8a1e1e;
 }
-

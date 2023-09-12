@@ -1,107 +1,110 @@
-import React from 'react';
-import '../styles/navbar.css'
-import coatOfArms from '../static/coatOfArms.png'
-import { NavLink } from 'react-router-dom';
+import React from "react"
+import "../styles/navbar.css"
+import coatOfArms from "../static/coatOfArms.png"
+import { NavLink } from "react-router-dom"
 
 // const Navbar = () => {
 //     return (
 //         <>
-        // <div class="banner">
-        //     <headerTitle > 
-        //         <p> Theta Tau </p>
-        //     </headerTitle>
-        //     <headerSubtitle> 
-        //         <p>
-        //             SIGMA DELTA CHAPTER AT UC RIVERSIDE 
-        //         </p>
-        //         </headerSubtitle>
-        // </div>
-        // <div>
-        //     <subtitle>
-        //         <p> CO-ED PROFESSIONAL ENGINEERING FRATERNITY </p>
-        //     </subtitle>
-        // </div>
-        // <div class="bar">
-        //     <div class="half">
-        //         <a href="/"> Home </a>
-        //         <a href="About"> About </a>
-        //         <a href="Rush"> Rush </a>
-        //     </div>
-        //     <div class="crest">
-        //         <img src={coatOfArms} className="crestImage"/>
-        //     </div>
-        //     <div class="half">
-        //         <NavLink href="Members"> Members </NavLink>
-        //         <a href="Officers"> Officers </a>
-        //         <a href="Contact"> Contact </a>
-        //     </div>
-        // </div>
+// <div class="banner">
+//     <headerTitle >
+//         <p> Theta Tau </p>
+//     </headerTitle>
+//     <headerSubtitle>
+//         <p>
+//             SIGMA DELTA CHAPTER AT UC RIVERSIDE
+//         </p>
+//         </headerSubtitle>
+// </div>
+// <div>
+//     <subtitle>
+//         <p> CO-ED PROFESSIONAL ENGINEERING FRATERNITY </p>
+//     </subtitle>
+// </div>
+// <div class="bar">
+//     <div class="half">
+//         <a href="/"> Home </a>
+//         <a href="About"> About </a>
+//         <a href="Rush"> Rush </a>
+//     </div>
+//     <div class="crest">
+//         <img src={coatOfArms} className="crestImage"/>
+//     </div>
+//     <div class="half">
+//         <NavLink href="Members"> Members </NavLink>
+//         <a href="Officers"> Officers </a>
+//         <a href="Contact"> Contact </a>
+//     </div>
+// </div>
 //         </>
 //     );
 // };
-// export default Navbar; 
+// export default Navbar;
 
 const Navbar = () => (
-    <>
+  <>
     <div class="banner">
-        <headerTitle > 
-            <p> Theta Tau </p>
-        </headerTitle>
-        <headerSubtitle> 
-            <p>
-                SIGMA DELTA CHAPTER AT UC RIVERSIDE 
-            </p>
-        </headerSubtitle>
+      <headerTitle>
+        <p> Theta Tau </p>
+      </headerTitle>
+      <headerSubtitle>
+        <p>SIGMA DELTA CHAPTER AT UC RIVERSIDE</p>
+      </headerSubtitle>
     </div>
     <div class="sub">
-        <subtitle>
-            <p> CO-ED PROFESSIONAL ENGINEERING FRATERNITY </p>
-        </subtitle>
+      <subtitle>
+        <p> CO-ED PROFESSIONAL ENGINEERING FRATERNITY </p>
+      </subtitle>
     </div>
     <div class="bar">
-        <div class="half">
-            <NavLink
-                to="/"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Home
-            </NavLink>
-            <NavLink
-                to="/About"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                About
-            </NavLink>
-            <NavLink
-                to="/Rush"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Rush
-            </NavLink>
-        </div>
-        <div class="crest">
-            <img src={coatOfArms} className="crestImage"/>
-        </div>
-        <div class="half">
-            <NavLink
-                to="/Members"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Members
-            </NavLink>
-            <NavLink
-                to="/Officers"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Officers
-            </NavLink>
-            <NavLink
-                to="/Contact"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Contact
-            </NavLink>
-        </div>
+      <div class="half">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/About"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/Rush"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Rush
+        </NavLink>
+      </div>
+      <div class="crest">
+        <img src={coatOfArms} className="crestImage" alt = "CrestImage" />
+      </div>
+      <div class="half">
+        <NavLink
+          to="/Members"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Members
+        </NavLink>
+        <NavLink
+          to="/Officers"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Officers
+        </NavLink>
+        <NavLink
+          to="/Contact"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Contact
+        </NavLink>
+      </div>
     </div>
-    
-    </>
-  );
-  
-  export default Navbar;
+  </>
+)
+
+export default Navbar
 
 // import * as React from 'react';
 // import AppBar from '@mui/material/AppBar';
@@ -119,20 +122,16 @@ const Navbar = () => (
 // const ResponsiveAppBar = () => {
 //   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-
-
 //   const handleCloseNavMenu = () => {
 //     setAnchorElNav(null);
 //   };
 
-
-
 //   return (
-//     <AppBar position="static" 
+//     <AppBar position="static"
 //      sx={{
 //         bgcolor: '#8d191c'
 //      }}
-    
+
 //     >
 //       <Container maxWidth="xl">
 //         <Toolbar disableGutters>
@@ -204,7 +203,7 @@ const Navbar = () => (
 //             {pages.map((page) => (
 //               <Button
 //                 key={page}
-//                 href={page} 
+//                 href={page}
 //                 onClick={handleCloseNavMenu}
 //                 sx={{ my: 2, color: 'white', display: 'block' }}
 //               >

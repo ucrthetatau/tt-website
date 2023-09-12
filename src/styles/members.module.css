@@ -1,43 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap");
 
-.memberlist { 
-    margin: 7em;
-    margin-top: 1em;
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: 300px 300px 300px;
-    justify-content: center;
-    /* border: 1px solid green; */
+.memberlist {
+  margin: 7em;
+  margin-top: 1em;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: center;
+  /* border: 1px solid green; */
 }
 
 .membercard {
-    border-radius: 10px; 
-    display: grid; 
-    text-align: center;
-    font-family: 'Darker Grotesque'; 
-    font-size: 30px; 
-    justify-content: center;
-
+  border-radius: 10px;
+  display: grid;
+  text-align: center;
+  font-family: "Darker Grotesque";
+  font-size: 30px;
+  justify-content: center;
 }
 
-.memberphoto { 
-    border: 10px solid #8a2c33; 
-    border-radius: 10px;
-    height: 250px; 
-    width: 250px; 
-    object-fit: cover; 
-    max-width: 400px;
-    display: block;
+.memberphoto {
+  border: 10px solid #8a2c33;
+  border-radius: 10px;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  max-width: 400px;
+  display: block;
 }
 
-.head { 
-    text-transform: uppercase; 
+.head {
+  text-transform: uppercase;
 }
 
-.dropdown { 
-    display: flex; 
-    font: 'Darker Grotesque';
-    align-content: center; 
-    box-shadow: inset 1px 1px #b1bd15, inset -1px 0 #b1bd15, inset 0 -1px #b1bd15;
-    background-color: gray;
+.dropdown {
+  display: flex;
+  font: "Darker Grotesque";
+  align-content: center;
+  box-shadow: inset 1px 1px #b1bd15, inset -1px 0 #b1bd15, inset 0 -1px #b1bd15;
+  background-color: gray;
 }

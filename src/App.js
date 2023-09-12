@@ -1,12 +1,10 @@
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Members from './components/Members'
-import About from './components/About'
-import Rush from './components/Rush'
-
-
+import "./App.css"
+import { Route, Routes } from "react-router-dom"
+import Navbar from "./components/Navbar"
+import Home from "./components/Home"
+import Members from "./components/Members"
+import About from "./components/About"
+import Rush from "./components/Rush"
 
 function App() {
   return (
@@ -21,7 +19,7 @@ function App() {
         </Routes>
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
