@@ -6,31 +6,54 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import dropdown from "../styles/dropdown.css";
+import dropdown from "../styles/members.dropdown.css"; 
 import { color } from '@mui/system';
 
 const options = [
   'Members',
-  'Founding',
-  'Alpha',
-  'Beta',
-  'Gamma',
-  'Delta',
-  'Epsilon',
-  'Zeta',
-  'Eta',
-  'Theta',
-  'Iota',
-  'Kappa',
-  'Lambda',
-  'Mu',
-  'Nu',
-  'Xi',
-  'Omicron',
-  'Pi',
-  'Rho',
+  'Upsilon',
+  'Tau',
   'Sigma',
-  'Tau'
+  'Rho',
+  'Pi',
+  'Omicron',
+  'Xi',
+  'Nu',
+  'Mu',
+  'Lambda',
+  'Kappa',
+  'Iota',
+  'Theta',
+  'Eta',
+  'Zeta',
+  'Epsilon',
+  'Delta',
+  'Gamma',
+  'Beta',
+  'Alpha',
+  'Founding'
+
+  // 'Founding',
+  // 'Alpha',
+  // 'Beta',
+  // 'Gamma',
+  // 'Delta',
+  // 'Epsilon',
+  // 'Zeta',
+  // 'Eta',
+  // 'Theta',
+  // 'Iota',
+  // 'Kappa',
+  // 'Lambda',
+  // 'Mu',
+  // 'Nu',
+  // 'Xi',
+  // 'Omicron',
+  // 'Pi',
+  // 'Rho',
+  // 'Sigma',
+  // 'Tau',
+  // 'Upsilon'
 ];
 
 

@@ -1,13 +1,13 @@
-import styles from "../styles/members.module.css";
-import LoadMembers from '../firebase/LoadMembers'
-import classes from '../styles/members.module.css'
+import styles from "../styles/officers.module.css";
+import LoadOfficers from '../firebase/LoadOfficers' //Members
+import classes from '../styles/officers.module.css'
 import { useState, useEffect } from 'react';
-import Dropdown from './MembersDropdown'
+import Dropdown from './OfficersDropdown'
 
-const Members = () => {
+const Officers = () => {
     const [render, setRender] = useState(false);
-    const [member, setMember] = useState("Upsilon"); // should be the most recent class
-    const { docs } = LoadMembers(member);
+    const [member, setMember] = useState('Founding');
+    const { docs } = LoadOfficers(member);
     console.log(docs);
     useEffect(() => {
         if (!render) {
@@ -25,13 +25,11 @@ const Members = () => {
                         <img src={doc.Photo} className={classes.memberphoto}></img>
                         {doc.Name}
                         <br></br>
-                        {doc.Major}
-                        <br></br>
-                        {doc.GraduatingClass}
+                        {doc.Position}
                     </div>
                 ))}
             </div>
         </div>
     )
 };
-export default Members; 
+export default Officers; 
