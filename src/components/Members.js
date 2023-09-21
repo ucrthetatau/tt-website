@@ -2,32 +2,32 @@ import styles from "../styles/members.module.css";
 import LoadMembers from '../firebase/LoadMembers'
 import classes from '../styles/members.module.css'
 import { useState, useEffect } from 'react';
-import Dropdown from './MembersDropdown'
 
 const Members = () => {
-    const [render, setRender] = useState(false);
-    const [member, setMember] = useState("Upsilon"); // should be the most recent class
+    const [render, setRender] = useState("");
+    const [member, setMember] = useState(""); // should be the most recent class
     const { docs } = LoadMembers(member);
+
     console.log(docs);
-    useEffect(() => {
-        if (!render) {
-            console.log(member);
-            setRender(true);
-        }
-    });
 
     return (
         <div>
-            <Dropdown setMember={setMember} />
-            <div className={classes.memberlist}>
-                {docs && docs.map(doc => (
-                    <div key={doc.id} className={classes.membercard}>
-                        <img src={doc.Photo} className={classes.memberphoto}></img>
-                        {doc.Name}
-                        <br></br>
-                        {doc.Major}
-                        <br></br>
-                        {doc.GraduatingClass}
+            <div className={classes.termlist}>
+                {docs.map(doc => (
+                    <div>
+                        <p1>{doc.Class}</p1>
+                        <div className={classes.memberlist}>
+                            {
+                                doc.Members.map(member => (
+                                    <div key={member.id} className={classes.membercard}>
+                                        <img src={member.Photo} className={classes.memberphoto}></img>
+                                        {member.Name}
+                                        <br></br>
+                                        {member.Position}
+                                    </div>
+                                ))
+                            }
+                        </div>
                     </div>
                 ))}
             </div>
