@@ -6,12 +6,12 @@ function Rush() {
     return (
         <>
         <div class = "rush-container">
-            <div class = "rush-floating1">
+            {/* <div class = "rush-floating1">
                 RUSH RUSH RUSH
-            </div>
-            <div class = "rush-floating2">
+            </div> */}
+            {/* <div class = "rush-floating2">
                 RUSH RUSH RUSH
-            </div>
+            </div> */}
             <div class = "rush-text">
                 <h1>Are You An Engineer?</h1>
                 <br></br>
