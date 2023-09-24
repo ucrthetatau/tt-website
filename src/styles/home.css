@@ -41,3 +41,32 @@
     border: 1px solid #F00;
     background-color: gray;
 }
+
+.pillar>.pic {
+    background-color: gray;
+    width: 40%;
+    height: fit-content;
+    justify-content: center;
+}
+
+.pillar {
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pillar>.subtitle {
+    font-family: 'Farro';
+    font-style: normal;
+    color: black;
+    font-size: 24px;
+    padding: 1em;
+}
+
+.pillar>.description {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    color: black;
+}
