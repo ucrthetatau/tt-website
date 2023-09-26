@@ -1,5 +1,4 @@
 import React from 'react'
-import s23 from '../static/S23graphic1.jpg'
 import omicron1 from '../static/aboutOmi1.jpg'
 import UpsPic from '../static/upsilonPic.jpg'
 import about3 from '../static/W23Retreat.jpg'
@@ -18,6 +17,14 @@ export const yearData = [
 export const yearColors = {
     colors: ['#cd5c5c', '#7c0a02', '#a52a2a', '#f3b49f', '#cc3333'],
     backgroundColor: "transparent",
+    is3D: true,
+    slices: {
+        0: { offset: 0.1 },
+        1: { offset: 0.1 },
+        2: { offset: 0.1 },
+        3: { offset: 0.1 },
+        4: { offset: 0.1 },
+      },
     legend: {
         // position: 'bottom', 
     }
@@ -39,7 +46,15 @@ export const majorData = [
 export const majorColors = {
     colors: ['#ffcc33', '#e5b73b', '#da9100', '#996515', '#faf0be', '#f3e5ab', '#f8de7e'],
     backgroundColor: "transparent",
-    position: "static"
+    position: "static",
+    is3D: true,
+    slices: {
+        1: { offset: 0.4 },
+        2: { offset: 0.2 },
+        3: { offset: 0.2 },
+        4: { offset: 0.4 },
+        5: { offset: 0.4 },
+      },
 };
 
 export const genderData = [
@@ -56,6 +71,7 @@ export const genderColors = {
 const About = () => {
     return (
         <>
+        <br></br><br></br><br></br>
         <div class = "about-container">
             {/* <div class = "about-floating1">
                 ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
@@ -64,10 +80,9 @@ const About = () => {
                 ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
             </div> */}
             <div>
-                <img src={about3} class="about-pic"></img>
+                <img src={about3} class="about-pic" alt="Winter Retreat 2023"></img>
             </div>
             <div class = "head-info">
-            {/* <p>About Theta Tau</p> */}
             </div>
             <div class = "pic-info">
                 Winter 2023
@@ -83,24 +98,22 @@ const About = () => {
                     <div class = "mission-statement">
                         <div class = "ms-text">
                             <h1>Mission Statement</h1>
-                            {/* <hr color = "black"></hr> */}
                             <br></br>
                             <p>The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members and to unite them in a strong bond of fraternal fellowship.</p> 
                         </div>
                         <br></br>
                         <div>
-                            <img src={UpsPic} class="ms-pic"></img>
+                            <img src={UpsPic} class="ms-pic" alt="Upsilon Class Photo"></img>
                         </div>
                     </div>
                     <br></br>
                     <div class = "motto">
                         <div>
-                            <img src={omicron1} class="motto-pic"></img>
+                            <img src={omicron1} class="motto-pic" alt="Omicron Class at Winter Retreat 2023"></img>
                         </div>
                         <br></br>
                         <div class = "motto-text">
                             <h1>Open Motto</h1>
-                            {/* <hr color = "black"></hr> */}
                             <br></br>
                             <p>"Whatsoever thy hand findeth to do, do it with thy might;..."</p>
                             <br></br>
@@ -122,6 +135,8 @@ const About = () => {
                                 data={yearData}
                                 options={yearColors}
                                 width={"100%"}
+                                wmode="window"
+                                zIndex="-1"
                             />
                         </div>
                     </div>

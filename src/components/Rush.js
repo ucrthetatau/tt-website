@@ -5,6 +5,7 @@ import '../styles/rush.css'
 function Rush() {
     return (
         <>
+        <br></br><br></br><br></br>
         <div class = "rush-container">
             {/* <div class = "rush-floating1">
                 RUSH RUSH RUSH
@@ -35,7 +36,7 @@ function Rush() {
                 <img src={s23} class="rush-pic"></img>
             </div>
         </div>
-        
+        <br></br><br></br><br></br>
         </>
     );
 }

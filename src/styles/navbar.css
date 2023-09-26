@@ -12,6 +12,7 @@
     width: 100%;
     position: fixed;
     font-family: "Helvetica Neue", san-serif;
+    z-index: 1;
 }
 
 .banner {
