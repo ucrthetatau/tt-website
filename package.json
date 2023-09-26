@@ -11,8 +11,10 @@
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.9.1",
     "jest": "^28.1.2",
+    "react-google-charts": "^4.0.1",
     "react-router-dom": "^6.3.0",
     "react-select": "^5.4.0",
+    "react-slick": "^0.29.0",
     "typescript": "^4.8.2",
     "web-vitals": "^2.1.4"
   },

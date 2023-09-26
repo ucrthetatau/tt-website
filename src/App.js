@@ -8,7 +8,6 @@ import Rush from './components/Rush'
 import Officers from './components/Officers'
 import Footer from './components/Footer'
 
-
 function App() {
   return (
     <>
@@ -29,7 +28,7 @@ function App() {
       </div>
         
     </>
-  );
+  )
 }
 
-export default App;
+export default App

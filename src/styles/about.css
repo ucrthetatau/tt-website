@@ -4,20 +4,20 @@
 }
 
 .head-info {
-    display: flex;
+  display: flex;
 }
 
 .about-pic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
-    border-radius: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  border-radius: 40px;
 }
 
 .pic-info {
-    color: rgb(120, 120, 120);
-    margin-left: 24%;
+  color: rgb(120, 120, 120);
+  margin-left: 24%;
 }
 
 .head-info > p {
@@ -34,18 +34,18 @@
     width: 75%;
 }
 .about-info > .graphics {
-    display: grid;
-    grid-gap: 10%;
-    grid-template-columns: 45% 45%;
+  display: grid;
+  grid-gap: 10%;
+  grid-template-columns: 45% 45%;
 }
 
 .about-info > p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .about-info > h1 {
-    color: rgb(124, 0, 0);
-    text-shadow: 1px 0px 1px black;
+  color: rgb(124, 0, 0);
+  text-shadow: 1px 0px 1px black;
 }
 
 .section2 {
@@ -63,14 +63,14 @@
 }
 
 .ms-text > h1 {
-    font-size: 35px;
-    color: rgb(124, 0, 0);
-    text-shadow: 1px 0px 1px black;
+  font-size: 35px;
+  color: rgb(124, 0, 0);
+  text-shadow: 1px 0px 1px black;
 }
 
 .ms-text > p {
-    font-size: 17px;
-    width: 83%;
+  font-size: 17px;
+  width: 83%;
 }
 
 .ms-text > hr {
@@ -79,8 +79,8 @@
 }
 
 .ms-pic {
-    width: 500px;
-    border-radius: 15px;
+  width: 500px;
+  border-radius: 15px;
 }
 
 .motto {
@@ -90,31 +90,30 @@
 }
 
 .motto-text {
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 60%;
-
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 60%;
 }
 
 .motto-text > h1 {
-    font-size: 30px;
-    color: rgb(124, 0, 0);
-    text-shadow: 1px 0px 1px black;
+  font-size: 30px;
+  color: rgb(124, 0, 0);
+  text-shadow: 1px 0px 1px black;
 }
 
 .motto-text > p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 .motto-text > hr {
-    border-width: 1px;
-    width: 170px;
-    margin-left:auto;
+  border-width: 1px;
+  width: 170px;
+  margin-left: auto;
 }
 
 .motto-pic {
-    width: 500px;
-    border-radius: 15px;
+  width: 500px;
+  border-radius: 15px;
 }
 
 .card {
@@ -156,7 +155,6 @@ svg > g > g:last-child {
     top: 45%; 
     right: -695px;
 } */
-
 
 @media screen and (max-width: 960px) {
     .about-info > .graphics {
@@ -216,6 +214,12 @@ svg > g > g:last-child {
         margin-right: auto;
     }
 
+  .motto-pic {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 768px) {
     .about-floating1 {
