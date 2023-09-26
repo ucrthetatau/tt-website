@@ -82,30 +82,7 @@ const About = () => {
             <div>
                 <img src={about3} class="about-pic" alt="Winter Retreat 2023"></img>
             </div>
-            <div class = "head-info">
-            </div>
-          </div>
-          <br></br>
-          <br></br>
-          <hr></hr>
-          <br></br>
-          <br></br>
-          <h1>Chapter Breakdown</h1>
-          <br></br>
-          <br></br>
-          <div class="graphics">
-            <div class="card">
-              <div>Year</div>
-              <div>
-                <Chart
-                  chartType="PieChart"
-                  data={yearData}
-                  options={yearColors}
-                  width={"100%"}
-                />
-              </div>
-            </div>
-            
+            <div class="pic-info">Winter 2023</div>
             <br></br><br></br>
             <div class = "about-info">
                 <p>Theta Tau was originally founded as the "Society of Hammer and Tongs" on October 15, 1904 at the University of Minnesota by four engineers: Erich J. Schrader, Elwin L. Vinal, William M. Lewis, and Isaac B. Hanks. At the fraternity's first national convention in 1911, the name was changed to Theta Tau, and the fraternity opened up to include all departments of engineering. Since then, approximately 30,000 engineering students have been initiated.</p>
@@ -178,31 +155,10 @@ const About = () => {
                             />
                         </div>
                     </div> */}
-          </div>
+                </div>
+            </div>
+        <br></br><br></br><br></br><br></br>
         </div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-      </div>
-      <div class="pic-info">Winter 2023</div>
-      <div class="about-text">
-        <p>
-          Theta Tau was originally founded as the "Society of Hammer and Tongs"
-          on October 15, 1904 at the University of Minnesota by four engineers:
-          Erich J. Schrader, Elwin L. Vinal, William M. Lewis, and Isaac B.
-          Hanks. At the fraternity's first national convention in 1911, the name
-          was changed to Theta Tau, and the fraternity opened up to include all
-          departments of engineering. Since then, approximately 30,000
-          engineering students have been initiated.
-        </p>
-        <h2>Mission Statement</h2>
-        <p>
-          The purpose of Theta Tau is to develop and maintain a high standard of
-          professional interest among its members and to unite them in a strong
-          bond of fraternal fellowship.
-        </p>
-      </div>
     </>
   )
 }

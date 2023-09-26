@@ -53,9 +53,6 @@ function Rush() {
           <img src={s23} class="rush-pic"></img>
         </div>
       </div>
-      <div>
-        <img src={s23} class="rush-pic"></img>
-      </div>
       <br></br><br></br><br></br>
     </>
   )
