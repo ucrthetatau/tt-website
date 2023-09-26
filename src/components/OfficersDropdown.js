@@ -25,24 +25,22 @@ const options = [
 
 
 export default function Dropdown({ setMember }) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(1);
-  const open = Boolean(anchorEl);
+  const [anchorEl, setAnchorEl] = React.useState(null)
+  const [selectedIndex, setSelectedIndex] = React.useState(1)
+  const open = Boolean(anchorEl)
   const handleClickListItem = (event) => {
-    setAnchorEl(event.currentTarget);
-
-
-  };
+    setAnchorEl(event.currentTarget)
+  }
 
   const handleMenuItemClick = (event, index, option) => {
-    setSelectedIndex(index);
-    setMember(option);
-    setAnchorEl(null);
-  };
+    setSelectedIndex(index)
+    setMember(option)
+    setAnchorEl(null)
+  }
 
   const handleClose = () => {
-    setAnchorEl(null);
-  };
+    setAnchorEl(null)
+  }
 
   return (
     <>
@@ -90,11 +88,38 @@ export default function Dropdown({ setMember }) {
             style= {{
               fontFamily: 'Farro'}}
           >
-            {option}
-          </MenuItem>
-        ))}
-      </Menu>
-    </div>
+            <ListItemText
+              primary="Members"
+              secondary={options[selectedIndex]}
+              style={{}}
+            />
+          </ListItem>
+        </List>
+        <Menu
+          id="lock-menu"
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          MenuListProps={{
+            "aria-labelledby": "lock-button",
+            role: "listbox",
+          }}
+        >
+          {options.map((option, index) => (
+            <MenuItem
+              key={option}
+              disabled={index === 0}
+              selected={index === selectedIndex}
+              onClick={(event) => handleMenuItemClick(event, index, option)}
+              style={{
+                fontFamily: "Farro",
+              }}
+            >
+              {option}
+            </MenuItem>
+          ))}
+        </Menu>
+      </div>
     </>
-  );
+  )
 }
