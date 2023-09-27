@@ -40,7 +40,9 @@ const Footer = () => (
                     <p>Jared Nagata</p>
                     <p>Nuha Rahman</p>
                     <p>Catherine Truong</p>
-                    <p>Shreyas Deshpande</p>
+                    <p>
+                        <a href="https://www.instagram.com/desh_panda/">Shreyas Deshpande</a>
+                    </p>
                     </div>
                 <div class="team" id="right"> 
                     <p>Davis Kim</p>

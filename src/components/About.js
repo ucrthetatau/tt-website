@@ -57,15 +57,24 @@ export const majorColors = {
       },
 };
 
-export const genderData = [
-  ["Gender", "Number of People"],
-  ["Female", 10],
-  ["Male", 21],
+export const internData = [
+  ["Our Members With Experience", "Number of People"],
+  ["Internship/Job", 10],
+  ["Research", 2],
+  ["Both", 5],
+  ["None", 12],
 ]
 
-export const genderColors = {
-  colors: ["#989898", "#dcdcdc"],
+export const internColors = {
+  colors: ['#f3b49f', '#7c0a02', '#a52a2a', '#cd5c5c'],
+  is3D: true,
   backgroundColor: "transparent",
+  slices: {
+    0: { offset: 0.05 },
+    1: { offset: 0.4 },
+    2: { offset: 0.3 },
+    3: { offset: 0.05 },
+  },
 }
 
 const About = () => {
@@ -145,16 +154,16 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    {/* <div class="card">
-                        <div>Gender</div>
+                    <div class="card">
+                        <div>Experience</div>
                         <div>
                             <Chart
                                 chartType="PieChart"
-                                data={genderData}
-                                options={genderColors}
+                                data={internData}
+                                options={internColors}
                             />
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         <br></br><br></br><br></br><br></br>
