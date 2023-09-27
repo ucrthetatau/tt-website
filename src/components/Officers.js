@@ -1,35 +1,55 @@
-import styles from "../styles/officers.module.css";
-import LoadOfficers from '../firebase/LoadOfficers' //Members
-import classes from '../styles/officers.module.css'
+import { firestore } from '../firebase/config';
+import { collection, query, onSnapshot, where, getDocs, QuerySnapshot } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
-import Dropdown from './OfficersDropdown'
 
-const Officers = () => {
-    const [render, setRender] = useState(false);
-    const [member, setMember] = useState('Founding');
-    const { docs } = LoadOfficers(member);
-    console.log(docs);
-    useEffect(() => {
-        if (!render) {
-            console.log(member);
-            setRender(true);
-        }
+const LoadMembers = () => {
+  const [docs, setDocs] = useState([]);
+
+  const membersQ = query(collection(firestore, 'members'));
+  var members = {}
+  const membersUnsub = onSnapshot(membersQ, (querySnapshot) => {
+    querySnapshot.forEach((document) => {
+      members[document.id] = document.data()
     });
+  });
 
-    return (
-        <div>
-            <Dropdown setMember={setMember} />
-            <div className={classes.memberlist}>
-                {docs && docs.map(doc => (
-                    <div key={doc.id} className={classes.membercard}>
-                        <img src={doc.Photo} className={classes.memberphoto}></img>
-                        {doc.Name}
-                        <br></br>
-                        {doc.Position}
-                    </div>
-                ))}
-            </div>
-        </div>
-    )
-};
-export default Officers; 
+  useEffect(() => {
+    const q = query(collection(firestore, 'classes'));
+    var allClasses = [];
+    const unsub = onSnapshot(q, (querySnapshot) => {
+      querySnapshot.forEach((document) => {
+        // console.log(document.id)
+        let index = Object.keys(document.data())
+        let names = Object.values(document.data())
+
+        let temp = []
+
+        for (let i = 0; i < names.length; ++i) {
+          // console.log(names[i])
+          try {
+            temp[index[i]] = ({ ...members[names[i]] })
+          }
+          catch {
+            console.log("not found")
+          }
+        }
+        // console.log(temp)
+
+        let tempMap = {
+          Members: temp,
+          Class: document.id
+        }
+
+        allClasses.unshift(tempMap)
+        // console.log(allClasses)
+        setDocs(allClasses);
+      });
+    });
+    return () => unsub();
+  });
+
+  return { docs };
+
+}
+
+export default LoadMembers;
