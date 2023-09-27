@@ -10,7 +10,7 @@
     justify-content: space-evenly;
     background-color: #8B0000;
     color: white;
-    font-family: "Helvetica Neue", san-serif;
+    font-family: "Helvetica", san-serif;
 }
 
 .column {
@@ -30,7 +30,7 @@
 }
 
 h3 {
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 45px;
     padding-bottom: 3px;
     border-bottom: solid white;
@@ -39,13 +39,13 @@ h3 {
 
 h4 {
     padding-top: 5px;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 21px;
 
 }
 
 h5 {
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 24px;
     text-align: center;
     border-bottom: solid 1px white;
@@ -87,6 +87,10 @@ a {
     display: flex;
     width: 100%;
     margin: 1em auto;
+}
+
+#names a {
+    text-decoration: none;
 }
 
 #left {
