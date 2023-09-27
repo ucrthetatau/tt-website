@@ -10,6 +10,7 @@ import Officers from './components/Officers'
 import Footer from './components/Footer'
 import Brothers from './components/Brothers'
 
+
 function App() {
   return (
     <>
@@ -33,7 +34,7 @@ function App() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 export default App;
