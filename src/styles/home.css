@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5% 0% 5% 0%;
+  padding: 3% 0% 1% 0%;
   width: 100%;
 }
 
@@ -25,6 +25,7 @@
   font-size: 250%;
   line-height: 54px;
   padding: 1% 2% 1% 2%;
+  padding: 0% 2%;
 }
 
 .home-slider-container {
@@ -95,6 +96,7 @@
   text-align: justify;
   inline-size: 150px;
   hyphens: auto;
+  width: 75%;
 }
 
 .border-with-diamonds {
@@ -168,6 +170,10 @@
 @media (max-width: 768px) {
   .page-container {
     flex-direction: column;
+  }
+
+  .title-container {
+    padding: 0.05%;
   }
 
   .home-slider-container {
