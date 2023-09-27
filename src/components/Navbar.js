@@ -3,23 +3,10 @@ import '../styles/navbar.css'
 import Logo from '../static/WhiteCrest.png'
 import { NavLink } from 'react-router-dom';
 
-
 document.addEventListener('click', (e) => {
     if (e.target.matches('headerSubtitle a')) {
-        // let dropdown = document.querySelector("headerSubtitle")
-        // dropdown.style.height = 0
-
-        // let open = document.querySelector("#open")
-        // open.style.display = "flex"
-
-        // let close = document.querySelector("#close")
-        // close.style.display = "none"
-        
         let checkbox = document.querySelector("#check")
         checkbox.checked = false
-
-
-
     }
 })
 
