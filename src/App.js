@@ -15,7 +15,9 @@ function App() {
   return (
     <>
       <div class="flex-wrapper">
-        <Navbar />
+        <div class="header">
+          <Navbar />
+        </div>
         <div class="content-container">
           <Routes>
             <Route index element={<Home />} />

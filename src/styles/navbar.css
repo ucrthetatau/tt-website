@@ -3,14 +3,8 @@
   margin: 0;
 }
 
-.dummy {
-  height: 8rem;
-  width: 100%;
-}
-
 .header {
     width: 100%;
-    position: fixed;
     font-family: "Helvetica", san-serif;
     z-index: 1;
 }
@@ -19,7 +13,6 @@
   height: 8rem;
   background: #8b0000;
   color: white;
-  width: 100%;
   display: flex;
 }
 
@@ -36,11 +29,11 @@ headerTitle {
 }
 
 h1 {
-    font-weight: lighter;
-    font-size: 32px;
-    padding-bottom: 3px;
-    border-bottom: solid white;
-    border-width: 1px;  
+  font-weight: lighter;
+  font-size: 32px;
+  padding-bottom: 3px;
+  border-bottom: solid white;
+  border-width: 1px;  
 }
 
 h2 {
@@ -55,7 +48,7 @@ headerSubtitle {
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
-  margin: auto 75px auto auto;
+  margin: auto 4em auto auto;
 }
 
 headerSubtitle a {
@@ -69,8 +62,7 @@ headerSubtitle a {
   padding: 7px;
 }
 
-.icons,
-#check {
+.icons, #check {
   display: none;
 }
 
@@ -132,8 +124,7 @@ headerSubtitle a.active, headerSubtitle a:hover, #contact a:hover{
     height: 15em;
   }
 
-  headerSubtitle a,
-  #insta {
+  headerSubtitle a, #insta {
     display: block;
     width: fit-content;
     padding: 7px;

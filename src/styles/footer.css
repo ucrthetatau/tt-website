@@ -11,6 +11,7 @@
     background-color: #8B0000;
     color: white;
     font-family: "Helvetica", san-serif;
+    font-weight: lighter;
 }
 
 .column {
@@ -41,7 +42,6 @@ h4 {
     padding-top: 5px;
     font-weight: lighter;
     font-size: 21px;
-
 }
 
 h5 {
