@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: black;
+}
+
+#container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+
+#disclaimer {
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px 1px #8B0000;
+}

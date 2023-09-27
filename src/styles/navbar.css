@@ -11,7 +11,8 @@
 .header {
     width: 100%;
     position: fixed;
-    font-family: "Helvetica Neue", san-serif;
+    font-family: "Helvetica", san-serif;
+
 }
 
 .banner {
@@ -35,7 +36,7 @@ headerTitle {
 }
 
 h1 {
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 32px;
     padding-bottom: 3px;
     border-bottom: solid white;
@@ -72,7 +73,7 @@ headerSubtitle a {
     display: none;
 }
 
-headerSubtitle a.active, headerSubtitle a:hover, #contact a:hover, .icons:hover {
+headerSubtitle a.active, headerSubtitle a:hover, #contact a:hover{
     background: #a82020;
     transition: 0.3s;
 }
