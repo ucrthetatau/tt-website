@@ -5,19 +5,19 @@ import { NavLink, Outlet } from 'react-router-dom';
 const Brothers = () => {
     return (
         <>
-            {/* <nav>
+            <nav>
                 <NavLink to="members" className={({isActive}) => isActive ? "active" : ""}>
                     Members
                 </NavLink>
                 <NavLink to="officers" className={({isActive}) => isActive ? "active" : ""}> 
                     Officers
                 </NavLink>
-            </nav> */}
-            <div id="container">
+            </nav>
+            {/* <div id="container">
                 <div id="disclaimer">
                     This page is currently under construction.
                 </div>
-            </div>
+            </div> */}
             
             
             <Outlet />

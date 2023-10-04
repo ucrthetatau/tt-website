@@ -10,6 +10,7 @@ import Officers from './components/Officers'
 import Footer from './components/Footer'
 import Brothers from './components/Brothers'
 
+
 function App() {
   return (
     <>
@@ -22,9 +23,9 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="rush" element={<Rush />} />
             <Route path="brothers" element={<Brothers />}>
-              {/* <Route index element={<Members />} />
+              <Route index element={<Members />} />
               <Route path="members" element={<Members />} />
-              <Route path="officers" element={<Officers />} /> */}
+              <Route path="officers" element={<Officers />} />
             </Route>
           </Routes>
         </div>
@@ -33,7 +34,7 @@ function App() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 export default App;

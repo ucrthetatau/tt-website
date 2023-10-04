@@ -1,37 +1,40 @@
 .rush-container {
     width: 90%;
     display: flex;
-    padding-left: 70px;
+    margin-left: auto;
+    margin-right: auto;
     column-gap: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .rush-text {
-    text-align: center;
-}
-
-.rush-text > p {
-    font-style: normal;
-    text-align: left;
+  text-align: center;
 }
 
 .rush-text > h1 {
     margin: auto;
 }
 
+.rush-text > p {
+  font-style: normal;
+  text-align: left;
+}
+
 .rush-pic {
-    width: 600px;
-    border-radius: 40px;
+  width: 600px;
+  border-radius: 40px;
 }
 
 .rush-buttons {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .rush-bttn {
     /* border: none; */
     font-size: 20px;
+    border-color: black;
+    /* border: none; */
     padding: 15px;
     width: 200px;
     margin: 10px 10px; /*first value adjusts the margin above and below. Secon value adjusts the margin to the right and left of the buttons.*/
@@ -44,33 +47,33 @@
     
 }
 
-.rush-bttn span{
-    display: inline-block;
-    position: relative;
-    /* background-color: #ffffff; */
-    transition: 0.5s;
+.rush-bttn span {
+  display: inline-block;
+  position: relative;
+  /* background-color: #ffffff; */
+  transition: 0.5s;
 }
 
-.rush-bttn span:after{
-    font-size: 35px;
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    margin-top: -11px;
-    right: -25px;
-    transition: 0.5s;
+.rush-bttn span:after {
+  font-size: 35px;
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  margin-top: -11px;
+  right: -25px;
+  transition: 0.5s;
 }
 
-.rush-bttn:hover span{
-    padding-right: 30px;
+.rush-bttn:hover span {
+  padding-right: 30px;
 }
 
-.rush-bttn:hover span:after{
-    opacity: 1;
-    right: 0;
+.rush-bttn:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
-.rush-floating1 {
+/* .rush-floating1 {
     position: fixed;
     transform: rotate(-90deg);
     text-align: right;
@@ -84,25 +87,37 @@
     text-align: right;
     top: 45%; 
     right: -40px;
-}
+} */
 
 @media screen and (max-width: 960px) {
     .rush-container {
-        padding-left: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
     }
     .rush-pic {
         text-align: center;
-        width: 450px;
+        width: 100%;
         border-radius: 40px;
     }
-    .rush-floating1 {
+
+    .rush-text {
+        width: 100%;
+    }
+
+    .rush-text > p {
+        text-align: center;
+    }
+
+    /* .rush-floating1 {
         left: -50px;
     }
     .rush-floating2 {
         right: -50px;
-    }
+    } */
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .rush-container {
         display: block;
     }
@@ -110,4 +125,4 @@
         width: 100%;
         border-radius: 40px;
     }
-}
+} */

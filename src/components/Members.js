@@ -2,36 +2,14 @@ import { type } from '@testing-library/user-event/dist/type';
 import { firestore } from '../firebase/config';
 import { collection, query, onSnapshot, where, getDocs, QuerySnapshot } from 'firebase/firestore';
 import { useState, useEffect } from 'react';
-// import styles from "../styles/members.css";
+import "../styles/members.css";
 
 const Members = () => {
     
     const [memberArray, setMemberArray] = useState([]);
     const [memberById, setMemberById] = useState({});
     const classes = ["Upsilon", "Tau", "Sigma", "Rho", "Pi", "Omicron", "Xi", "Nu", "Mu", "Lambda", "Kappa", "Iota", "Theta", "Eta", "Zeta", "Epsilon", "Delta", "Gamma", "Beta", "Alpha", "Founding"]   
-    const classMap = {
-        // "Upsilon": [],
-        // "Tau": [],
-        // "Sigma": [],
-        // "Rho": [],
-        // "Pi": [],
-        // "Omicron": [],
-        // "Xi": [],
-        // "Nu": [],
-        // "Mu": [],
-        // "Lambda": [],
-        // "Kappa": [],
-        // "Iota": [],
-        // "Theta": [],
-        // "Eta": [],
-        // "Zeta": [],
-        // "Epsilon": [],
-        // "Delta": [],
-        // "Gamma": [],
-        // "Beta": [],
-        // "Alpha": [],
-        // "Founding": []
-    }
+    const classMap = {}
 
     const getMembers = async () => {
         try {
@@ -59,7 +37,6 @@ const Members = () => {
 
     const populateclassMap = () => {
         memberArray.forEach((doc) => {
-            // classMap[doc.Class].push(doc.id)
             try {
                 classMap[doc.Class].push(doc.id)
             }
@@ -71,62 +48,56 @@ const Members = () => {
 
     const renderMembers = () => {
         const container = document.getElementById('container')
-        // const temp = document.createElement('div')
-        // temp.innerHTML = "hello"
-        // container.appendChild(temp)
+        
         classes.forEach((currentClass) => {
             const group = document.createElement('div')
-            container.appendChild(group)
-            group.innerHTML += `<div class="className">${currentClass}</div>`
-            // const className = document.createElement('div')
-            // className.innerHTML = currentClass
-            // container.appendChild(className)
+            container?.appendChild(group)
+            group.classList.add("group")
+
+            const greek = document.createElement('div')
+            group.appendChild(greek)
+            greek.classList.add("className")
+            greek.innerHTML = currentClass
+            // group.innerHTML = `<div class="greek">${currentClass}</div>`
 
             if (classMap[currentClass] != undefined) {
-            // let classMembers = classMap[currentClass]
-            // let classSize = classMembers.length
-            // console.log(classMembers.length)
-            // console.log(classMembers)
 
                 for (let i = 0; i < classMap[currentClass].length; i++) {
-                    let name = memberById[classMap[currentClass][i]].Name
-                    console.log(name)
                     const member = document.createElement('div')
+                    member.classList.add("member")
+
+                    // member.innerHTML = `
+                    // <img class="photo" src=${memberById[classMap[currentClass][i]].Photo}></img>
+                    // <div class="name">${memberById[classMap[currentClass][i]].Name}</div>
+                    // <div class="major">${memberById[classMap[currentClass][i]].Major}</div>
+                    // <div class="year">${memberById[classMap[currentClass][i]].GraduatingYear}</div>
+                    // `
+
+                    const photo = document.createElement('img')
+                    photo.classList.add("photo")
+                    photo.src = `${memberById[classMap[currentClass][i]].Photo}`
+
+                    const name = document.createElement('div')                      
+                    name.classList.add("name")
+                    name.innerHTML = memberById[classMap[currentClass][i]].Name
+
+                    const major = document.createElement('div')                        
+                    major.classList.add("major")
+                    major.innerHTML = memberById[classMap[currentClass][i]].Major
+
+                    const year = document.createElement('div')
+                    year.classList.add("year")
+                    year.innerHTML = memberById[classMap[currentClass][i]].GraduatingClass
+
+                    member.appendChild(photo)
+                    member.appendChild(name)
+                    member.appendChild(major)
+                    member.appendChild(year)
                     group.appendChild(member)
-                    member.innerHTML += `<div class="memberName">${name}</div>`
-                    // console.log(typeof(classMap[currentClass][i]))
+
+                    console.log("hello")
                 }
-            // try {
-            //     if (classMembers != undefined) {
-            //     for (let i = 0; i < classSize - 1; i++) {
-            //         if (classMembers[i]) {
-            //             console.log(memberById[`{classMembers[i]}`].Name)
-
-            //         }
-            //         // console.log("hello")
-            //     }
-            // }
-            // }
-            // catch(e) {
-            //     console.log(e)
-            // }
-            
-            // for (let [key, currentMember] of classMap[currentClass]) {
-            //     const member = document.createElement('div')
-            //     group.appendChild(member)
-            //     member.innerHTML += `<div class="member">${memberById[currentMember].Name}</div>`
-            // }
-            // classMap[currentClass].forEach((currentMember) => {
-            //     const member = document.createElement('div')
-            //     group.appendChild(member)
-            //     member.innerHTML += `<div class="member">${memberById[currentMember].Name}</div>`
-
-            //     // const memberName = document.createElement('div')
-            //     // console.log()
-            //     // memberName.innerHTML = memberById[currentMember].Name
-            //     // container.appendChild(memberName)
-            // })
-        }
+            }
         })
     }
 
@@ -134,25 +105,31 @@ const Members = () => {
         getMembers();
         populateclassMap();
         renderMembers();
-    }, [0]);
+    }, []);
+
+
 
     return (
         <div id="container">
-            {/* {/* {classes.map((currentClass) => (
-                <div class="group">
-                    <h1 class="title"> {currentClass} </h1>
-                    <h1 class="title"> {classMap[currentClass][0]} </h1>
-                    {/* for (let i = 0; i < {classMap[currentClass]}.length}}) (
-                        
-                    ) 
-                </div>
-            ))}
-            {memberArray.forEach((currentMember) => (
-                <h1 class="member"> {memberById[currentMember].Name} </h1>
-            ))} */}
+            {/* {classes.map(currentClass => {
+                return (
+                    <div class="group">
+                        <h1 class="className">{currentClass}</h1>
+                        {classMap[currentClass]?.map(temp => {
+                            return (
+                                <div class="member">
+                                    <img src={memberById[temp].Photo}></img>
+                                    <div class="name">{memberById[temp].Name}</div>
+                                    <div class="major">{memberById[temp].Major}</div>
+                                    <div class="year">{memberById[temp].GraduatingYear}</div>
+                                </div>
+                            )
+                        })}
+                    </div>
+                )
+            })} */}
         </div>
     )
-
 };
 
 export default Members; 
