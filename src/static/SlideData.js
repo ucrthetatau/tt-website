@@ -8,12 +8,12 @@ export const SlideData = [
     image: home,
   },
   {
-    image: brother,
-  },
-  {
-    image: rush
-  },
-  {
     image: about,
+  },
+  {
+    image: rush,
+  },
+  {
+    image: brother,
   },
 ]

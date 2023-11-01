@@ -154,7 +154,7 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    <div class="card">
+                    {/* <div class="card">
                         <div>Experience</div>
                         <div>
                             <Chart
@@ -163,7 +163,7 @@ const About = () => {
                                 options={internColors}
                             />
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         <br></br><br></br><br></br><br></br>

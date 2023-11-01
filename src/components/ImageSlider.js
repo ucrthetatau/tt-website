@@ -9,12 +9,12 @@ const slideInfo = [
     text: "About",
   },
   {
-    link: "./Members",
-    text: "Brothers",
-  },
-  {
     link: "./Rush",
     text: "Rush",
+  },
+  {
+    link: "./Members",
+    text: "Brothers",
   },
   {
     link: "./Contact",
