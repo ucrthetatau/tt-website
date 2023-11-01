@@ -16,10 +16,6 @@ const slideInfo = [
     link: "./Members",
     text: "Brothers",
   },
-  {
-    link: "./Contact",
-    text: "Contact",
-  },
 ]
 
 export const ImageSlider = () => {

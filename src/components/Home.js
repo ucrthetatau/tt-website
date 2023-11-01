@@ -1,4 +1,3 @@
-// import Navbar from './Navbar'
 import "../styles/home.css"
 import brotherhood from "../static/brotherhood.png"
 import professionalism from "../static/professionalism.png"

@@ -1,12 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Helvetica", san-serif;
+  font-weight: lighter;
 }
 
 .header {
-    width: 100%;
-    font-family: "Helvetica", san-serif;
-    z-index: 1;
+  width: 100%;
+  font-family: "Helvetica", san-serif;
+  z-index: 1;
 }
 
 .banner {
@@ -33,7 +35,7 @@ h1 {
   font-size: 32px;
   padding-bottom: 3px;
   border-bottom: solid white;
-  border-width: 1px;  
+  border-width: 1px;
 }
 
 h2 {
@@ -62,13 +64,16 @@ headerSubtitle a {
   padding: 7px;
 }
 
-.icons, #check {
+.icons,
+#check {
   display: none;
 }
 
-headerSubtitle a.active, headerSubtitle a:hover, #contact a:hover{
-    background: #a82020;
-    transition: 0.3s;
+headerSubtitle a.active,
+headerSubtitle a:hover,
+#contact a:hover {
+  background: #a82020;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 820px) {
@@ -124,7 +129,8 @@ headerSubtitle a.active, headerSubtitle a:hover, #contact a:hover{
     height: 15em;
   }
 
-  headerSubtitle a, #insta {
+  headerSubtitle a,
+  #insta {
     display: block;
     width: fit-content;
     padding: 7px;

@@ -1,6 +1,10 @@
+* {
+    font-family: "Helvetica", san-serif;
+    font-weight: lighter;
+}
+
 .about-container {
     font-family: Helvetica;
-
 }
 
 .head-info {

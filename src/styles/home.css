@@ -1,3 +1,8 @@
+* {
+  font-family: "Helvetica", san-serif;
+  font-weight: lighter;
+}
+
 .page-container {
   width: auto;
   height: auto;
@@ -19,9 +24,6 @@
 }
 
 .title {
-  font-family: "Times New Roman", Times, serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 250%;
   line-height: 54px;
   padding: 1% 2% 1% 2%;
@@ -78,16 +80,13 @@
 }
 
 .subtitle {
-  font-family: "Times New Roman", Times, serif;
-  font-style: normal;
   color: rgb(0, 0, 0);
+  font-weight: 20;
   font-size: 24px;
   padding: 1em;
 }
 
 .caption {
-  font-family: "Times New Roman", Times, serif;
-  font-style: normal;
   color: rgb(0, 0, 0);
   font-size: 20px;
   padding: 1em;

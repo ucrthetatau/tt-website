@@ -1,18 +1,19 @@
 .rush-container {
-    width: 90%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    column-gap: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .rush-text {
+  margin: 0px 5%;
   text-align: center;
 }
 
 .rush-text > h1 {
-    margin: auto;
+  margin: auto;
 }
 
 .rush-text > p {
@@ -31,20 +32,19 @@
 }
 
 .rush-bttn {
-    /* border: none; */
-    font-size: 20px;
-    border-color: black;
-    /* border: none; */
-    padding: 15px;
-    width: 200px;
-    margin: 10px 10px; /*first value adjusts the margin above and below. Secon value adjusts the margin to the right and left of the buttons.*/
-    background-color: #4d4d4d;
-    color: white;
-    cursor: pointer;
-    transition: 0.5s;
-    border-radius: 15px;
-    box-shadow: 8px 8px 5px 0 rgba(0,0,0,0.5);
-    
+  /* border: none; */
+  font-size: 20px;
+  border-color: black;
+  /* border: none; */
+  padding: 15px;
+  width: 200px;
+  margin: 10px 10px; /*first value adjusts the margin above and below. Secon value adjusts the margin to the right and left of the buttons.*/
+  background-color: #4d4d4d;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 15px;
+  box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .rush-bttn span {
@@ -90,27 +90,27 @@
 } */
 
 @media screen and (max-width: 960px) {
-    .rush-container {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
-    }
-    .rush-pic {
-        text-align: center;
-        width: 100%;
-        border-radius: 40px;
-    }
+  .rush-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .rush-pic {
+    text-align: center;
+    width: 100%;
+    border-radius: 40px;
+  }
 
-    .rush-text {
-        width: 100%;
-    }
+  .rush-text {
+    width: 100%;
+  }
 
-    .rush-text > p {
-        text-align: center;
-    }
+  .rush-text > p {
+    text-align: center;
+  }
 
-    /* .rush-floating1 {
+  /* .rush-floating1 {
         left: -50px;
     }
     .rush-floating2 {
