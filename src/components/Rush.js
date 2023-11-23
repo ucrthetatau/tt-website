@@ -18,8 +18,8 @@ function Rush() {
           <h1>Are You An Engineer?</h1>
           <br></br>
           <p>
-            We aboutre the only Co-ed Professional Engineering Fraternity at UCR. Theta Tau can help you in expanding
-            your professional network, becoming a part of a brotherhood, giving back to the community, and becoming a better engineer.
+            We are the only co-ed professional engineering fraternity at UCR. Theta Tau can help you in expanding
+            your professional network, becoming a part of a brotherhood, giving back to the community, and developing into a better engineer.
             <br></br> <br></br>
             Come and find out what we're all about! We are looking for motivated
             and bright individuals to become part of our next class!
