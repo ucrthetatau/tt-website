@@ -32,7 +32,7 @@ const Navbar = () => (
                 </label> 
 
                 <headerSubtitle>
-                    <NavLink to="home" className={({isActive}) => isActive ? "active" : ""} > 
+                    <NavLink to="" className={({isActive}) => isActive ? "active" : ""} > 
                         Home
                     </NavLink>
                     <NavLink to="about" className={({isActive}) => isActive ? "active" : ""} > 
