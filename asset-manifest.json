@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8e001076.css",
-    "main.js": "/static/js/main.8a655df0.js",
+    "main.js": "/static/js/main.ccaec2df.js",
     "static/media/W23Retreat.jpg": "/static/media/W23Retreat.fa5fc4b2119a8a4e0fbf.jpg",
     "static/media/upsilonPic.jpg": "/static/media/upsilonPic.643e55feb61525bb4de9.jpg",
     "static/media/aboutOmi1.jpg": "/static/media/aboutOmi1.a8a27c49ba094d446623.jpg",
@@ -15,10 +15,10 @@
     "static/media/service.png": "/static/media/service.ec82cfaa78ee5fa90778.png",
     "index.html": "/index.html",
     "main.8e001076.css.map": "/static/css/main.8e001076.css.map",
-    "main.8a655df0.js.map": "/static/js/main.8a655df0.js.map"
+    "main.ccaec2df.js.map": "/static/js/main.ccaec2df.js.map"
   },
   "entrypoints": [
     "static/css/main.8e001076.css",
-    "static/js/main.8a655df0.js"
+    "static/js/main.ccaec2df.js"
   ]
 }
