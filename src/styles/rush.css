@@ -1,10 +1,20 @@
-.rush-container {
-  width: 90%;
+.master {
+  width: auto;
+  height: auto;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  column-gap: 40px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  /* border: 5px solid red; */
+}
+.rush-container {
+  width: 55%;
+  display: grid;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  /* border: 5px solid pink; */
 }
 
 .rush-text {
@@ -22,8 +32,12 @@
 }
 
 .rush-pic {
-  width: 600px;
+  width: 550px;
   border-radius: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
 }
 
 .rush-buttons {
