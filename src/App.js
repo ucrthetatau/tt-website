@@ -22,11 +22,7 @@ function App() {
             <Route path="home" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="rush" element={<Rush />} />
-            <Route path="brothers" element={<Brothers />}>
-              <Route index element={<Members />} />
-              <Route path="members" element={<Members />} />
-              <Route path="officers" element={<Officers />} />
-            </Route>
+            <Route path="brothers" element={<Brothers />} />
           </Routes>
         </div>
         <div class="footer--pin">

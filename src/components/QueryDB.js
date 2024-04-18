@@ -1,26 +1,60 @@
-// import { firestore } from '../firebase/config';
-// import { collection, getDocs } from 'firebase/firestore';
-// import { useState } from 'react';
+import { firestore } from '../firebase/config';
+import { collection, getDocs } from 'firebase/firestore';
+import { useState, useEffect } from 'react';
 
-// const QueryDB = () => {
-    
-//     const [memberList, setMemberList] = useState({});
+const brotherData = await getDocs(collection(firestore, "members"));
+const officerData = await getDocs(collection(firestore, "officers"));
+let brothers = {}
+let officers = {}
+let classMap = {}
+let yearMap = {}
+let classes = ["Upsilon", "Tau", "Sigma", "Rho", "Pi", "Omicron", "Xi", "Nu", "Mu", "Lambda", "Kappa", "Iota", "Theta", "Eta", "Zeta", "Epsilon", "Delta", "Gamma", "Beta", "Alpha", "Founding"]
 
-//     const getMembers = async () => {
-//         try {
-//             let members = {}
-//             const data = await getDocs(collection(firestore, "members"));
-//             data.forEach((doc) => {
-//                 members[doc.id] = doc.data()
-//             });
-//             setMemberList(members);
-//             console.log(memberList)
-//             return memberList;
-//         } catch(e) {
-//             console.error(e);
-//         }    
-//     }
-    
-// }
+const getBrothers = async () => {
+    try {
+        brotherData.forEach((doc) => {
+            brothers[doc.id] = doc.data()
+        });
+    } catch(e) {
+        console.error(e);
+    }    
+}
 
-// export default QueryDB;
+const getOfficers = async () => {
+    try {
+        officerData.forEach((doc) => {
+            officers[doc.id] = doc.data()
+        });
+    } catch(e) {
+        console.error(e);
+    }    
+}
+
+const populateClassMap = () => {
+    Object.entries(brothers).forEach(([key,value]) => {
+        try {
+            classMap[value["Class"]].push(key)
+        }
+        catch {
+            classMap[value["Class"]] = [key]
+        }
+    })
+}
+
+const populateYearMap = () => {
+    Object.entries(brothers).forEach(([key,value]) => {
+        try {
+            yearMap[value["GraduatingClass"]].push(key)
+        }
+        catch {
+            yearMap[value["GraduatingClass"]] = [key]
+        }
+    })
+}
+
+getBrothers()
+getOfficers()
+populateClassMap()
+populateYearMap()
+
+export { brothers, officers, classes, classMap, yearMap };
