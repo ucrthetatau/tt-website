@@ -4,61 +4,85 @@
     box-sizing: 0;
 }
 
+.brotherProfile {
+    height: fit-content;
+    width: fit-content;
+}
+
 .brotherCard {
-    height: 20em;
-    width: 15em;
+    height: 400px;
+    width: 300px;
     perspective: 2000px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.brotherCard:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.flip:hover{
+    box-shadow: 0 0 1px black;
 }
 
 .flip {
     height: 100%;
     width: 100%;
-    position: relative;
-    transition: all 1s;
+    transition: all 0.5s ease;
     transform-style: preserve-3d;
-}
-
-.flip:hover {
-    cursor: pointer;
+    border-radius: 20px;
 }
 
 .flipCard {
-    transform: rotateY(180deg);
+    transform: rotateY(181deg); /* for some reason it flips the other way if the value is exactly 180 so leave it at 181*/
 }
 
 .front, .back {
     height: 100%;
     width: 100%;
-    /* border-radius: 20px; */
-    /* box-shadow: 2px 5px 0 0 rgba(50,50,50,0.25); */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     backface-visibility: hidden;
+    pointer-events: none;
 }
 
 .back{
-    background-color: rgb(211,211,200);
-    transform: rotateY(-180deg);
-}
-
-.front {
-    background-color: red;
+    background-color: #FAF9F6;
+    transform: rotateY(180deg);
 }
 
 .headshot {
-    height: 200px; 
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.details {
+    pointer-events: none;
+    margin-top: 20px;
 }
 
 .details h2 {
-    font-size: 20px;
+    font-size: 30px;
+    padding: 10px 30px;
+    pointer-events: none;
+    color: #8b0000;
 }
 
 .details h3 {
-    font-size: 15px;
+    font-size: 20px;
+    padding: 10px 30px;
+
+    pointer-events: none;
+    border: none;
 }
 
 .info h1 {
-    font-size: 25px;
+    font-size: 30px;
+    padding: 10px 30px;
 }
