@@ -3,10 +3,8 @@ import React from "react"
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
-import Members from './components/Members'
 import About from './components/About'
 import Rush from './components/Rush'
-import Officers from './components/Officers'
 import Footer from './components/Footer'
 import Brothers from './components/Brothers'
 
