@@ -3,22 +3,24 @@
     margin: 0;
 }
 
-.dummy {
-    height: 8rem;
-    width: 100%;
-}
-
 .header {
     width: 100%;
     position: fixed;
     font-family: "Helvetica Neue", san-serif;
-}
-
-.banner {
     height: 8rem;
     background: #8B0000;
     color: white;
     width: 100%;
+    display: flex;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#main {
     display: flex;
 }
 
@@ -34,38 +36,32 @@ headerTitle {
     margin-right: 10px;
 }
 
-h1 {
-    font-weight: normal;
-    font-size: 32px;
+headerTitle h1 {
+    font-weight: 300;
+    font-size: 2.1em;
     padding-bottom: 3px;
     border-bottom: solid white;
-    border-width: 1px;  
+    border-width: 1px; 
 }
 
-h2 {
+headerTitle h2 {
     padding: 5px 0;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 15px;
 }
 
 headerSubtitle {
     display: flex;
-    width: 400px;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    margin: auto 75px auto auto;
+    gap: 1em;
+    margin: auto 3em auto auto;
 }
 
 headerSubtitle a {
     padding: 4px 7px;
     border-radius: 5px;
-    text-decoration: none;
-}
-
-#insta {
-    height: 20px;
-    padding: 7px;
 }
 
 .icons, #check{
@@ -83,12 +79,6 @@ headerSubtitle a.active, headerSubtitle a:hover, #contact a:hover, .icons:hover 
         margin-left: 5%;
     }
 
-    .buttons {
-        display: flex;
-        align-items: center;
-        margin-right: 5%;
-    }
-
     .icons {
         display: flex;
         margin: auto 5% auto auto;
@@ -97,7 +87,6 @@ headerSubtitle a.active, headerSubtitle a:hover, #contact a:hover, .icons:hover 
         font-size: 30px;
         padding: 5px;
         border-radius: 5px;
-        border: 1px solid white;
     }
 
     #close {
@@ -128,15 +117,13 @@ headerSubtitle a.active, headerSubtitle a:hover, #contact a:hover, .icons:hover 
     }
 
     #check:checked~headerSubtitle {
-        height: 15em;
-        
+        height: auto;
     }
     
-    headerSubtitle a, #insta {
+    headerSubtitle a {
         display: block;
         width: fit-content;
         padding: 7px;
         margin: 15px auto;
-        color: white;
     }
 }

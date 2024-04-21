@@ -1,11 +1,29 @@
 import React from 'react';
 import '../styles/footer.css'
+import Letters from '../static/Letters.png'
 import Logo from '../static/Logo.PNG'
 
 const Footer = () => (
-    <>
     <div class="footer">
-        <div class="column" id="col1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></link>
+        <div class="footer-contents">
+            <div class="buttons">
+                <a href="https://thetatau.org">
+                    <img id="letters" src={Letters}/>
+                </a>
+                <a id="insta" href='https://www.instagram.com/thetatauucr/'>
+                    <i  class="bi bi-instagram"></i>
+                </a>
+                <a href="mailto:thetatauucr@gmail.com">
+                    <i id="mail" class="bi bi-envelope"></i>
+                </a>
+            </div>
+            <p class="credits">Website Credits</p>
+        </div>
+    </div>      
+);
+
+        {/* <div class="column" id="col1">
             <img src={Logo} class="crest"/>
             <div id="title">
                 <h3>Theta Tau</h3>
@@ -49,9 +67,6 @@ const Footer = () => (
                     <p>Nanma Pillai</p>
                 </div>
             </div>
-        </div>
-    </div>    
-    </>
-  );
+        </div> */}
   
   export default Footer;
