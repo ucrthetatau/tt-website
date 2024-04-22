@@ -6,7 +6,7 @@
 }
 
 .footer {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     background-color: #8B0000;
@@ -53,19 +53,60 @@
 
 #letters:hover, #insta:hover, #mail:hover, .credits:hover{
     background: #a82020;
-    transition: all 0.5s ease;
+    transition: background 0.5s ease;
 }
 
 .credits {
     color: white;
+    width: fit-content;
     font-size: 1em;
     font-weight: 400;
+    text-wrap: nowrap;
     padding: 4% 5% 5% 5%;
     margin-left: 4%;
     border-radius: 0.5em;
 }
 
-.credits:hover {
-    transform: scale(1.1);
-    transition: all 0.25s ease;
+@media screen and (min-width: 550px) {
+    .credits:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+    }
+}    
+
+@media screen and (max-width: 550px) {
+
+    #letters {
+        height: 1.25em;
+        padding: 13%;
+        border-radius: 0.25em;
+        margin-top: 10%;
+    }
+    
+    #insta {
+        font-size: 1.3em;
+        padding: 5% 6%;
+        border-radius: 0.25em;
+    }
+    
+    #mail {
+        font-size: 1.6em;
+        padding: 9% 20% 12% 20%;
+        border-radius: 0.25em;
+    }
+
+    .credits {
+        font-size: 1.1em;
+        padding: 2% 3% 3% 3%;
+    }
+
+    .footer-contents {
+        flex-direction: row;
+        padding: 0.5em;
+    }
+
+    .buttons {
+        gap: 0.2em;
+    }
+
 }
