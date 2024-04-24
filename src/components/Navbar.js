@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../styles/navbar.css'
 import Logo from '../static/WhiteCrest.png'
 import { NavLink } from 'react-router-dom';
@@ -10,7 +10,7 @@ const Navbar = () => (
         
         <NavLink to="/" id="main" className={({isActive}) => isActive ? "active" : ""} > 
             <headerTitle>
-                <img src={Logo} class="crestImage"/>
+                <img src={Logo} alt="" class="crestImage"/>
                 <div id="title">
                     <h1>Theta Tau</h1>
                     <h2>Sigma Delta Chapter</h2>

@@ -43,6 +43,11 @@
   min-height: 100vh;
 }
 
+.header {
+  z-index: 1;
+  position: fixed;
+}
+
 .footer--pin {
   margin-top: auto;
 }

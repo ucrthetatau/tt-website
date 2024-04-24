@@ -14,7 +14,7 @@ const Footer = () => {
             <div class="footer-contents">
                 <div class="buttons">
                     <a href="https://thetatau.org">
-                        <img id="letters" src={Letters}/>
+                        <img id="letters" src={Letters} alt="" />
                     </a>
                     <a id="insta" href='https://www.instagram.com/thetatauucr/'>
                         <i  class="bi bi-instagram"></i>

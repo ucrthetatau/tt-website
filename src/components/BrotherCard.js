@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/brothercard.css";
-import { brothers, officers, classes, classMap, yearMap } from '../firebase/QueryDB.js'
+import { brothers } from '../firebase/QueryDB.js'
 
 const BrotherCard = ({ brotherId }) => {
     const name = brothers[brotherId]["Name"]
@@ -18,7 +18,7 @@ const BrotherCard = ({ brotherId }) => {
             <div class="brotherCard" >
                 <div class="flip" onClick={flipCard} >
                     <div class="front" >
-                        <img class="headshot" src={pic}/>
+                        <img class="headshot" src={pic} alt="Brother of Sigma Delta Chapter"/>
                     </div>
                     <div class="back">
                         <div class="details">
