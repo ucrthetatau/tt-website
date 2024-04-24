@@ -1,6 +1,8 @@
 import { firestore } from '../firebase/config';
 import { collection, getDocs } from 'firebase/firestore';
 
+const brotherData = await getDocs(collection(firestore, "members"));
+const officerData = await getDocs(collection(firestore, "officers"));
 let brothers = {}
 let officers = {}
 let classMap = {}
@@ -9,7 +11,6 @@ let classes = ["Upsilon", "Tau", "Sigma", "Rho", "Pi", "Omicron", "Xi", "Nu", "M
 
 const getBrothers = async () => {
     try {
-        const brotherData = await getDocs(collection(firestore, "members"));
         brotherData.forEach((doc) => {
             brothers[doc.id] = doc.data()
         });
@@ -20,7 +21,6 @@ const getBrothers = async () => {
 
 const getOfficers = async () => {
     try {
-        const officerData = await getDocs(collection(firestore, "officers"));
         officerData.forEach((doc) => {
             officers[doc.id] = doc.data()
         });
