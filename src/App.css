@@ -47,10 +47,6 @@
   margin-top: auto;
 }
 
-.header {
-  position: fixed;
-}
-
 .content-container {
-  margin-top: 8rem;
+  padding-top: 8rem;
 }
