@@ -2,7 +2,7 @@ import React from "react"
 // import s23 from "../static/S23graphic1.jpg"
 import blackGear from "../static/blackGear.png"
 import "../styles/rush.css"
-import s24graphic from "../static/Rush BannerWebsite Graphic.png"
+// import s24graphic from "../static/Rush BannerWebsite Graphic.png"
 
 function Rush() {
   return (

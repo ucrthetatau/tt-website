@@ -1,28 +1,23 @@
 import React from 'react';
 import "../styles/brothers.css";
-import { NavLink, Outlet } from 'react-router-dom';
+import { brothers, officers, classes, classMap, yearMap } from '../firebase/QueryDB.js'
+import BrotherCard from "./BrotherCard.js"
 
 const Brothers = () => {
     return (
-        <>
-            {/* <nav>
-                <NavLink to="members" className={({isActive}) => isActive ? "active" : ""}>
-                    Members
-                </NavLink>
-                <NavLink to="officers" className={({isActive}) => isActive ? "active" : ""}> 
-                    Officers
-                </NavLink>
-            </nav> */}
-            <div id="container">
-                <div id="disclaimer">
-                    This page is currently under construction.
+        <div id="container">
+            {classes.map(currentClass => (
+                <div class="classGroup">
+                    <h1 class="className">{currentClass}</h1>
+                        <div class="classMembers">
+                            {classMap[currentClass]?.map((brotherId) => (
+                                <BrotherCard brotherId={brotherId}></BrotherCard>
+                            ))}
+                        </div>
                 </div>
-            </div>
-            
-            
-            <Outlet />
-        </>
-      );
+            ))}
+        </div>
+    );
 };
 
-export default Brothers; 
+export default Brothers;

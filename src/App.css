@@ -50,3 +50,11 @@
 .content-container {
   padding-top: 8rem;
 }
+
+@media screen and (max-width: 675px) {
+  
+  .content-container {
+    padding-top: 6rem;
+  }
+
+}

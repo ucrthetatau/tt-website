@@ -54,6 +54,7 @@ headerSubtitle {
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+    font-weight: bold;
     gap: 1em;
     margin: auto 3em auto auto;
 }
@@ -63,8 +64,7 @@ headerSubtitle a {
     border-radius: 5px;
 }
 
-.icons,
-#check {
+.icons, #check {
   display: none;
 }
 

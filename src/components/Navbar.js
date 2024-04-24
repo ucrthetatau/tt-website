@@ -25,28 +25,20 @@ const Navbar = () => (
         </label> 
 
         <headerSubtitle>
-            <NavLink
-                to="/"
-                className={({isActive}) => isActive ? "active" : ""} > 
+            <NavLink to="/" className={({isActive}) => isActive ? "active" : ""} > 
                 Home
             </NavLink>
-            <NavLink
-                to="/About"
-                className={({isActive}) => isActive ? "active" : ""} > 
+            <NavLink to="/About" className={({isActive}) => isActive ? "active" : ""} > 
                 About
             </NavLink>
-            <NavLink
-                to="/Rush"
-                className={({isActive}) => isActive ? "active" : ""} > 
+            <NavLink to="/Rush" className={({isActive}) => isActive ? "active" : ""} > 
                 Rush
             </NavLink>
-            <NavLink
-                to="/Members"
-                className={({isActive}) => isActive ? "active" : ""} > 
-                Members
+            <NavLink to="/Brothers" className={({isActive}) => isActive ? "active" : ""} > 
+                Brothers
             </NavLink>
         </headerSubtitle>
     </div>
 );
 
-  export default Navbar;
+export default Navbar;
