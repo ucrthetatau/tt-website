@@ -18,7 +18,7 @@ const BrotherCard = ({ brotherId }) => {
             <div class="brotherCard" >
                 <div class="flip" onClick={flipCard} >
                     <div class="front" >
-                        <img class="headshot" src={pic} alt="Brother of Sigma Delta Chapter"/>
+                        <img class="headshot" src={pic} alt="Photo Unavailable"/>
                     </div>
                     <div class="back">
                         <div class="details">

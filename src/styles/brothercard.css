@@ -45,10 +45,10 @@
     position: absolute;
     backface-visibility: hidden;
     pointer-events: none;
+    background-color: #FAF9F6;
 }
 
 .back{
-    background-color: #FAF9F6;
     transform: rotateY(180deg);
 }
 
