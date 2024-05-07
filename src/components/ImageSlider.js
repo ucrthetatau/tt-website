@@ -13,7 +13,7 @@ const slideInfo = [
     text: "Rush",
   },
   {
-    link: "./Members",
+    link: "./Brothers",
     text: "Brothers",
   },
 ]

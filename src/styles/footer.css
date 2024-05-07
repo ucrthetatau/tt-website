@@ -6,107 +6,173 @@
 }
 
 .footer {
-    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #8B0000;
-    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-    font-family: "Helvetica Neue", san-serif;
+    color: white;
+    font-family: "Helvetica", san-serif;
+    font-weight: lighter;
 }
 
-.footer-contents {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5em;
+.column {
+    margin: 20px 0 30px;
+    width: 260px;
 }
 
-.buttons {
+#col1 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding-top: 12px;
 }
 
-.buttons a {
-    color: white;
+.crest {
+    height: 90px;
+    margin-right: 10px;
 }
 
-#letters {
-    height: 1.5em;
-    padding: 13%;
-    border-radius: 0.5em;
-    margin-top: 3%;
+h3 {
+    font-weight: lighter;
+    font-size: 45px;
+    padding-bottom: 3px;
+    border-bottom: solid white;
+    border-width: 1px;
 }
 
-#insta {
-    font-size: 1.5em;
-    padding: 5% 6%;
-    border-radius: 0.25em;
+h4 {
+    padding-top: 5px;
+    font-weight: lighter;
+    font-size: 21px;
 }
 
-#mail {
-    font-size: 1.75em;
-    padding: 9% 20% 12% 20%;
-    border-radius: 0.25em;
+h5 {
+    font-weight: lighter;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: solid 1px white;
+    padding: 20px 0;
+
 }
 
-#letters:hover, #insta:hover, #mail:hover, .credits:hover{
-    background: #a82020;
-    transition: background 0.5s ease;
+#col2 p {
+    max-width: 11em;
+    text-align: center;
+    margin: 1em auto;
+    overflow-wrap: break-word;
+    line-height: 1.25em;
 }
 
-.credits {
-    color: white;
+#contact {
+    margin: 1em 0;
+}
+
+#icon {
+    margin-right: 10px;
+}
+
+#contact > * {
+    display: flex;
+    margin: 0 auto;
+    padding: 4px 7px;
+    border-radius: 5px;
     width: fit-content;
-    font-size: 1em;
-    font-weight: 400;
-    text-wrap: nowrap;
-    padding: 4% 5% 5% 5%;
-    margin-left: 4%;
-    border-radius: 0.5em;
+    text-decoration: none;
+    align-items: center;
 }
 
-@media screen and (min-width: 550px) {
-    .credits:hover {
-        transform: scale(1.1);
-        transition: transform 0.5s ease;
+a {
+    color: white;
+}
+
+#names {
+    display: flex;
+    width: 100%;
+    margin: 1em auto;
+}
+
+#names a {
+    text-decoration: none;
+}
+
+#left {
+    width: 60%;
+    text-align: right;
+    margin-right: 5px;
+}
+
+#right {
+    width: 40%;
+    text-align: left;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .footer {
+        flex-direction: column;
     }
-}    
 
-@media screen and (max-width: 550px) {
+    .column {
+        margin: 2em auto 1em;
+    }
 
-    #letters {
-        height: 1.25em;
-        padding: 13%;
-        border-radius: 0.25em;
-        margin-top: 10%;
+    #col1 {
+        padding: 0;
+    }
+
+    h5 {
+        padding: 5px 0;
+        margin-bottom: 0.5em;
+    }
+
+    #col2 p {
+        padding: 0;
+        margin: 0 auto;
+        line-height: 1.25;
+    }
+
+    #contact {
+        margin: 0;
+    }
+
+    #contact > * {
+        margin: 0 auto;
+        padding: 2px 7px;
+        border-radius: 5px;
+    }
+
+    #col4 {
+        margin-bottom: 2em;
     }
     
-    #insta {
-        font-size: 1.3em;
-        padding: 5% 6%;
-        border-radius: 0.25em;
+    #names {
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    #left {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: auto;
     }
     
-    #mail {
-        font-size: 1.6em;
-        padding: 9% 20% 12% 20%;
-        border-radius: 0.25em;
+    #right {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: auto;
+
     }
 
-    .credits {
-        font-size: 1.1em;
-        padding: 2% 3% 3% 3%;
-    }
+}
 
-    .footer-contents {
-        flex-direction: row;
-        padding: 0.5em;
-    }
+@media screen and (max-width: 320px) {
 
-    .buttons {
-        gap: 0.2em;
+    .column {
+        margin: 2em auto 1em;
     }
 
 }
