@@ -2,6 +2,7 @@ import React from "react"
 // import s23 from "../static/S23graphic1.jpg"
 // import blackGear from "../static/blackGear.png"
 import "../styles/rush.css"
+import InstagramEmbed from './InstagramEmbed'
 // import s24graphic from "../static/Rush BannerWebsite Graphic.png"
 
 function Rush() {
@@ -21,9 +22,14 @@ function Rush() {
               becoming a part of a brotherhood, giving back to the community,
               and developing into a better engineer.
               <br></br> <br></br>
+            </p>
+            <p>
               Come and find out what we're all about! We are looking for
               motivated and bright individuals to become part of our next class in Fall 2024!
               <br></br> <br></br>
+            </p>
+            <p>
+              Feel free to follow our Instagram page embedded below to keep up to date with further announcements!
               {/* Please fill out the interest form if you'd like to join us for our
               next rush in Spring 2024. Come rush for Theta Tau! */}
             </p>
@@ -57,6 +63,7 @@ function Rush() {
             <img src={blackGear} class="black gear"></img>
           </div> */}
         </div>
+        <InstagramEmbed></InstagramEmbed>
         <br></br>
         <br></br>
         <br></br>

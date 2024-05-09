@@ -9,18 +9,23 @@
   align-content: center;
   /* border: 5px solid red; */
 }
+
 .rush-container {
   width: 55%;
-  display: grid;
+  display: flex;
   font-family: Arial, Helvetica, sans-serif;
   justify-content: center;
-  /* border: 5px solid pink; */
+  align-items: center;
 }
 
 .rush-text {
   margin: 0px 5%;
   text-align: center;
-  font-family: 'Matcha';
+  font-family: "Matcha";
+  /* border: 3px solid red; */
+  align-self: center;
+  width: 60%;
+  margin-bottom: 10%;
 }
 
 .rush-text > h1 {
@@ -28,8 +33,10 @@
 }
 
 .rush-text > p {
+  text-indent: 5%;
   font-style: normal;
   text-align: left;
+  font-size: medium;
 }
 
 .rush-pic {

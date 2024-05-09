@@ -7,40 +7,40 @@ import { Chart } from "react-google-charts"
 
 export const yearData = [
   ["Year", "Number of People"],
-  ["1st", 0],
-  ["2nd", 5],
-  ["3rd", 12],
+  ["1st", 5],
+  ["2nd", 10],
+  ["3rd", 13],
   ["4th", 7],
-  ["5th+", 7],
+  ["5th+", 3],
 ]
 
 export const yearColors = {
-    colors: ['#cd5c5c', '#7c0a02', '#a52a2a', '#f3b49f', '#cc3333'],
-    backgroundColor: "transparent",
-    is3D: true,
-    slices: {
-        0: { offset: 0.1 },
-        1: { offset: 0.1 },
-        2: { offset: 0.1 },
-        3: { offset: 0.1 },
-        4: { offset: 0.1 },
-      },
-    legend: {
-        // position: 'bottom', 
-    }
-};
+  colors: ["#f3b49f", "#cd5c5c", "#7c0a02", "#a52a2a", "#cc3333"],
+  backgroundColor: "transparent",
+  is3D: true,
+  slices: {
+    0: { offset: 0.1 },
+    1: { offset: 0.1 },
+    2: { offset: 0.1 },
+    3: { offset: 0.1 },
+    4: { offset: 0.1 },
+  },
+  legend: {
+    // position: 'bottom',
+  },
+}
 
 export const majorData = [
   ["Major", "Number of People"],
-  ["CS/CE/CSBA", 16],
-  // ['CSBA', 2],
-  // ['CE', 2],
+  ["CS/CSBA", 14],
+//   ['CSBA', 2],
+  ['CE', 2],
   ["EE", 2],
-  ["ME", 5],
-  ["BIEN", 5],
-  // ['MSE', 0],
-  ["CHEME", 1],
-  ["ENVE", 2],
+  ["ME", 8],
+  ["BIEN", 6],
+//   ['MSE', 0],
+  ["CHEME", 2],
+  ["ENVE", 3],
 ]
 
 export const majorColors = {
@@ -107,7 +107,7 @@ const About = () => {
                         </div>
                         <br></br>
                         <div>
-                            <img src={UpsPic} class="ms-pic" alt="Upsilon Class Photo"></img>
+                            <img src={UpsPic} class="ms-pic" alt="Upsilon Class"></img>
                         </div>
                     </div>
                     <br></br>

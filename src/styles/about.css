@@ -38,7 +38,9 @@
     width: 75%;
 }
 .about-info > .graphics {
-    display: grid;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
     grid-gap: 7%;
     grid-template-columns: 28% 28% 28%;
 }
