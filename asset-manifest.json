@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4046d3d.css",
-    "main.js": "/static/js/main.44f8e5fd.js",
+    "main.css": "/static/css/main.d0e19afb.css",
+    "main.js": "/static/js/main.531748a8.js",
     "static/media/W23Retreat.jpg": "/static/media/W23Retreat.fa5fc4b2119a8a4e0fbf.jpg",
     "static/media/upsilonPic.jpg": "/static/media/upsilonPic.643e55feb61525bb4de9.jpg",
     "static/media/aboutOmi1.jpg": "/static/media/aboutOmi1.a8a27c49ba094d446623.jpg",
@@ -12,11 +12,11 @@
     "static/media/brotherhood.png": "/static/media/brotherhood.c1eeee51f4b75f2f2578.png",
     "static/media/service.png": "/static/media/service.ec82cfaa78ee5fa90778.png",
     "index.html": "/index.html",
-    "main.a4046d3d.css.map": "/static/css/main.a4046d3d.css.map",
-    "main.44f8e5fd.js.map": "/static/js/main.44f8e5fd.js.map"
+    "main.d0e19afb.css.map": "/static/css/main.d0e19afb.css.map",
+    "main.531748a8.js.map": "/static/js/main.531748a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4046d3d.css",
-    "static/js/main.44f8e5fd.js"
+    "static/css/main.d0e19afb.css",
+    "static/js/main.531748a8.js"
   ]
 }
