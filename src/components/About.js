@@ -7,11 +7,11 @@ import { Chart } from "react-google-charts"
 
 export const yearData = [
   ["Year", "Number of People"],
-  ["1st", 5],
-  ["2nd", 10],
-  ["3rd", 13],
-  ["4th", 7],
-  ["5th+", 3],
+  ["1st", 4],
+  ["2nd", 2],
+  ["3rd", 24],
+  ["4th", 15],
+  ["5th+", 5],
 ]
 
 export const yearColors = {
@@ -32,13 +32,11 @@ export const yearColors = {
 
 export const majorData = [
   ["Major", "Number of People"],
-  ["CS/CSBA", 14],
-//   ['CSBA', 2],
-  ['CE', 2],
-  ["EE", 2],
-  ["ME", 8],
-  ["BIEN", 6],
-//   ['MSE', 0],
+  ["CS/CSBA/CE", 18],
+  ["EE", 3],
+  ["ME", 11],
+  ["BIEN", 9],
+  ['MSE', 1],
   ["CHEME", 2],
   ["ENVE", 3],
 ]

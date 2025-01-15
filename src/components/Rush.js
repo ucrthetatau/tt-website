@@ -25,11 +25,11 @@ function Rush() {
             </p>
             <p>
               Come and find out what we're all about! We are looking for
-              motivated and bright individuals to become part of our next class in Fall 2024!
+              motivated and bright individuals to become part of our next class in Spring 2025!
               <br></br> <br></br>
             </p>
             <p>
-              Feel free to follow our Instagram page embedded below to keep up to date with further announcements!
+              Feel free to follow our Instagram page below to keep up to date with further announcements!
               {/* Please fill out the interest form if you'd like to join us for our
               next rush in Spring 2024. Come rush for Theta Tau! */}
             </p>
