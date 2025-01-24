@@ -22,8 +22,8 @@ const BrotherCard = ({ brotherId }) => {
                     </div>
                     <div class="back">
                         <div class="details">
-                            <h2>Class</h2>
-                            <h3>{greek}</h3>
+                            {/* <h2>Class</h2>
+                            <h3>{greek}</h3> */}
                             <h2>Major</h2>
                             <h3>{major}</h3>
                             <h2>Year</h2>
