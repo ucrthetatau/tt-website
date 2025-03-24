@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Farro&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
 
 * {
     padding: 0;
@@ -6,173 +6,107 @@
 }
 
 .footer {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #8B0000;
-    color: white;
-    font-family: "Helvetica", san-serif;
-    font-weight: lighter;
-}
-
-.column {
-    margin: 20px 0 30px;
-    width: 260px;
-}
-
-#col1 {
+    width: 100vw;
     display: flex;
     justify-content: center;
-    padding-top: 12px;
+    background-color: #8B0000;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    font-family: "Helvetica Neue", san-serif;
 }
 
-.crest {
-    height: 90px;
-    margin-right: 10px;
-}
-
-h3 {
-    font-weight: lighter;
-    font-size: 45px;
-    padding-bottom: 3px;
-    border-bottom: solid white;
-    border-width: 1px;
-}
-
-h4 {
-    padding-top: 5px;
-    font-weight: lighter;
-    font-size: 21px;
-}
-
-h5 {
-    font-weight: lighter;
-    font-size: 24px;
-    text-align: center;
-    border-bottom: solid 1px white;
-    padding: 20px 0;
-
-}
-
-#col2 p {
-    max-width: 11em;
-    text-align: center;
-    margin: 1em auto;
-    overflow-wrap: break-word;
-    line-height: 1.25em;
-}
-
-#contact {
-    margin: 1em 0;
-}
-
-#icon {
-    margin-right: 10px;
-}
-
-#contact > * {
-    display: flex;
-    margin: 0 auto;
-    padding: 4px 7px;
-    border-radius: 5px;
+.footer-contents {
     width: fit-content;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 0.5em;
 }
 
-a {
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons a {
     color: white;
 }
 
-#names {
-    display: flex;
-    width: 100%;
-    margin: 1em auto;
+#letters {
+    height: 1.5em;
+    padding: 13%;
+    border-radius: 0.5em;
+    margin-top: 3%;
 }
 
-#names a {
-    text-decoration: none;
+#insta {
+    font-size: 1.5em;
+    padding: 5% 6%;
+    border-radius: 0.25em;
 }
 
-#left {
-    width: 60%;
-    text-align: right;
-    margin-right: 5px;
+#mail {
+    font-size: 1.75em;
+    padding: 9% 20% 12% 20%;
+    border-radius: 0.25em;
 }
 
-#right {
-    width: 40%;
-    text-align: left;
-    margin-left: 5px;
+#letters:hover, #insta:hover, #mail:hover, .credits:hover{
+    background: #a82020;
+    transition: background 0.5s ease;
 }
 
-@media screen and (max-width: 1100px) {
-    
-    .footer {
-        flex-direction: column;
-    }
+.credits {
+    color: white;
+    width: fit-content;
+    font-size: 1em;
+    font-weight: 400;
+    text-wrap: nowrap;
+    padding: 4% 5% 5% 5%;
+    margin-left: 4%;
+    border-radius: 0.5em;
+}
 
-    .column {
-        margin: 2em auto 1em;
+@media screen and (min-width: 550px) {
+    .credits:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
     }
+}    
 
-    #col1 {
-        padding: 0;
-    }
+@media screen and (max-width: 550px) {
 
-    h5 {
-        padding: 5px 0;
-        margin-bottom: 0.5em;
-    }
-
-    #col2 p {
-        padding: 0;
-        margin: 0 auto;
-        line-height: 1.25;
-    }
-
-    #contact {
-        margin: 0;
-    }
-
-    #contact > * {
-        margin: 0 auto;
-        padding: 2px 7px;
-        border-radius: 5px;
-    }
-
-    #col4 {
-        margin-bottom: 2em;
+    #letters {
+        height: 1.25em;
+        padding: 13%;
+        border-radius: 0.25em;
+        margin-top: 10%;
     }
     
-    #names {
-        line-height: 1.5;
-        display: flex;
-        flex-direction: column-reverse;
-        margin: 0;
-        padding: 0;
-    }
-
-    #left {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        width: auto;
+    #insta {
+        font-size: 1.3em;
+        padding: 5% 6%;
+        border-radius: 0.25em;
     }
     
-    #right {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        width: auto;
-
+    #mail {
+        font-size: 1.6em;
+        padding: 9% 20% 12% 20%;
+        border-radius: 0.25em;
     }
 
-}
+    .credits {
+        font-size: 1.1em;
+        padding: 2% 3% 3% 3%;
+    }
 
-@media screen and (max-width: 320px) {
+    .footer-contents {
+        flex-direction: row;
+        padding: 0.5em;
+    }
 
-    .column {
-        margin: 2em auto 1em;
+    .buttons {
+        gap: 0.2em;
     }
 
 }
