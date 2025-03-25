@@ -1,0 +1,25 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.bodyWrapper {
+  padding-top: 8rem;
+}
+
+@media screen and (max-width: 675px) {
+  .bodyWrapper {
+    padding-top: 6rem;
+  }
+}

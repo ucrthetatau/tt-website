@@ -1,4 +1,4 @@
-import './App.css'
+import styles from './App.module.css'
 import React from "react"
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
@@ -8,15 +8,14 @@ import Rush from './components/Rush'
 import Footer from './components/Footer'
 import Brothers from './components/Brothers'
 
-
 function App() {
   return (
     <>
-      <div class="flex-wrapper">
-        <div class="header">
+      <div className={styles.pageWrapper}>
+        <div className={styles.header}>
           <Navbar />
         </div>
-        <div class="content-container">
+        <div className={styles.bodyWrapper}>
           <Routes>
             <Route index element={<Home />} />
             <Route path="home" element={<Home />} />
@@ -25,7 +24,7 @@ function App() {
             <Route path="brothers" element={<Brothers />} />
           </Routes>
         </div>
-        <div class="footer--pin">
+        <div className={styles.footer}>
           <Footer />
         </div>
       </div>
@@ -33,4 +32,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

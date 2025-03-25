@@ -1,27 +1,114 @@
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
-
-.head {
-  margin: 0.75em;
-  font-family: "Major Mono Display", monospace;
-  text-align: center;
-  position: sticky;
-  padding-bottom: 3em;
+.header {
+    width: 100vw;
+    height: 8rem;
+    background: #8B0000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
 }
 
-.title {
-  font-size: 1.5em;
-  margin-top: 0.25em;
-  float: left;
-  display: inline;
+.main {
+    margin-left: 3em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.links {
-  font-size: 1.55em;
-  list-style-type: none;
-  display: inline-flex;
-  float: right;
+.navLogo {
+    height: 4rem;
+    width: auto;
 }
 
-.active:hover {
-  color: #8a1e1e;
+.nav {
+    margin-right: 5em;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.menuCheck {
+    display: none;
+}
+
+.icons {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 675px) {
+    .header {
+        height: 6rem;
+    }
+
+    .main {
+        margin-left: 2em;
+    }
+
+    .navLogo {
+        height: 3em;
+    }
+
+    .nav {
+        position: fixed;
+        right: 0;
+        height: 92vh;
+        top: 6rem;
+        background-color: #8B0000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateY(0%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .icons {
+        display: block;
+        margin-right: 1em;
+    }
+}
+
+.navActive {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Menu Icon */
+.icons i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#close {
+    display: none;
+}
+
+.menuCheck:checked ~ .icons #open {
+    display: none;
+}
+
+.menuCheck:checked ~ .icons #close {
+    display: block;
 }

@@ -1,19 +1,16 @@
 import React from "react"
-// import s23 from "../static/S23graphic1.jpg"
-// import blackGear from "../static/blackGear.png"
-import "../styles/rush.css"
+import styles from "../styles/rush.module.css"
 import InstagramEmbed from './InstagramEmbed'
-// import s24graphic from "../static/Rush BannerWebsite Graphic.png"
 
 function Rush() {
   return (
     <>
-      <div class="master">
+      <div className={styles.master}>
         <br></br>
         <br></br>
         <br></br>
-        <div class="rush-container">
-          <div class="rush-text">
+        <div className={styles.rushContainer}>
+          <div className={styles.rushText}>
             <h1>Are You An Engineer?</h1>
             <br></br>
             <p>
@@ -30,38 +27,8 @@ function Rush() {
             </p>
             <p>
               Feel free to follow our Instagram page below to keep up to date with further announcements!
-              {/* Please fill out the interest form if you'd like to join us for our
-              next rush in Spring 2024. Come rush for Theta Tau! */}
             </p>
-
-            {/* <div class="rush-buttons">
-              <a
-                href="https://forms.gle/WxQ7Dxa5u45CvBqRA"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="rush-bttn">
-                  <span>Interest Form</span>
-                </button>
-              </a>
-              <a
-                href="https://discord.gg/EB7jACxzhd"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button class="rush-bttn">
-                  <span>Discord Link</span>
-                </button>
-              </a>
-            </div> */}
           </div>
-
-          {/* <div>
-            <img src={s24graphic} class="rush-pic"></img>
-          </div> */}
-          {/* <div>
-            <img src={blackGear} class="black gear"></img>
-          </div> */}
         </div>
         <InstagramEmbed></InstagramEmbed>
         <br></br>

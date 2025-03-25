@@ -1,56 +1,147 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap');
-
-.head { 
-    font-family: 'Major Mono Display';     
-    text-align: center; 
-    font-size: 6em; 
-
-
+.master {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
 
-.container { 
-    margin: 4em; 
+.rush-container {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rush-text {
+  margin: 0px 5%;
+  text-align: center;
+  /* border: 3px solid red; */
+  align-self: center;
+  width: 60%;
+  margin-bottom: 10%;
+}
+
+.rush-text > h1 {
+  margin: auto;
+}
+
+.rush-text > p {
+  text-indent: 5%;
+  font-style: normal;
+  text-align: left;
+  font-size: medium;
+}
+
+.rush-pic {
+  width: 550px;
+  border-radius: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
+}
+
+.rush-buttons {
+  text-align: center;
+  padding: 20px;
+}
+
+.rush-bttn {
+  /* border: none; */
+  font-size: 20px;
+  border-color: black;
+  /* border: none; */
+  padding: 15px;
+  width: 200px;
+  margin: 10px 10px; /*first value adjusts the margin above and below. Secon value adjusts the margin to the right and left of the buttons.*/
+  background-color: #4d4d4d;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 15px;
+  box-shadow: 8px 8px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.rush-bttn span {
+  display: inline-block;
+  position: relative;
+  /* background-color: #ffffff; */
+  transition: 0.5s;
+}
+
+.rush-bttn span:after {
+  font-size: 35px;
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  margin-top: -11px;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.rush-bttn:hover span {
+  padding-right: 30px;
+}
+
+.rush-bttn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* .rush-floating1 {
+    position: fixed;
+    transform: rotate(-90deg);
+    text-align: right;
+    bottom: 15%; 
+    left: -40px;
+}
+
+.rush-floating2 {
+    position: fixed;
+    transform: rotate(-90deg);
+    text-align: right;
+    top: 45%; 
+    right: -40px;
+} */
+
+@media screen and (max-width: 960px) {
+  .rush-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .rush-pic {
     text-align: center;
+    width: 100%;
+    border-radius: 40px;
+  }
 
-}
+  .rush-text {
+    width: 100%;
+  }
 
-.content { 
-    display: flex; 
-    flex-direction: column;
-    font-family: 'Darker Grotesque'; 
-
-}
-
-.pic{ 
-    text-justify: center;
-    margin: 0em 3.5em 1.5em 3.5em; 
-    border-radius: 10px; 
-    border: 10px solid #8a2c33; 
-
-}
-
-.body{ 
-    font-size: 1.5em; 
-    margin: inherit; 
-    text-align: center; 
-
-}
-
-.button { 
-    background-color: #8a2c33; 
-    border: none;
-    color: white;
+  .rush-text > p {
     text-align: center;
-    font-family: 'Darker Grotesque'; 
-    font-size: 10em; 
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10px; 
-    margin: inherit; 
-    font-size: 32px; 
-    padding: 0.25em; 
-    border:  10px solid #ffcc00
-    ; 
+  }
 
+  /* .rush-floating1 {
+        left: -50px;
+    }
+    .rush-floating2 {
+        right: -50px;
+    } */
+}
+/* @media screen and (max-width: 768px) {
+    .rush-container {
+        display: block;
+    }
+    .rush-pic {
+        width: 100%;
+        border-radius: 40px;
+    }
 } */

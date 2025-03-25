@@ -1,8 +1,8 @@
 import React from 'react'
+import styles from '../styles/about.module.css'
 import omicron1 from '../static/aboutOmi1.jpg'
 import UpsPic from '../static/upsilonPic.jpg'
 import about3 from '../static/W23Retreat.jpg'
-import '../styles/about.css'
 import { Chart } from "react-google-charts"
 
 export const yearData = [
@@ -25,9 +25,7 @@ export const yearColors = {
     3: { offset: 0.1 },
     4: { offset: 0.1 },
   },
-  legend: {
-    // position: 'bottom',
-  },
+  legend: {},
 }
 
 export const majorData = [
@@ -50,10 +48,10 @@ export const majorColors = {
         1: { offset: 0.4 },
         2: { offset: 0.2 },
         3: { offset: 0.2 },
-        4: { offset: 0.4 },
-        5: { offset: 0.4 },
-      },
-};
+        4: { offset: 0.3 },
+        5: { offset: 0.1 },
+    },
+}
 
 export const internData = [
   ["Our Members With Experience", "Number of People"],
@@ -79,42 +77,36 @@ const About = () => {
     return (
         <>
         <br></br><br></br><br></br>
-        <div class = "about-container">
-            {/* <div class = "about-floating1">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div>
-            <div class = "about-floating2">
-                ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT
-            </div> */}
+        <div className={styles.aboutContainer}>
             <div>
-                <img src={about3} class="about-pic" alt="Winter Retreat 2023"></img>
+                <img src={about3} className={styles.aboutPic} alt="Winter Retreat 2023"></img>
             </div>
-            <div class="pic-info">Winter 2023</div>
+            <div className={styles.picInfo}>Winter 2023</div>
             <br></br><br></br>
-            <div class = "about-info">
+            <div className={styles.aboutInfo}>
                 <p>Theta Tau was originally founded as the "Society of Hammer and Tongs" on October 15, 1904 at the University of Minnesota by four engineers: Erich J. Schrader, Elwin L. Vinal, William M. Lewis, and Isaac B. Hanks. At the fraternity's first national convention in 1911, the name was changed to Theta Tau, and the fraternity opened up to include all departments of engineering. Since then, approximately 30,000 engineering students have been initiated.</p>
                 <br></br>
                 <hr></hr>
                 <br></br><br></br>
-                <div class = "section2">
-                    <div class = "mission-statement">
-                        <div class = "ms-text">
+                <div className={styles.section2}>
+                    <div className={styles.missionStatement}>
+                        <div className={styles.msText}>
                             <h1>Mission Statement</h1>
                             <br></br>
                             <p>The purpose of Theta Tau is to develop and maintain a high standard of professional interest among its members and to unite them in a strong bond of fraternal fellowship.</p> 
                         </div>
                         <br></br>
                         <div>
-                            <img src={UpsPic} class="ms-pic" alt="Upsilon Class"></img>
+                            <img src={UpsPic} className={styles.msPic} alt="Upsilon Class"></img>
                         </div>
                     </div>
                     <br></br>
-                    <div class = "motto">
+                    <div className={styles.motto}>
                         <div>
-                            <img src={omicron1} class="motto-pic" alt="Omicron Class at Winter Retreat 2023"></img>
+                            <img src={omicron1} className={styles.mottoPic} alt="Omicron Class at Winter Retreat 2023"></img>
                         </div>
                         <br></br>
-                        <div class = "motto-text">
+                        <div className={styles.mottoText}>
                             <h1>Open Motto</h1>
                             <br></br>
                             <p>"Whatsoever thy hand findeth to do, do it with thy might;..."</p>
@@ -128,8 +120,8 @@ const About = () => {
                 <br></br><br></br>
                 <h1>Chapter Breakdown</h1>
                 <br></br><br></br>
-                <div class = "graphics">
-                    <div class = "card">
+                <div className={styles.graphics}>
+                    <div className={styles.card}>
                         <div>Year</div>
                         <div>
                             <Chart
@@ -142,7 +134,7 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    <div class="card">
+                    <div className={styles.card}>
                         <div>Major</div>
                         <div>
                             <Chart
@@ -152,7 +144,7 @@ const About = () => {
                             />
                         </div>
                     </div>
-                    {/* <div class="card">
+                    <div className={styles.card}>
                         <div>Experience</div>
                         <div>
                             <Chart
@@ -161,7 +153,7 @@ const About = () => {
                                 options={internColors}
                             />
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         <br></br><br></br><br></br><br></br>

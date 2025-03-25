@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "../styles/imageSlider.css"
+import styles from "../styles/imageSlider.module.css"
 import { SlideData } from "../static/SlideData.js"
 import { NavLink } from "react-router-dom"
 
@@ -30,8 +30,8 @@ export const ImageSlider = () => {
   }
 
   return (
-    <div className="imageSlider">
-      <div className="arrow arrow--left" onClick={prevSlide}>
+    <div className={styles.imageSlider}>
+      <div className={`${styles.arrow} ${styles.arrowLeft}`} onClick={prevSlide}>
         <span></span>
       </div>
       {SlideData.map((item, idx) => {
@@ -41,36 +41,36 @@ export const ImageSlider = () => {
             <img
               src={item.image}
               alt={`Slide: ${idx + 1}`}
-              className={isCurrentSlide ? "slide" : "slide-hidden"}
+              className={isCurrentSlide ? styles.slide : styles.slideHidden}
               fade
             />
             <div
-              className={isCurrentSlide ? "center-text-container" : "hidden"}
+              className={isCurrentSlide ? styles.centerTextContainer : styles.hidden}
             >
-              <div className="center-text">Explore</div>
+              <div className={styles.centerText}>Explore</div>
               <div
                 className={
-                  isCurrentSlide ? "center-linked-text-container" : "hidden"
+                  isCurrentSlide ? styles.centerLinkedTextContainer : styles.hidden
                 }
               >
-                <NavLink to={slideInfo[idx].link} className="nav-link">
-                  <div className="center-text">{slideInfo[idx].text}</div>
+                <NavLink to={slideInfo[idx].link} className={styles.navLink}>
+                  <div className={styles.centerText}>{slideInfo[idx].text}</div>
                 </NavLink>
               </div>
             </div>
           </div>
         )
       })}
-      <div className="arrow arrow--right" onClick={nextSlide}>
+      <div className={`${styles.arrow} ${styles.arrowRight}`} onClick={nextSlide}>
         <span></span>
       </div>
-      <span className="indicators">
+      <span className={styles.indicators}>
         {SlideData.map((_, idx) => {
           return (
             <button
               key={idx}
               className={
-                slide === idx ? "indicator" : "indicator indicator-inactive"
+                slide === idx ? styles.indicator : `${styles.indicator} ${styles.indicatorInactive}`
               }
               onClick={() => setSlide(idx)}
             ></button>

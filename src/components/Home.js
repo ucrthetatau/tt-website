@@ -1,4 +1,4 @@
-import "../styles/home.css"
+import styles from "../styles/home.module.css"
 import brotherhood from "../static/brotherhood.png"
 import professionalism from "../static/professionalism.png"
 import service from "../static/service.png"
@@ -7,54 +7,54 @@ import { ImageSlider } from "./ImageSlider.js"
 const Home = () => {
   return (
     <>
-      <div className="page-container">
-        <div className="title-container">
-          <div className="left-line-with-triangle"></div>
-          <div className="title">Chapter</div>
-          <div className="right-line-with-triangle"></div>
+      <div className={styles.pageContainer}>
+        <div className={styles.titleContainer}>
+          <div className={styles.leftLineWithTriangle}></div>
+          <div className={styles.title}>Chapter</div>
+          <div className={styles.rightLineWithTriangle}></div>
         </div>
-        <div className="home-slider-container">
+        <div className={styles.homeSliderContainer}>
           <ImageSlider />
         </div>
-        <div className="title-container">
-          <div className="left-line-with-triangle"></div>
-          <div className="title">Pillars</div>
-          <div className="right-line-with-triangle"></div>
+        <div className={styles.titleContainer}>
+          <div className={styles.leftLineWithTriangle}></div>
+          <div className={styles.title}>Pillars</div>
+          <div className={styles.rightLineWithTriangle}></div>
         </div>
-        <div className="total-pillar-container">
-          <div className="pillar">
-            <img src={brotherhood} alt="BrotherhoodIcon" className="icon"></img>
-            <div className="subtitle">Brotherhood</div>
-            <div className="border-with-diamonds"></div>
-            <div className="caption">
+        <div className={styles.totalPillarContainer}>
+          <div className={styles.pillar}>
+            <img src={brotherhood} alt="Brotherhood Icon" className={styles.icon}></img>
+            <div className={styles.subtitle}>Brotherhood</div>
+            <div className={styles.borderWithDiamonds}></div>
+            <div className={styles.caption}>
               We develop lifelong bonds of fraternal fellowship between our
               members through unique and memorable experiences. We stay
               supportive and honest with each other to promote a brotherhood
               that goes beyond school and work.
             </div>
           </div>
-          <div className="pillar">
-            <div className="icon-container">
+          <div className={styles.pillar}>
+            <div className={styles.iconContainer}>
               <img
                 src={professionalism}
-                alt="ProfessionalismIcon="
-                className="icon"
+                alt="Professionalism Icon"
+                className={styles.icon}
               ></img>
             </div>
-            <div className="subtitle">Professionalism</div>
-            <div className="border-with-diamonds"></div>
-            <div className="caption">
+            <div className={styles.subtitle}>Professionalism</div>
+            <div className={styles.borderWithDiamonds}></div>
+            <div className={styles.caption}>
               We aim to build and refine the professional abilities of our
               members so that they succeed in their careers and endeavors. We
               emphasize professional characteristics such as communication,
               presentation, and innovation.
             </div>
           </div>
-          <div className="pillar">
-            <img src={service} alt="ServiceIcon" className="icon"></img>
-            <div className="subtitle">Service</div>
-            <div className="border-with-diamonds"></div>
-            <div className="caption">
+          <div className={styles.pillar}>
+            <img src={service} alt="Service Icon" className={styles.icon}></img>
+            <div className={styles.subtitle}>Service</div>
+            <div className={styles.borderWithDiamonds}></div>
+            <div className={styles.caption}>
               We believe that it is important to excel in our respective fields
               as well as give back to the community. Our members strive to lead
               by example and stay true through volunteering, work, and

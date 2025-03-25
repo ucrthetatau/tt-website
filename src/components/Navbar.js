@@ -1,44 +1,37 @@
 import React from 'react';
-import '../styles/navbar.css'
-import Logo from '../static/WhiteCrest.png'
+import styles from '../styles/navbar.module.css'
+import NavLogo from '../static/NavLogo.png'
 import { NavLink } from 'react-router-dom';
 
-
 const Navbar = () => (
-    <div class="header">
+    <header className={styles.header}>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>  
         
-        <NavLink to="/" id="main" className={({isActive}) => isActive ? "active" : ""} > 
-            <headerTitle>
-                <img src={Logo} alt="" class="crestImage"/>
-                <div id="title">
-                    <h1>Theta Tau</h1>
-                    <h2>Sigma Delta Chapter</h2>
-                </div>
-            </headerTitle>
+        <NavLink to="/" className={styles.main}>
+            <img src={NavLogo} alt="Theta Tau Crest" className={styles.navLogo}/>
         </NavLink>
 
-        <input type='checkbox' id="check" />
-        <label for='check' class="icons">
-            <i class='bx bx-menu' id="open"></i>
-            <i class='bx bx-x' id="close"></i>
+        <input type='checkbox' id="check" className={styles.menuCheck}/>
+        <label htmlFor='check' className={styles.icons}>
+            <i className='bx bx-menu' id="open"></i>
+            <i className='bx bx-x' id="close"></i>
         </label> 
 
-        <headerSubtitle>
-            <NavLink to="/" className={({isActive}) => isActive ? "active" : ""} > 
+        <div className={styles.nav}>
+            <NavLink to="/" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}> 
                 Home
             </NavLink>
-            <NavLink to="/About" className={({isActive}) => isActive ? "active" : ""} > 
+            <NavLink to="/about" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
                 About
             </NavLink>
-            <NavLink to="/Rush" className={({isActive}) => isActive ? "active" : ""} > 
+            <NavLink to="/rush" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
                 Rush
             </NavLink>
-            <NavLink to="/Brothers" className={({isActive}) => isActive ? "active" : ""} > 
+            <NavLink to="/brothers" className={({isActive}) => isActive ? `${styles.link} ${styles.active}` : styles.link}>
                 Brothers
             </NavLink>
-        </headerSubtitle>
-    </div>
+        </div>
+    </header>
 );
 
 export default Navbar;

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../styles/brothercard.css";
+import styles from "../styles/brothercard.module.css";
 import { brothers } from '../firebase/QueryDB.js'
 
 const BrotherCard = ({ brotherId }) => {
@@ -10,20 +10,20 @@ const BrotherCard = ({ brotherId }) => {
     const pic = brothers[brotherId]["Photo"]
 
     function flipCard(event) {
-        event.target.classList.toggle("flipCard");        
+        event.target.classList.toggle(styles.flipCard);        
     }
 
     return (
-        <div class="brotherProfile">
-            <div class="brotherCard" >
-                <div class="flip" onClick={flipCard} >
-                    <div class="front" >
-                        <img class="headshot" src={pic} alt="Photo Unavailable"/>
+        <div className={styles.brotherProfile}>
+            <div className={styles.brotherCard} >
+                <div className={styles.flip} onClick={flipCard} >
+                    <div className={styles.front} >
+                        <img className={styles.headshot} src={pic} alt="Unavailable"/>
                     </div>
-                    <div class="back">
-                        <div class="details">
-                            {/* <h2>Class</h2>
-                            <h3>{greek}</h3> */}
+                    <div className={styles.back}>
+                        <div className={styles.details}>
+                            <h2>Class</h2>
+                            <h3>{greek}</h3>
                             <h2>Major</h2>
                             <h3>{major}</h3>
                             <h2>Year</h2>
@@ -32,7 +32,7 @@ const BrotherCard = ({ brotherId }) => {
                     </div>
                 </div>
             </div>
-            <div class="info">
+            <div className={styles.info}>
                 <h1>{name}</h1>
             </div>
         </div>

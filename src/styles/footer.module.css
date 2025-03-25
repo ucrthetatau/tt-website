@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 .footer {
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: #8B0000;
-    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-    font-family: "Helvetica Neue", san-serif;
+    align-items: center;
+    background: #8B0000;
+    color: white;
+    padding: 2em;
 }
 
 .footer-contents {
