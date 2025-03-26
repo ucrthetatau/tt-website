@@ -1,7 +1,8 @@
 .header {
-    width: 100vw;
+    position: fixed;
+    width: 100%;
+    background: #7E2524;
     height: 8rem;
-    background: #8B0000;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -9,7 +10,7 @@
 }
 
 .main {
-    margin-left: 3em;
+    margin-left: 6em;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -21,7 +22,7 @@
 }
 
 .nav {
-    margin-right: 5em;
+    margin-right: 6em;
     display: flex;
     align-items: center;
     gap: 3em;
@@ -31,6 +32,12 @@
     color: white;
     text-decoration: none;
     cursor: pointer;
+    transition: transform 0.5s ease;
+    font-size: 18px;
+}
+
+.link:hover {
+    transform: scale(1.1);
 }
 
 .active {
@@ -42,7 +49,7 @@
     display: none;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 850px) {
     .header {
         height: 6rem;
     }
@@ -63,7 +70,6 @@
         height: 0;
         overflow: hidden;
         font-size: 18px;
-        background: #8B0000;
         transition: height 0.5s ease;
     }
 
@@ -99,28 +105,4 @@
         height: 13em;
     }
 
-    /* .icons .menuOpen,
-    .icons .menuClose {
-        font-size: 30px;
-        color: white;
-    } */
-    
-    /* Hide close icon by default */
-    /* .icons .menuClose {
-        display: none;
-    } */
-
-    /* Show menu when checkbox is checked */
-    /* .menuCheck:checked ~ .nav {
-        height: 13em;
-    } */
-
-    /* Toggle between menu and close icons */
-    /* .menuCheck:checked ~ .icons .menuOpen {
-        display: none;
-    } */
-
-    /* .menuCheck:checked ~ .icons .menuClose {
-        display: inline-block;
-    } */
 }

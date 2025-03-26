@@ -1,19 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-}
-
 .brotherProfile {
-    padding: 0 10px;
-    width: 12em;
+    width: 10em;
 }
 
 .brotherCard {
-    height: 16em;
+    height: 14em;
     perspective: 1500px;
     transition: all 0.25s ease;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 .brotherCard:hover {
@@ -21,16 +14,12 @@
     transform: scale(1.05);
 }
 
-.flip:hover{
-    box-shadow: 0 0 1px black;
-}
-
 .flip {
     height: 100%;
     width: 100%;
     transition: all 0.5s ease;
     transform-style: preserve-3d;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 .flipCard {
@@ -40,8 +29,7 @@
 .front, .back {
     height: 100%;
     width: 100%;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
     position: absolute;
     backface-visibility: hidden;
     pointer-events: none;
@@ -50,6 +38,7 @@
 
 .back{
     transform: rotateY(180deg);
+    border: 1px solid lightgray;
 }
 
 .headshot {
@@ -57,7 +46,7 @@
     width: 100%;
     pointer-events: none;
     object-fit: cover;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 .details {
@@ -71,9 +60,7 @@
     font-weight: 200;
     margin: 5% 0 0 5%;
     pointer-events: none;
-    color: #8b0000;
-    padding: 0;
-
+    color: #7E2524;
 }
 
 .details h3 {
@@ -91,9 +78,9 @@
 
 .info h1 {
     width: 100%;
-    margin-top: 1em;
+    margin-top: 10px;
     padding: 0;
-    font-size: 120%;
+    font-size: 18px;
     font-weight: 400;
 }
 

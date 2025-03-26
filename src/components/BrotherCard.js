@@ -3,6 +3,11 @@ import styles from "../styles/brothercard.module.css";
 import { brothers } from '../firebase/QueryDB.js'
 
 const BrotherCard = ({ brotherId }) => {
+    
+    if (!brothers[brotherId]) {
+        return null;
+    }
+
     const name = brothers[brotherId]["Name"]
     const greek = brothers[brotherId]["Class"]
     const major = brothers[brotherId]["Major"]
