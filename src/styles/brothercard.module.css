@@ -5,8 +5,9 @@
 .brotherCard {
     height: 14em;
     perspective: 1500px;
-    transition: all 0.25s ease;
+    transition: transform 0.25s ease;
     border-radius: 5px;
+    will-change: transform;
 }
 
 .brotherCard:hover {
@@ -17,9 +18,10 @@
 .flip {
     height: 100%;
     width: 100%;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
     transform-style: preserve-3d;
     border-radius: 5px;
+    will-change: transform;
 }
 
 .flipCard {
@@ -34,6 +36,8 @@
     backface-visibility: hidden;
     pointer-events: none;
     background-color: #FAF9F6;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .back{

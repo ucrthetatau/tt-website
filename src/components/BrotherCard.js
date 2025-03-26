@@ -3,7 +3,7 @@ import styles from "../styles/brothercard.module.css";
 import { brothers } from '../firebase/QueryDB.js'
 
 const BrotherCard = ({ brotherId }) => {
-    
+
     if (!brothers[brotherId]) {
         return null;
     }
@@ -23,7 +23,13 @@ const BrotherCard = ({ brotherId }) => {
             <div className={styles.brotherCard} >
                 <div className={styles.flip} onClick={flipCard} >
                     <div className={styles.front} >
-                        <img className={styles.headshot} src={pic} alt="Unavailable"/>
+                        <img 
+                            className={styles.headshot} 
+                            src={pic} 
+                            alt="Unavailable"
+                            loading="lazy"
+                            decoding="async"
+                        />
                     </div>
                     <div className={styles.back}>
                         <div className={styles.details}>

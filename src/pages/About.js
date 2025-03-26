@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from '../styles/about.module.css'
-import omicron1 from '../static/aboutOmi1.jpg'
-import UpsPic from '../static/upsilonPic.jpg'
-import about3 from '../static/W23Retreat.jpg'
+import omicron1 from '../images/aboutOmi1.jpg'
+import UpsPic from '../images/upsilonPic.jpg'
+import about3 from '../images/W23Retreat.jpg'
 import { Chart } from "react-google-charts"
 
 export const yearData = [

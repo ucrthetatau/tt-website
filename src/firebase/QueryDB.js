@@ -1,4 +1,4 @@
-import { firestore } from '../firebase/config';
+import { firestore } from './config';
 import { collection, getDocs } from 'firebase/firestore';
 
 const brotherData = await getDocs(collection(firestore, "members"));

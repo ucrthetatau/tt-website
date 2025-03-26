@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/footer.module.css'
-import WhiteLetters from '../static/WhiteLetters.png'
+import WhiteLetters from '../images/WhiteLetters.png'
 
 const Footer = () => {
     

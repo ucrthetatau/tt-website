@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '../styles/navbar.module.css'
-import NavLogo from '../static/NavLogo.png'
+import NavLogo from '../images/NavLogo.png'
 import { NavLink } from 'react-router-dom';
 
-function Navbar() {
+const Navbar = () => {
     
     const closeMenu = () => {
         document.getElementById('check').checked = false;

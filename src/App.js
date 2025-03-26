@@ -2,11 +2,11 @@ import styles from './App.module.css'
 import React from "react"
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Rush from './components/Rush'
+import Home from './pages/Home'
+import About from './pages/About'
+import Rush from './pages/Rush'
 import Footer from './components/Footer'
-import Brothers from './components/Brothers'
+import Brothers from './pages/Brothers'
 
 function App() {
   return (

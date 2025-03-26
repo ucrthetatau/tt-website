@@ -19,10 +19,10 @@
 .bodyWrapper {
   padding-top: 8rem;
   width: 100%;
-  margin-bottom: 4em;
+  /* margin-bottom: 4em; */
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 850px) {
   .bodyWrapper {
     padding-top: 6rem;
   }
