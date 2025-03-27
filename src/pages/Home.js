@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from "../styles/home.module.css"
-import brotherhood from "../images/brotherhood.png"
-import professionalism from "../images/professionalism.png"
-import service from "../images/service.png"
 import chapter from "../images/chapter.jpg"
 import tabling from "../images/tabling.jpg"
 import pier from "../images/pier.jpg"
@@ -25,23 +22,40 @@ const Home = () => {
 		setCurrentSlide(index)
 	}
 
+	useEffect(() => {
+		const timer = setInterval(nextSlide, 7000)
+		return () => clearInterval(timer)
+	}, [currentSlide])
+
 	return (
 		<div className={styles.home}>
-			<div className={styles.slider}>
-				<img src={chapter} alt="Chapter" className={`${styles.chapter} ${currentSlide === 0 ? styles.active : ''}`} />
-				<img src={tabling} alt="Tabling" className={`${styles.chapter} ${currentSlide === 1 ? styles.active : ''}`} />
-				<img src={pier} alt="Pier" className={`${styles.chapter} ${currentSlide === 2 ? styles.active : ''}`} />
-				<div className={styles.leftArrow} onClick={prevSlide}>
-					<IoIosArrowBack />
+			<div className={styles.banner}>
+				<div className={styles.slider}>
+					<img src={chapter} alt="Chapter" className={`${styles.chapter} ${currentSlide === 0 ? styles.active : ''}`} />
+					<img src={tabling} alt="Tabling" className={`${styles.chapter} ${currentSlide === 1 ? styles.active : ''}`} />
+					<img src={pier} alt="Pier" className={`${styles.chapter} ${currentSlide === 2 ? styles.active : ''}`} />
 				</div>
-				<div className={styles.rightArrow} onClick={nextSlide}>
-					<IoIosArrowForward />
+				<div className={styles.overlay}>
+					<div className={`${styles.arrowContainer} ${styles.left}`} onClick={prevSlide}>
+						<IoIosArrowBack className={styles.arrow}/>
+					</div>
+					<div className={styles.title}>
+						<h1>UCR Theta Tau</h1>
+						<h2>Sigma Delta Chapter</h2>
+						<p>The Premier Co-Ed Professional Engineering Fraternity at UCR</p>
+					</div>
+					<div className={`${styles.arrowContainer} ${styles.right}`} onClick={nextSlide}>
+						<IoIosArrowForward className={styles.arrow}/>
+					</div>
+					<div className={styles.dots}>
+						{[...Array(totalSlides)].map((_, index) => (
+							<div key={index} className={`${styles.dot} ${index === currentSlide ? styles.activeDot : ''}`} onClick={() => goToSlide(index)} />
+						))}
+					</div>
 				</div>
-				<div className={styles.dots}>
-					{[...Array(totalSlides)].map((_, index) => (
-						<div key={index} className={`${styles.dot} ${index === currentSlide ? styles.dotActive : ''}`} onClick={() => goToSlide(index)} />
-					))}
-				</div>
+			</div>
+			<div className={styles.body}>
+				Hello
 			</div>
 		</div>
 	)

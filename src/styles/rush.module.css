@@ -1,20 +1,3 @@
-.rush {
-	width: 100%;
-}
-
-.graphicContainer {
-	width: 50%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-}
-
-.instagramContainer {
-	display: flex;
-	justify-content: center;
-	margin-top: 2em;
-}
-
 .buttonContainer {
 	display: flex;
 	justify-content: center;
@@ -38,4 +21,121 @@
 .button:hover {
 	background-color: white;
 	color: #7E2524;
+}
+
+.timeline {
+	max-width: 800px;
+	margin: 2em auto;
+	padding: 0 2em;
+	position: relative;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	left: 200px;
+	height: 100%;
+	width: 2px;
+	background: #7E2524;
+}
+
+.event {
+	position: relative;
+	margin-bottom: 2em;
+	display: flex;
+}
+
+.event::before {
+	content: '';
+	position: absolute;
+	left: 196px;  /* 200px (line center) - 6px (half dot width) */
+	top: 5px;
+	width: 12px;
+	height: 12px;
+	background: #7E2524;
+	border-radius: 50%;
+	border: 2px solid white;  /* Add white border to make dot appear centered */
+}
+
+.date {
+	width: 180px;  /* Fixed width for date column */
+	padding-right: 20px;
+	text-align: right;
+}
+
+.day {
+	color: #333;
+	font-weight: 500;
+}
+
+.details {
+	padding-left: 40px;  /* Space after the vertical line */
+	flex: 1;
+}
+
+.details h3 {
+	color: #7E2524;
+	font-size: 1.5em;
+	margin: 0 0 0.5em 0;
+	font-weight: 500;
+}
+
+.description {
+	color: rgb(186, 141, 63);
+	margin: 0.5em 0;
+	font-size: 1em;
+}
+
+.time, .location, .attire {
+	color: #666;
+	margin: 0.3em 0;
+	font-size: 0.9em;
+}
+
+.rush {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	flex: 1;
+}
+
+.timelineSection {
+	flex: 1;
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+}
+
+.graphicSection {
+	flex: 1;
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.graphic {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+.timeline {
+	width: 100%;
+	max-width: 600px;
+	position: relative;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	left: 200px;
+	height: 100%;
+	width: 2px;
+	background: #7E2524;
 }

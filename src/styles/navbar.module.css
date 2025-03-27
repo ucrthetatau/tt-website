@@ -1,5 +1,4 @@
 .header {
-    position: fixed;
     width: 100%;
     background: #7E2524;
     height: 8rem;
@@ -32,7 +31,7 @@
     color: white;
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     font-size: 18px;
 }
 
@@ -51,7 +50,7 @@
 
 @media screen and (max-width: 850px) {
     .header {
-        height: 6rem;
+        height: 6em;
     }
 
     .main {
@@ -71,6 +70,7 @@
         overflow: hidden;
         font-size: 18px;
         transition: height 0.5s ease;
+        background: #7E2524;
     }
 
     .link {

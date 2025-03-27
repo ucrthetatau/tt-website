@@ -1,4 +1,4 @@
-.pageWrapper {
+.page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -7,8 +7,11 @@
 }
 
 .header {
-  z-index: 1;
-  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+
+.body {
   width: 100%;
 }
 
@@ -16,14 +19,8 @@
   margin-top: auto;
 }
 
-.bodyWrapper {
-  padding-top: 8rem;
-  width: 100%;
-  /* margin-bottom: 4em; */
-}
-
 @media screen and (max-width: 850px) {
-  .bodyWrapper {
+  .body {
     padding-top: 6rem;
   }
 }

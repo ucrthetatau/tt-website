@@ -10,25 +10,23 @@ import Brothers from './pages/Brothers'
 
 function App() {
   return (
-    <>
-      <div className={styles.pageWrapper}>
-        <div className={styles.header}>
-          <Navbar />
-        </div>
-        <div className={styles.bodyWrapper}>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="home" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="rush" element={<Rush />} />
-            <Route path="brothers" element={<Brothers />} />
-          </Routes>
-        </div>
-        <div className={styles.footer}>
-          <Footer />
-        </div>
-      </div>
-    </>
+		<div className={styles.page}>
+			<div className={styles.header}>
+				<Navbar />
+			</div>
+			<div className={styles.body}>
+				<Routes>
+					<Route index element={<Home />} />
+					<Route path="home" element={<Home />} />
+					<Route path="about" element={<About />} />
+					<Route path="rush" element={<Rush />} />
+					<Route path="brothers" element={<Brothers />} />
+				</Routes>
+			</div>
+			<div className={styles.footer}>
+				<Footer />
+			</div>
+		</div>
   )
 }
 
