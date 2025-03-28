@@ -41,21 +41,22 @@
 
 .Title {
     padding: 2em 0 1em 0;
-    color: black;
+    color: #B9996C;
     text-align: left;
     font-size: 26px;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+    /* text-shadow: 0px 0px 1px black; */
 }
 
 .Title::after {
     content: '';
     height: 2px;
-    background-color: black;
+    background-color: #B9996C;
     flex-grow: 1;
 }
 

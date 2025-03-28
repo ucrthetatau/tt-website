@@ -8,6 +8,7 @@
     transition: transform 0.25s ease;
     border-radius: 5px;
     will-change: transform;
+    /* overflow: hidden; */
 }
 
 .brotherCard:hover {
@@ -20,7 +21,7 @@
     width: 100%;
     transition: transform 0.5s ease;
     transform-style: preserve-3d;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     will-change: transform;
 }
 
@@ -40,6 +41,11 @@
     will-change: transform;
 }
 
+.front{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 .back{
     transform: rotateY(180deg);
     border: 1px solid lightgray;
@@ -50,7 +56,7 @@
     width: 100%;
     pointer-events: none;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 .details {

@@ -23,13 +23,7 @@ const BrotherCard = ({ brotherId }) => {
             <div className={styles.brotherCard} >
                 <div className={styles.flip} onClick={flipCard} >
                     <div className={styles.front} >
-                        <img 
-                            className={styles.headshot} 
-                            src={pic} 
-                            alt="Unavailable"
-                            loading="lazy"
-                            decoding="async"
-                        />
+                        <img className={styles.headshot} src={pic} alt="Unavailable" />
                     </div>
                     <div className={styles.back}>
                         <div className={styles.details}>

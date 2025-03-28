@@ -3,6 +3,9 @@ import styles from "../styles/home.module.css"
 import chapter from "../images/chapter.jpg"
 import tabling from "../images/tabling.jpg"
 import pier from "../images/pier.jpg"
+import omicrons from "../images/omicrons.jpg"
+import upsilons from "../images/upsilons.jpg"
+import retreat from "../images/W23Retreat.jpg"
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
