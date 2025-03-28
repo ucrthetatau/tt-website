@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from '../styles/about.module.css'
-import UpsPic from '../images/upsilonPic.jpg'
-import about3 from '../images/W23Retreat.jpg'
 import { Chart } from "react-google-charts"
 
 export const yearData = [

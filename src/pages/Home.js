@@ -11,7 +11,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Home = () => {
 	const [currentSlide, setCurrentSlide] = useState(0)
-	const totalSlides = 3
+	const totalSlides = 6
 
 	const nextSlide = () => {
 		setCurrentSlide(current => (current + 1) % totalSlides)
@@ -37,6 +37,9 @@ const Home = () => {
 					<img src={chapter} alt="Chapter" className={`${styles.chapter} ${currentSlide === 0 ? styles.active : ''}`} />
 					<img src={tabling} alt="Tabling" className={`${styles.chapter} ${currentSlide === 1 ? styles.active : ''}`} />
 					<img src={pier} alt="Pier" className={`${styles.chapter} ${currentSlide === 2 ? styles.active : ''}`} />
+					<img src={omicrons} alt="Omicrons" className={`${styles.chapter} ${currentSlide === 3 ? styles.active : ''}`} />
+					<img src={upsilons} alt="Upsilons" className={`${styles.chapter} ${currentSlide === 4 ? styles.active : ''}`} />
+					<img src={retreat} alt="Winter 2023 Retreat" className={`${styles.chapter} ${currentSlide === 5 ? styles.active : ''}`} />
 				</div>
 				<div className={styles.overlay}>
 					<div className={`${styles.arrowContainer} ${styles.left}`} onClick={prevSlide}>

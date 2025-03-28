@@ -1,116 +1,131 @@
-.timeline {
-	max-width: 800px;
-	margin: 2em auto;
-	padding: 0 2em;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	gap: 2em;
-}
-
-.timeline::before {
-	content: '';
-	position: absolute;
-	left: 200px;
-	height: 100%;
-	width: 2px;
-	background: #B9996C;
-}
-
-.event {
-	position: relative;
-	display: flex;
-}
-
-.event::before {
-	content: '';
-	position: absolute;
-	left: 196px;  /* 200px (line center) - 6px (half dot width) */
-	top: 5px;
-	width: 12px;
-	height: 12px;
-	background: #B9996C;
-	border-radius: 50%;
-	border: 2px solid white;  /* Add white border to make dot appear centered */
-}
-
-.date {
-	width: 180px;  /* Fixed width for date column */
-	padding-right: 20px;
-	text-align: right;
-}
-
-.day {
-	color: black;
-	font-weight: 500;
-	display: block;
-	margin-bottom: 5px;
-}
-
-.details {
-	padding-left: 40px;  /* Space after the vertical line */
-	flex: 1;
-}
-
-.details h3 {
-	color: black;
-	font-size: 1.5em;
-	margin: 0 0 0.5em 0;
-	font-weight: 500;
-}
-
-.description {
-	color: black;
-	margin: 0;
-	font-size: 0.9em;
-	line-height: 1.4;
-}
-
-.timeLocation {
-	display: flex;
-	align-items: center;
-	gap: 5px;
-	color: black;
-	font-size: 0.85em;
-	justify-content: flex-end;
-}
-
-.separator {
-	color: black;
-}
-
-.time, .location {
-	color: black;
-}
-
-.attire {
-	color: #666;
-	margin: 0.5em 0 0 0;
-	font-size: 0.85em;
-	font-style: italic;
-}
-
 .rush {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 3em 0;
 }
 
-.container {
-	width: 100%;
+.section {
+	padding: 1em 0 1em 0;
+	color: #B9996C;
+	text-align: left;
+	font-size: 34px;
+	font-weight: 400;
+	margin: 0 auto;
+	width: 85%;
 	display: flex;
-	align-items: flex-start;  /* Align to top instead of stretch */
-	padding: 2em;
+	align-items: center;
+	gap: 10px;
 }
 
-.timelineSection {
+.section::after {
+	content: '';
+	height: 2px;
+	background-color: #B9996C;
+	flex-grow: 1;
+}
+
+.scheduleContainer {
+	width: 80%;
+	display: flex;
+}
+
+/* .timelineContainer {
 	flex: 1;
 	display: flex;
-	justify-content: center;
+	align-items: flex-start;
+} */
+
+.timeline {
+	max-width: 800px;
+	/* padding-r: 2em 2em 0 0; */
+	display: flex;
+	flex-direction: column;
 }
 
-.graphicSection {
+.event {
+	display: flex;
+}
+
+.left {
+	width: 180px;
+	padding-right: 15px;
+	text-align: right;
+	position: relative;
+	color: #B9996C;
+}
+
+.right {
+	margin-left: 15px;
+	flex: 1;
+	position: relative;
+}
+
+.date {
+	padding-top: 4px;
+}
+
+.timeLocation {
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+.name {
+	color: #7E2524;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.description {
+	color: gray;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.attire {
+	color: gray;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.left::after {
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #B9996C;
+	content: "";
+	box-sizing: content-box;
+	/* bottom: -30px; */
+	/* left: 16px; */
+	right: 0;
+	top: 12px;
+}
+
+.right::before {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #7E2524;
+	content: '';
+	border-radius: 50%;
+	left: -21px;
+	top: 7px;
+	border: 2px solid #B9996C;
+}
+
+/* Last event doesn't need the line extending below */
+.event:last-child .left::after {
+	display: none;
+}
+
+.event:last-child .right .attire {
+	margin-bottom: 0;
+}
+
+.graphicContainer {
 	flex: 1;
 	display: flex;
 	justify-content: center;
@@ -119,30 +134,15 @@
 .graphic {
 	width: 100%;
 	height: auto;
+	/* padding: 2em; */
 	object-fit: contain;
-}
-
-.timeline {
-	width: 100%;
-	max-width: 600px;
-	position: relative;
-	padding-left: 2em;
-}
-
-.timeline::before {
-	content: '';
-	position: absolute;
-	left: 200px;
-	height: 100%;
-	width: 2px;
-	background: #B9996C;
 }
 
 .buttonContainer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding: 2em;
+	padding-top: 2em;
 }
 
 .button {
@@ -161,24 +161,4 @@
 .button:hover {
 	background-color: white;
 	color: #7E2524;
-}
-
-.title {
-	padding: 2em 0 1em 0;
-	color: #7E2524;
-	text-align: left;
-	font-size: 34px;
-	font-weight: 400;
-	margin: 0 auto;
-	width: 85%;
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-.title::after {
-	content: '';
-	height: 2px;
-	background-color: #7E2524;
-	flex-grow: 1;
 }
