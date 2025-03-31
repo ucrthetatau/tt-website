@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f870e719.css",
-    "main.js": "/static/js/main.f83423c7.js",
+    "main.js": "/static/js/main.1365f1a2.js",
     "static/media/W23Retreat.jpg": "/static/media/W23Retreat.fa5fc4b2119a8a4e0fbf.jpg",
     "static/media/upsilonPic.jpg": "/static/media/upsilonPic.643e55feb61525bb4de9.jpg",
     "static/media/homeSlide.jpg": "/static/media/homeSlide.ee105c10eef5a0f6f977.jpg",
@@ -14,10 +14,10 @@
     "static/media/service.png": "/static/media/service.ec82cfaa78ee5fa90778.png",
     "index.html": "/index.html",
     "main.f870e719.css.map": "/static/css/main.f870e719.css.map",
-    "main.f83423c7.js.map": "/static/js/main.f83423c7.js.map"
+    "main.1365f1a2.js.map": "/static/js/main.1365f1a2.js.map"
   },
   "entrypoints": [
     "static/css/main.f870e719.css",
-    "static/js/main.f83423c7.js"
+    "static/js/main.1365f1a2.js"
   ]
 }
