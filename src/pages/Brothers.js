@@ -35,7 +35,7 @@ const Brothers = () => {
 					Year
 				</h1>
 				<h1 className={`${styles.category} ${category === "Board" ? styles.active : ""}`} onClick={() => setCategory("Board")}>
-					Board
+					Officers
 				</h1>
 			</div>
 			

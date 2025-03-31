@@ -113,4 +113,8 @@
         font-size: 16px;
         padding: 0.4em 1.2em;
     }
+
+    .Title {
+		font-size: 28px;
+	}
 }

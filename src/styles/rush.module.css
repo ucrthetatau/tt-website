@@ -3,14 +3,14 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 3em 0;
+	padding: 4em 0;
 }
 
 .section {
-	padding: 1em 0 1em 0;
+	padding-bottom: 2em;
 	color: #B9996C;
 	text-align: left;
-	font-size: 34px;
+	font-size: 30px;
 	font-weight: 400;
 	margin: 0 auto;
 	width: 85%;
@@ -26,22 +26,17 @@
 	flex-grow: 1;
 }
 
-.scheduleContainer {
+.timelineContainer {
 	width: 80%;
 	display: flex;
+	justify-content: center;
+	margin-bottom: 3em;
 }
 
-/* .timelineContainer {
-	flex: 1;
-	display: flex;
-	align-items: flex-start;
-} */
-
 .timeline {
-	max-width: 800px;
-	/* padding-r: 2em 2em 0 0; */
 	display: flex;
 	flex-direction: column;
+	height: fit-content;
 }
 
 .event {
@@ -54,19 +49,24 @@
 	text-align: right;
 	position: relative;
 	color: #B9996C;
+	flex-shrink: 0;
 }
 
 .right {
 	margin-left: 15px;
-	flex: 1;
 	position: relative;
+	flex: 1;
+	min-width: 0;
+	word-wrap: break-word;
 }
 
 .date {
-	padding-top: 4px;
+	padding-top: 2px;
+	padding-bottom: 5px;
 }
 
-.timeLocation {
+.time, .seperator, .location {
+	display: inline;
 	font-size: 14px;
 	padding-top: 5px;
 }
@@ -80,13 +80,12 @@
 
 .description {
 	color: gray;
-	margin: 0;
 	margin-bottom: 5px;
 }
 
 .attire {
 	color: gray;
-	margin-bottom: 20px;
+	margin-bottom: 3em;
 	font-size: 14px;
 	font-style: italic;
 }
@@ -98,10 +97,8 @@
 	background-color: #B9996C;
 	content: "";
 	box-sizing: content-box;
-	/* bottom: -30px; */
-	/* left: 16px; */
 	right: 0;
-	top: 12px;
+	top: 10px;
 }
 
 .right::before {
@@ -112,11 +109,10 @@
 	content: '';
 	border-radius: 50%;
 	left: -21px;
-	top: 7px;
+	top: 5px;
 	border: 2px solid #B9996C;
 }
 
-/* Last event doesn't need the line extending below */
 .event:last-child .left::after {
 	display: none;
 }
@@ -125,24 +121,11 @@
 	margin-bottom: 0;
 }
 
-.graphicContainer {
-	flex: 1;
-	display: flex;
-	justify-content: center;
-}
-
-.graphic {
-	width: 100%;
-	height: auto;
-	/* padding: 2em; */
-	object-fit: contain;
-}
-
 .buttonContainer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	padding-top: 2em;
+	margin-bottom: 2em;
 }
 
 .button {
@@ -161,4 +144,41 @@
 .button:hover {
 	background-color: white;
 	color: #7E2524;
+}
+
+@media screen and (max-width: 700px) {
+    
+	.left {
+		width: 160px;
+	}
+
+	.time, .location {
+		display: block;
+		font-size: 12px;
+	}
+
+	.seperator {
+		display: none;
+	}
+
+	.date {
+		padding-bottom: 0px;
+		font-size: 14px;
+	}
+
+	.name {
+		font-size: 16px;
+	}
+	
+	.description {
+		font-size: 14px;
+	}
+	
+	.attire {
+		font-size: 12px;
+	}
+
+	.section {
+		font-size: 28px;
+	}
 }
