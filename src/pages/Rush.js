@@ -92,6 +92,7 @@ const Rush = () => {
 			</div>
 			<div className={styles.buttonContainer}>
 				<button className={styles.button}>Interest Form</button>
+				<a href="https://discord.com/invite/dBWhZNjgEP" target="_blank" rel="noopener noreferrer" className={styles.button}>Discord Link</a>
 			</div>
 			<h1 className={styles.section}>
 				<span className={styles.fullTitle}>Frequently Asked Questions</span>
