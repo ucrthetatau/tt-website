@@ -29,7 +29,7 @@ const Rush = () => {
 				<div className={styles.timeline}>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Mon, April 8, 2024</div>
+							<div className={styles.date}>Mon, April 7, 2025</div>
 							<div className={styles.time}> 7-9 PM</div>
 							<div className={styles.seperator}> | </div>
 							<div className={styles.location}>HUB 302 South</div>
@@ -42,7 +42,7 @@ const Rush = () => {
 					</div>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Tue, April 9, 2024</div>
+							<div className={styles.date}>Tue, April 8, 2025</div>
 							<div className={styles.time}> 7-9 PM</div>
 							<div className={styles.seperator}> | </div>
 							<div className={styles.location}>HUB 302 South</div>
@@ -55,20 +55,20 @@ const Rush = () => {
 					</div>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Wed, April 10, 2024</div>
+							<div className={styles.date}>Wed, April 9, 2025</div>
 							<div className={styles.time}> 7-9 PM</div>
 							<div className={styles.seperator}> | </div>
 							<div className={styles.location}>Bourns Bus Stop</div>
 						</div>
 						<div className={styles.right}>
-							<h3 className={styles.name}>Food Night</h3>
-							<p className={styles.description}>Enjoy free food while mingling with brothers and fellow rushees in a relaxed environment</p>
+							<h3 className={styles.name}>Game Night</h3>
+							<p className={styles.description}>Enjoy some board games while mingling with brothers and fellow rushees in a relaxed environment</p>
 							<p className={styles.attire}>Casual Attire</p>
 						</div>
 					</div>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Thu, April 11, 2024</div>
+							<div className={styles.date}>Thu, April 10, 2025</div>
 							<div className={styles.time}> Invite Only</div>
 						</div>
 						<div className={styles.right}>
@@ -79,7 +79,7 @@ const Rush = () => {
 					</div>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Fri, April 12, 2024</div>
+							<div className={styles.date}>Fri, April 11, 2025</div>
 							<div className={styles.time}> Invite Only</div>
 						</div>
 						<div className={styles.right}>

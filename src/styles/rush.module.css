@@ -130,11 +130,10 @@
 }
 
 .buttonContainer {
-	margin-bottom: 3em;
+	margin: 1em 0 3em 0;
 	display: flex;
 	justify-content: center;
-	gap: 20px;
-	flex-wrap: wrap;
+	gap: 2em;
 }
 
 .button {

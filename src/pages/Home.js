@@ -6,9 +6,10 @@ import pier from "../images/pier.jpg"
 import omicrons from "../images/omicrons.jpg"
 import upsilons from "../images/upsilons.jpg"
 import retreat from "../images/W23Retreat.jpg"
-import { IoIosArrowBack, IoIosArrowForward} from "react-icons/io";
-// import { FaHandsHelping, FaGraduationCap, FaRecycle } from "react-icons/fa";
-
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { RiServiceLine } from "react-icons/ri";
+import { GrGroup } from "react-icons/gr";
+import { LuGraduationCap } from "react-icons/lu";
 
 const Home = () => {
 	const [currentSlide, setCurrentSlide] = useState(0)
@@ -62,6 +63,26 @@ const Home = () => {
 				</div>
 			</div>
 			<div className={styles.body}>
+				<div className={styles.pillarsContainer}>
+					<div className={styles.pillar + " " + styles.group}>
+						<GrGroup className={styles.icon} />
+						<h2>Brotherhood</h2>
+						<div className={styles.underline}></div>
+						<p>We strive to develop bonds that will last a lifetime.</p>
+					</div>
+					<div className={styles.pillar + " " + styles.cap}>
+						<LuGraduationCap className={styles.icon} />
+						<h2>Professionalism</h2>
+						<div className={styles.underline}></div>
+						<p>We aim to prepare for life in college and beyond.</p>
+					</div>
+					<div className={styles.pillar + " " + styles.heart}>
+						<RiServiceLine className={styles.icon} />
+						<h2>Service</h2>
+						<div className={styles.underline}></div>
+						<p>We are involved in projects that give back to the community.</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	)

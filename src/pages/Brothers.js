@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from "../styles/brothers.module.css";
-import { classes, classMap, yearMap, officers, years, nameMap, brothers } from '../firebase/QueryDB.js'
+import { classes, classMap, yearMap, officers, years, nameMap } from '../firebase/QueryDB.js'
 import BrotherCard from "../components/BrotherCard.js"
 
 const Brothers = () => {

@@ -1,80 +1,74 @@
 import React from 'react'
 import styles from '../styles/about.module.css'
-import { Chart } from "react-google-charts"
+import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
+
 
 export const yearData = [
-  ["Year", "Number of People"],
-  ["1st", 4],
-  ["2nd", 2],
-  ["3rd", 24],
-  ["4th", 15],
-  ["5th+", 5],
-]
-
-export const yearColors = {
-  colors: ["#f3b49f", "#cd5c5c", "#7c0a02", "#a52a2a", "#cc3333"],
-  backgroundColor: "transparent",
-  is3D: true,
-  slices: {
-    0: { offset: 0.1 },
-    1: { offset: 0.1 },
-    2: { offset: 0.1 },
-    3: { offset: 0.1 },
-    4: { offset: 0.1 },
-  },
-  legend: {},
-}
+  { name: '1st', value: 4 },
+  { name: '2nd', value: 6 },
+  { name: '3rd', value: 23 },
+  { name: '4th+', value: 18 },
+];
 
 export const majorData = [
-  ["Major", "Number of People"],
-  ["CS/CSBA/CE", 18],
-  ["EE", 3],
-  ["ME", 11],
-  ["BIEN", 9],
-  ['MSE', 1],
-  ["CHEME", 2],
-  ["ENVE", 3],
-]
+  { name: 'CS/CSBA/CE', value: 18 },
+  { name: 'ME', value: 11 },
+  { name: 'BIEN', value: 9 },
+  { name: 'ENVE', value: 6 },
+  { name: 'EE', value: 3 },
+  { name: 'CHEME', value: 2 },
+  { name: 'MSE', value: 1 },
+  { name: 'PHYS', value: 1 },
+];
 
-export const majorColors = {
-    colors: ['#ffcc33', '#e5b73b', '#da9100', '#996515', '#faf0be', '#f3e5ab', '#f8de7e'],
-    backgroundColor: "transparent",
-    position: "static",
-    is3D: true,
-    slices: {
-        1: { offset: 0.4 },
-        2: { offset: 0.2 },
-        3: { offset: 0.2 },
-        4: { offset: 0.3 },
-        5: { offset: 0.1 },
-    },
-}
-
-export const internData = [
-  ["Our Members With Experience", "Number of People"],
-  ["Internship/Job", 10],
-  ["Research", 2],
-  ["Both", 5],
-  ["None", 12],
-]
-
-export const internColors = {
-  colors: ['#f3b49f', '#7c0a02', '#a52a2a', '#cd5c5c'],
-  is3D: true,
-  backgroundColor: "transparent",
-  slices: {
-    0: { offset: 0.05 },
-    1: { offset: 0.4 },
-    2: { offset: 0.3 },
-    3: { offset: 0.05 },
-  },
-}
+const redColors = ['#F3B49F', '#CD5C5C', '#7C0A02', '#A52A2A', '#CC3333'];
+const goldColors = ['#FFCC33', '#E5B73B', '#DA9100', '#996515', '#FAF0BE', '#F3E5AB', '#F8DE7E', '#F3B49F'];
 
 const About = () => {
     return (
-		<div className={styles.about}>
-			Hello
-		</div>
+      <div className={styles.about}>
+        <h1 className={styles.section}>Chapter Breakdown</h1>
+        <div className={styles.chartsContainer}>
+          <div className={styles.chart}>
+            <h3 className={styles.title}>Year Distribution</h3>
+            <PieChart width={400} height={300}>
+              <Pie
+                data={yearData}
+                cx="50%"
+                cy="50%"
+                outerRadius={100}
+                label
+                dataKey="value"
+              >
+                {yearData.map((entry, i) => (
+                  <Cell key={`cell-${i}`} fill={redColors[i % redColors.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+              <Legend />
+            </PieChart>
+          </div>
+          <div className={styles.chart}>
+            <h3 className={styles.title}>Major Distribution</h3>
+            <PieChart width={400} height={300}>
+              <Pie
+                data={majorData}
+                cx="50%"
+                cy="50%"
+                outerRadius={100}
+                label
+                dataKey="value"
+              >
+                {majorData.map((entry, i) => (
+                  <Cell key={`cell-${i}`} fill={goldColors[i % goldColors.length]} />
+                ))}
+              </Pie>
+              <Tooltip />
+              <Legend />
+            </PieChart>
+          </div>
+        </div>
+      </div>
 	)
 }
 
