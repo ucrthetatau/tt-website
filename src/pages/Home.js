@@ -6,8 +6,9 @@ import pier from "../images/pier.jpg"
 import omicrons from "../images/omicrons.jpg"
 import upsilons from "../images/upsilons.jpg"
 import retreat from "../images/W23Retreat.jpg"
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack, IoIosArrowForward} from "react-icons/io";
+// import { FaHandsHelping, FaGraduationCap, FaRecycle } from "react-icons/fa";
+
 
 const Home = () => {
 	const [currentSlide, setCurrentSlide] = useState(0)
@@ -61,7 +62,6 @@ const Home = () => {
 				</div>
 			</div>
 			<div className={styles.body}>
-				Hello
 			</div>
 		</div>
 	)

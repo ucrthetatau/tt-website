@@ -106,3 +106,7 @@
 	background: white;
 	box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
+
+.icon {
+	font-size: 3em;
+}

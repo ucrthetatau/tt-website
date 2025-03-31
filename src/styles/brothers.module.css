@@ -50,7 +50,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    /* text-shadow: 0px 0px 1px black; */
 }
 
 .Title::after {
