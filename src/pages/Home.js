@@ -74,7 +74,7 @@ const Home = () => {
 						<LuGraduationCap className={styles.icon} />
 						<h2>Professionalism</h2>
 						<div className={styles.underline}></div>
-						<p>We aim to prepare for life in college, careers, and beyond.</p>
+						<p>We aim to prepare for life in college, career, and beyond.</p>
 					</div>
 					<div className={styles.pillar + " " + styles.heart}>
 						<RiServiceLine className={styles.icon} />

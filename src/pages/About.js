@@ -66,12 +66,12 @@ const About = () => {
 			width: 300,
 			height: 200,
 			outerRadius: 70,
-			innerRadius: 45
+			innerRadius: 40
 		} : {
 			width: 400,
 			height: 300,
-			outerRadius: 120,
-			innerRadius: 70
+			outerRadius: 110,
+			innerRadius: 60
 		}
 	}
 
