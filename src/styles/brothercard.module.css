@@ -68,7 +68,7 @@
     font-weight: 200;
     margin: 5% 0 0 5%;
     pointer-events: none;
-    color: #7E2524;
+    color: #A22D28;
 }
 
 .details h3 {
@@ -108,5 +108,9 @@
     
     .details h3 {
         font-size: 16px;
+    }
+
+    .brotherCard:hover {
+        transform: none;
     }
 }

@@ -13,6 +13,13 @@
 
 .body {
   width: 100%;
+  padding-top: 8em;
+}
+
+@media screen and (max-width: 850px) {
+  .body {
+    padding-top: 6em;
+  }
 }
 
 .footer {

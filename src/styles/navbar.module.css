@@ -1,12 +1,14 @@
 .header {
     width: 100%;
-    background: #7E2524;
+    background: #A22D28;
     height: 8em;
     color: white;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .main {
@@ -55,11 +57,11 @@
     }
 
     .main {
-        margin-left: 2em;
+        margin-left: 1em;
     }
 
     .navLogo {
-        height: 3em;
+        height: 3.5em;
     }
 
     .nav {
@@ -72,7 +74,7 @@
         overflow: hidden;
         font-size: 18px;
         transition: height 0.3s ease;
-        background: #7E2524;
+        background: #A22D28;
     }
 
     .link {

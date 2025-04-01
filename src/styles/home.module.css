@@ -121,12 +121,12 @@
 
 .icon {
 	font-size: 4.5rem;
-	color: #7E2524;
+	color: #A22D28;
 	margin-bottom: 1.5rem;
 }
 
 .pillar h2 {
-	color: #7E2524;
+	color: #A22D28;
 	font-size: 34px;
 	font-weight: 400;
 }
@@ -134,7 +134,7 @@
 .underline {
 	height: 3px;
 	width: 150px;
-	background-color: #7E2524;
+	background-color: #A22D28;
 	margin: 1.5em auto;
 }
 
@@ -151,13 +151,14 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
 	.title h1 {
-		font-size: 3em;
+		font-size: 2em;
+		padding-bottom: 0.5em;
 	}
 	
 	.title h2 {
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 	
 	.title p {
@@ -167,12 +168,29 @@
 	.arrowContainer {
 		font-size: 2em;
 	}
-	
-	.pillar {
-		min-width: 100%;
+
+	.arrow {
+		display: none;
 	}
 	
 	.icon {
 		font-size: 3.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.pillar {
+		padding: 1em;
+	}
+
+	.underline {
+		margin: 1em auto;
+	}
+
+	.pillar p {
+		font-size: 16px;
+	}
+	
+	.pillar h2 {
+		font-size: 26px;
 	}
 }

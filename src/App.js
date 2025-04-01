@@ -1,6 +1,6 @@
 import styles from './App.module.css'
-import React from "react"
-import { Route, Routes } from 'react-router-dom'
+import React, { useEffect } from "react"
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -9,7 +9,13 @@ import Footer from './components/Footer'
 import Brothers from './pages/Brothers'
 
 function App() {
-  return (
+	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo({ top: 0, left: 0, behavior: 'smooth'});
+	}, [location]);
+
+	return (
 		<div className={styles.page}>
 			<div className={styles.header}>
 				<Navbar />
@@ -27,7 +33,7 @@ function App() {
 				<Footer />
 			</div>
 		</div>
-  )
+	)
 }
 
 export default App

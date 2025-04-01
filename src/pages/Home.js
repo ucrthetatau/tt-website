@@ -68,19 +68,19 @@ const Home = () => {
 						<GrGroup className={styles.icon} />
 						<h2>Brotherhood</h2>
 						<div className={styles.underline}></div>
-						<p>We strive to develop bonds that will last a lifetime.</p>
+						<p>We strive to develop bonds between brothers that will last a lifetime.</p>
 					</div>
 					<div className={styles.pillar + " " + styles.cap}>
 						<LuGraduationCap className={styles.icon} />
 						<h2>Professionalism</h2>
 						<div className={styles.underline}></div>
-						<p>We aim to prepare for life in college and beyond.</p>
+						<p>We aim to prepare for life in college, careers, and beyond.</p>
 					</div>
 					<div className={styles.pillar + " " + styles.heart}>
 						<RiServiceLine className={styles.icon} />
 						<h2>Service</h2>
 						<div className={styles.underline}></div>
-						<p>We are involved in projects that give back to the community.</p>
+						<p>We are involved in projects and events that give back to the community.</p>
 					</div>
 				</div>
 			</div>

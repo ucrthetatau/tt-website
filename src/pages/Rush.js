@@ -29,7 +29,10 @@ const Rush = () => {
 				<div className={styles.timeline}>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Mon, April 7, 2025</div>
+							<div className={styles.date}>
+								<span className={styles.day}>Mon, </span>
+								<span className={styles.month}>April 7, 2025</span>
+							</div>
 							<div className={styles.time}> 7-9 PM</div>
 							<div className={styles.seperator}> | </div>
 							<div className={styles.location}>HUB 302 South</div>
@@ -42,7 +45,10 @@ const Rush = () => {
 					</div>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Tue, April 8, 2025</div>
+							<div className={styles.date}>
+								<span className={styles.day}>Tue, </span>
+								<span className={styles.month}>April 8, 2025</span>
+							</div>
 							<div className={styles.time}> 7-9 PM</div>
 							<div className={styles.seperator}> | </div>
 							<div className={styles.location}>HUB 302 South</div>
@@ -55,7 +61,10 @@ const Rush = () => {
 					</div>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Wed, April 9, 2025</div>
+							<div className={styles.date}>
+								<span className={styles.day}>Wed, </span>
+								<span className={styles.month}>April 9, 2025</span>
+							</div>
 							<div className={styles.time}> 7-9 PM</div>
 							<div className={styles.seperator}> | </div>
 							<div className={styles.location}>Bourns Bus Stop</div>
@@ -68,7 +77,10 @@ const Rush = () => {
 					</div>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Thu, April 10, 2025</div>
+							<div className={styles.date}>
+								<span className={styles.day}>Thu, </span>
+								<span className={styles.month}>April 10, 2025</span>
+							</div>
 							<div className={styles.time}> Invite Only</div>
 						</div>
 						<div className={styles.right}>
@@ -79,7 +91,10 @@ const Rush = () => {
 					</div>
 					<div className={styles.event}>
 						<div className={styles.left}>
-							<div className={styles.date}>Fri, April 11, 2025</div>
+							<div className={styles.date}>
+								<span className={styles.day}>Fri, </span>
+								<span className={styles.month}>April 11, 2025</span>
+							</div>
 							<div className={styles.time}> Invite Only</div>
 						</div>
 						<div className={styles.right}>
@@ -91,7 +106,7 @@ const Rush = () => {
 				</div>
 			</div>
 			<div className={styles.buttonContainer}>
-				<button className={styles.button}>Interest Form</button>
+				{/* <a href="" target="_blank" rel="noopener noreferrer" className={styles.button}>Interest Form</a> */}
 				<a href="https://discord.com/invite/dBWhZNjgEP" target="_blank" rel="noopener noreferrer" className={styles.button}>Discord Link</a>
 			</div>
 			<h1 className={styles.section}>

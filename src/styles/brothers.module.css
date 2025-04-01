@@ -5,19 +5,20 @@
 .categories {
     display: inline-flex;
     margin-top: 4em;
-    border: 2px solid #7E2524;
+    border: 2px solid #A22D28;
     border-radius: 50px;
     padding: 5px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
+    user-select: none;
 }
 
 .category {
     font-size: 18px;
     font-weight: 400;
-    color: #7E2524;
+    color: #A22D28;
     cursor: pointer;
     padding: 0.5em 1.5em;
     position: relative;
@@ -29,7 +30,7 @@
 .selector {
     position: absolute;
     height: calc(100% - 10px);
-    background-color: #7E2524;
+    background-color: #A22D28;
     border-radius: 50px;
     transition: all 0.3s ease;
     pointer-events: none;
