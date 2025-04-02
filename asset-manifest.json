@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.f870e719.css",
-    "main.js": "/static/js/main.1365f1a2.js",
+    "main.css": "/static/css/main.e72ee5cd.css",
+    "main.js": "/static/js/main.29ee8772.js",
     "static/media/W23Retreat.jpg": "/static/media/W23Retreat.fa5fc4b2119a8a4e0fbf.jpg",
-    "static/media/upsilonPic.jpg": "/static/media/upsilonPic.643e55feb61525bb4de9.jpg",
-    "static/media/homeSlide.jpg": "/static/media/homeSlide.ee105c10eef5a0f6f977.jpg",
-    "static/media/aboutOmi1.jpg": "/static/media/aboutOmi1.a8a27c49ba094d446623.jpg",
-    "static/media/aboutSlide.jpg": "/static/media/aboutSlide.2ae1f70b14bbeaa20860.jpg",
-    "static/media/S25Recruitment.png": "/static/media/S25Recruitment.2390032be0f7f37d21b0.png",
-    "static/media/WhiteCrest.png": "/static/media/WhiteCrest.a79f3edb8b53ab8de496.png",
-    "static/media/rushSlide.jpg": "/static/media/rushSlide.10ab3fafb160d75676eb.jpg",
-    "static/media/brotherhood.png": "/static/media/brotherhood.c1eeee51f4b75f2f2578.png",
-    "static/media/service.png": "/static/media/service.ec82cfaa78ee5fa90778.png",
+    "static/media/upsilons.jpg": "/static/media/upsilons.643e55feb61525bb4de9.jpg",
+    "static/media/chapter.jpg": "/static/media/chapter.ee105c10eef5a0f6f977.jpg",
+    "static/media/omicrons.jpg": "/static/media/omicrons.a8a27c49ba094d446623.jpg",
+    "static/media/tabling.jpg": "/static/media/tabling.2ae1f70b14bbeaa20860.jpg",
+    "static/media/NavLogo.png": "/static/media/NavLogo.f1ffd1add896660f83dc.png",
+    "static/media/pier.jpg": "/static/media/pier.10ab3fafb160d75676eb.jpg",
     "index.html": "/index.html",
-    "main.f870e719.css.map": "/static/css/main.f870e719.css.map",
-    "main.1365f1a2.js.map": "/static/js/main.1365f1a2.js.map"
+    "main.e72ee5cd.css.map": "/static/css/main.e72ee5cd.css.map",
+    "main.29ee8772.js.map": "/static/js/main.29ee8772.js.map"
   },
   "entrypoints": [
-    "static/css/main.f870e719.css",
-    "static/js/main.1365f1a2.js"
+    "static/css/main.e72ee5cd.css",
+    "static/js/main.29ee8772.js"
   ]
 }
