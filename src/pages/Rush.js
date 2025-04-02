@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 import styles from "../styles/rush.module.css"
-import { FaPlus, FaMinus } from "react-icons/fa6";
+// import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Rush = () => {
 
@@ -109,7 +109,7 @@ const Rush = () => {
 				{/* <a href="" target="_blank" rel="noopener noreferrer" className={styles.button}>Interest Form</a> */}
 				<a href="https://discord.com/invite/dBWhZNjgEP" target="_blank" rel="noopener noreferrer" className={styles.button}>Discord Link</a>
 			</div>
-			<h1 className={styles.section}>
+			{/* <h1 className={styles.section}>
 				<span className={styles.fullTitle}>Frequently Asked Questions</span>
 				<span className={styles.shortTitle}>FAQs</span>
 			</h1>
@@ -145,7 +145,7 @@ const Rush = () => {
 							<ul className={styles.list}>
 								<li> You must be enrolled in the Bourns College of Engineering.
 									<ul>
-										<li> Unfortunately we cannot accept Data Science or Robotics majors as those programs are not ABET Accredited at UCR yet.</li>
+										<li> Unfortunately we cannot accept Data Science nor Robotics majors as those programs are not ABET Accredited at UCR yet.</li>
 									</ul>
 								</li>
 								<li>You must have a minimum cumulative GPA of 2.5.</li>
@@ -278,7 +278,7 @@ const Rush = () => {
 						<p>Shoot us an email at <a href="mailto:thetatauucr@gmail.com">thetatauucr@gmail.com</a> or check out our social media pages for upcoming events and information.</p>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

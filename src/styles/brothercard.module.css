@@ -34,7 +34,7 @@
     position: absolute;
     backface-visibility: hidden;
     pointer-events: none;
-    background-color: #FAF9F6;
+    background-color: #f5f5f5;
     transform: translateZ(0);
     will-change: transform;
 }
@@ -68,7 +68,7 @@
     font-weight: 200;
     margin: 5% 0 0 5%;
     pointer-events: none;
-    color: #7D2121;
+    color: var(--red);
 }
 
 .details h3 {

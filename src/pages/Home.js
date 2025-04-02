@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styles from "../styles/home.module.css"
 import chapter from "../images/chapter.jpg"
 import tabling from "../images/tabling.jpg"
@@ -14,6 +14,41 @@ import { LuGraduationCap } from "react-icons/lu";
 const Home = () => {
 	const [currentSlide, setCurrentSlide] = useState(0)
 	const totalSlides = 6
+	const sliderRef = useRef(null)
+
+	const images = [
+		{ src: chapter, alt: "Chapter" },
+		{ src: tabling, alt: "Tabling" },
+		{ src: pier, alt: "Pier" },
+		{ src: omicrons, alt: "Omicrons" },
+		{ src: upsilons, alt: "Upsilons" },
+		{ src: retreat, alt: "Winter 2023 Retreat" }
+	]
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const img = entry.target;
+						img.src = img.dataset.src;
+						observer.unobserve(img);
+					}
+				});
+			},
+			{
+				rootMargin: '50px 0px',
+				threshold: 0.1
+			}
+		);
+
+		const images = sliderRef.current?.querySelectorAll('img[data-src]');
+		images?.forEach(img => observer.observe(img));
+
+		return () => {
+			images?.forEach(img => observer.unobserve(img));
+		};
+	}, []);
 
 	const nextSlide = () => {
 		setCurrentSlide(current => (current + 1) % totalSlides)
@@ -35,13 +70,16 @@ const Home = () => {
 	return (
 		<div className={styles.home}>
 			<div className={styles.banner}>
-				<div className={styles.slider}>
-					<img src={chapter} alt="Chapter" className={`${styles.chapter} ${currentSlide === 0 ? styles.active : ''}`} />
-					<img src={tabling} alt="Tabling" className={`${styles.chapter} ${currentSlide === 1 ? styles.active : ''}`} />
-					<img src={pier} alt="Pier" className={`${styles.chapter} ${currentSlide === 2 ? styles.active : ''}`} />
-					<img src={omicrons} alt="Omicrons" className={`${styles.chapter} ${currentSlide === 3 ? styles.active : ''}`} />
-					<img src={upsilons} alt="Upsilons" className={`${styles.chapter} ${currentSlide === 4 ? styles.active : ''}`} />
-					<img src={retreat} alt="Winter 2023 Retreat" className={`${styles.chapter} ${currentSlide === 5 ? styles.active : ''}`} />
+				<div className={styles.slider} ref={sliderRef}>
+					{images.map((image, index) => (
+						<img 
+							key={index}
+							className={`${styles.chapter} ${currentSlide === index ? styles.active : ''}`}
+							data-src={image.src}
+							src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+							alt={image.alt}
+						/>
+					))}
 				</div>
 				<div className={styles.overlay}>
 					<div className={`${styles.arrowContainer} ${styles.left}`} onClick={prevSlide}>
@@ -50,7 +88,7 @@ const Home = () => {
 					<div className={styles.title}>
 						<h1>UCR Theta Tau</h1>
 						<h2>Sigma Delta Chapter</h2>
-						<p>The Premier Co-Ed Professional Engineering Fraternity at UCR</p>
+						<p>The Only Co-Ed Professional Engineering Fraternity at UCR</p>
 					</div>
 					<div className={`${styles.arrowContainer} ${styles.right}`} onClick={nextSlide}>
 						<IoIosArrowForward className={styles.arrow}/>
@@ -74,7 +112,7 @@ const Home = () => {
 						<LuGraduationCap className={styles.icon} />
 						<h2>Professionalism</h2>
 						<div className={styles.underline}></div>
-						<p>We aim to prepare for life in college, career, and beyond.</p>
+						<p>We aim to prepare for life in college, our careers, and beyond.</p>
 					</div>
 					<div className={styles.pillar + " " + styles.heart}>
 						<RiServiceLine className={styles.icon} />
