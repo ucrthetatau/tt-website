@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#7D2121" />
-    <meta name="description" content="Official website of Theta Tau at University of California, Riverside - The Nation's Oldest and Largest Professional Engineering Fraternity" />
 
-    <!-- Keywords -->
-    <meta name="keywords" content="Theta Tau, UCR, University of California Riverside, Engineering Fraternity, Professional Fraternity, Engineering, UCR Engineering" />
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
 
-    <!-- Additional Meta -->
-    <meta name="author" content="UCR Theta Tau" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/RedCrest.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#7D2121" />
+  <meta name="description"
+    content="Official website of Theta Tau at University of California, Riverside - The Nation's Oldest and Largest Professional Engineering Fraternity" />
 
-    <!--
+  <!-- Keywords -->
+  <meta name="keywords"
+    content="Theta Tau, UCR, University of California Riverside, Engineering Fraternity, Professional Fraternity, Engineering, UCR Engineering" />
+
+  <!-- Additional Meta -->
+  <meta name="author" content="UCR Theta Tau" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+
+  <!-- URL Path Correction - Redirect /index.html to root -->
+  <script type="text/javascript">
+    // Check if current URL ends with /index.html
+    if (window.location.pathname.endsWith('/index.html')) {
+      // Remove /index.html from path and update history
+      var newPath = window.location.pathname.replace('/index.html', '/');
+      window.history.replaceState(null, document.title, newPath);
+    }
+  </script>
+
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -29,10 +47,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>UCR Theta Tau</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+  <title>UCR Theta Tau</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
 </html>
