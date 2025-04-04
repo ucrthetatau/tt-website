@@ -11,8 +11,9 @@ const BrotherCard = ({ brotherId }) => {
     const name = brothers[brotherId]["Name"]
     const greek = brothers[brotherId]["Class"]
     const major = brothers[brotherId]["Major"]
-    const year = brothers[brotherId]["GraduatingClass"]
+    const year = brothers[brotherId]["Year"]
     const pic = brothers[brotherId]["Photo"]
+    const imagePath = require(`../data/headshots/${pic}`);
 
     function flipCard(event) {
         event.target.classList.toggle(styles.flipCard);        
@@ -23,7 +24,7 @@ const BrotherCard = ({ brotherId }) => {
             <div className={styles.brotherCard} >
                 <div className={styles.flip} onClick={flipCard} >
                     <div className={styles.front} >
-                        <img className={styles.headshot} src={pic} alt="Unavailable" />
+                        <img className={styles.headshot} src={imagePath} alt={name} loading="lazy" />
                     </div>
                     <div className={styles.back}>
                         <div className={styles.details}>
@@ -31,7 +32,7 @@ const BrotherCard = ({ brotherId }) => {
                             <h3>{greek}</h3>
                             <h2>Major</h2>
                             <h3>{major}</h3>
-                            <h2>Year</h2>
+                            <h2>Graduating Class</h2>
                             <h3>{year}</h3>
                         </div>
                     </div>
@@ -42,6 +43,6 @@ const BrotherCard = ({ brotherId }) => {
             </div>
         </div>
     )
-};
+}
 
 export default BrotherCard;

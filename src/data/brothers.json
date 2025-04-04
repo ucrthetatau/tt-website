@@ -1,0 +1,1605 @@
+{
+  "aaronPark": {
+    "Name": "Aaron Park",
+    "Class": "Founding",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "aaronPark.webp"
+  },
+  "aaronYee": {
+    "Name": "Aaron Yee",
+    "Class": "Psi",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2026",
+    "Photo": "aaronYee.webp"
+  },
+  "abhijitRege": {
+    "Name": "Abhijit Rege",
+    "Class": "Sigma",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2023",
+    "Photo": "abhijitRege.webp"
+  },
+  "agustinBalquin": {
+    "Name": "Agustin Balquin",
+    "Class": "Iota",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "agustinBalquin.webp"
+  },
+  "akashPelala": {
+    "Name": "Akash Pelala",
+    "Class": "Zeta",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2019",
+    "Photo": "akashPelala.webp"
+  },
+  "alanChen": {
+    "Name": "Alan Chen",
+    "Class": "Epsilon",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2017",
+    "Photo": "alanChen.webp"
+  },
+  "alanChen1": {
+    "Name": "Alan Chen",
+    "Class": "Phi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2026",
+    "Photo": "alanChen1.webp"
+  },
+  "alanNguyen": {
+    "Name": "Alan Nguyen",
+    "Class": "Gamma",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2017",
+    "Photo": "alanNguyen.webp"
+  },
+  "albertoTamYong": {
+    "Name": "Alberto Tam Yong",
+    "Class": "Epsilon",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "albertoTamYong.webp"
+  },
+  "alexHa": {
+    "Name": "Alex Ha",
+    "Class": "Tau",
+    "Major": "Computer Science",
+    "Year": "Class of 2025",
+    "Photo": "alexHa.webp"
+  },
+  "alexanderChang": {
+    "Name": "Alexander Chang",
+    "Class": "Gamma",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "alexanderChang.webp"
+  },
+  "alexanderZamora": {
+    "Name": "Alexander Zamora",
+    "Class": "Nu",
+    "Major": "Computer Science",
+    "Year": "Class of 2022",
+    "Photo": "alexanderZamora.webp"
+  },
+  "alexandriaBolaños": {
+    "Name": "Alexandria Bolaños",
+    "Class": "Omicron",
+    "Major": "Bioengineering",
+    "Year": "Class of 2024",
+    "Photo": "alexandriaBolaños.webp"
+  },
+  "allisonNguyen": {
+    "Name": "Allison Nguyen",
+    "Class": "Kappa",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2019",
+    "Photo": "allisonNguyen.webp"
+  },
+  "amandaNguyen": {
+    "Name": "Amanda Nguyen",
+    "Class": "Delta",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "amandaNguyen.webp"
+  },
+  "amandaWu": {
+    "Name": "Amanda Wu",
+    "Class": "Beta",
+    "Major": "Bioengineering",
+    "Year": "Class of 2014",
+    "Photo": "amandaWu.webp"
+  },
+  "amandaXaypraseuth": {
+    "Name": "Amanda Xaypraseuth",
+    "Class": "Iota",
+    "Major": "Bioengineering",
+    "Year": "Class of 2016",
+    "Photo": "amandaXaypraseuth.webp"
+  },
+  "anabelMadrid": {
+    "Name": "Anabel Madrid",
+    "Class": "Alpha",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "anabelMadrid.webp"
+  },
+  "andreaGamino": {
+    "Name": "Andrea Gamino",
+    "Class": "Psi",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2026",
+    "Photo": "andreaGamino.webp"
+  },
+  "andrewCagampan": {
+    "Name": "Andrew Cagampan",
+    "Class": "Founding",
+    "Major": "Bioengineering",
+    "Year": "Class of 2014",
+    "Photo": "andrewCagampan.webp"
+  },
+  "andrewNg": {
+    "Name": "Andrew Ng",
+    "Class": "Gamma",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2017",
+    "Photo": "andrewNg.webp"
+  },
+  "andréNanniMendes": {
+    "Name": "André Nanni Mendes",
+    "Class": "Eta",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2015",
+    "Photo": "andréNanniMendes.webp"
+  },
+  "angelicaCheung": {
+    "Name": "Angelica Cheung",
+    "Class": "Founding",
+    "Major": "Bioengineering",
+    "Year": "Class of 2014",
+    "Photo": "angelicaCheung.webp"
+  },
+  "ankurAmbastha": {
+    "Name": "Ankur Ambastha",
+    "Class": "Founding",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2013",
+    "Photo": "ankurAmbastha.webp"
+  },
+  "annieWang": {
+    "Name": "Annie Wang",
+    "Class": "Omicron",
+    "Major": "Computer Science",
+    "Year": "Class of 2023",
+    "Photo": "annieWang.webp"
+  },
+  "anthonyLira": {
+    "Name": "Anthony Lira",
+    "Class": "Alpha",
+    "Major": "Bioengineering",
+    "Year": "Class of 2014",
+    "Photo": "anthonyLira.webp"
+  },
+  "anthonyMai": {
+    "Name": "Anthony Mai",
+    "Class": "Eta",
+    "Major": "Computer Science",
+    "Year": "Class of 2018",
+    "Photo": "anthonyMai.webp"
+  },
+  "anthonyTran": {
+    "Name": "Anthony Tran",
+    "Class": "Sigma",
+    "Major": "Bioengineering",
+    "Year": "Class of 2025",
+    "Photo": "anthonyTran.webp"
+  },
+  "anyaJobalia": {
+    "Name": "Anya Jobalia",
+    "Class": "Sigma",
+    "Major": "Bioengineering",
+    "Year": "Class of 2025",
+    "Photo": "anyaJobalia.webp"
+  },
+  "aravBatra": {
+    "Name": "Arav Batra",
+    "Class": "Theta",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "aravBatra.webp"
+  },
+  "arneilLiban": {
+    "Name": "Arneil Liban",
+    "Class": "Zeta",
+    "Major": "Bioengineering",
+    "Year": "Class of 2018",
+    "Photo": "arneilLiban.webp"
+  },
+  "audreyCho": {
+    "Name": "Audrey Cho",
+    "Class": "Psi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2026",
+    "Photo": "audreyCho.webp"
+  },
+  "audreyHui": {
+    "Name": "Audrey Hui",
+    "Class": "Phi",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2027",
+    "Photo": "audreyHui.webp"
+  },
+  "austinLee": {
+    "Name": "Austin Lee",
+    "Class": "Upsilon",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2025",
+    "Photo": "austinLee.webp"
+  },
+  "avelardoNoriega": {
+    "Name": "Avelardo Noriega",
+    "Class": "Phi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2026",
+    "Photo": "avelardoNoriega.webp"
+  },
+  "ayushNabar": {
+    "Name": "Ayush Nabar",
+    "Class": "Pi",
+    "Major": "Computer Science",
+    "Year": "Class of 2023",
+    "Photo": "ayushNabar.webp"
+  },
+  "benjaminDaivs": {
+    "Name": "Benjamin Daivs",
+    "Class": "Gamma",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2017",
+    "Photo": "benjaminDaivs.webp"
+  },
+  "benjaminKim": {
+    "Name": "Benjamin Kim",
+    "Class": "Rho",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2025",
+    "Photo": "benjaminKim.webp"
+  },
+  "bensonLee": {
+    "Name": "Benson Lee",
+    "Class": "Psi",
+    "Major": "Computer Science",
+    "Year": "Class of 2026",
+    "Photo": "bensonLee.webp"
+  },
+  "brandonNguyen": {
+    "Name": "Brandon Nguyen",
+    "Class": "Omicron",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2023",
+    "Photo": "brandonNguyen.webp"
+  },
+  "brandonTa": {
+    "Name": "Brandon Ta",
+    "Class": "Tau",
+    "Major": "Computer Science",
+    "Year": "Class of 2026",
+    "Photo": "brandonTa.webp"
+  },
+  "brandonTabata": {
+    "Name": "Brandon Tabata",
+    "Class": "Rho",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2025",
+    "Photo": "brandonTabata.webp"
+  },
+  "briannaLy": {
+    "Name": "Brianna Ly",
+    "Class": "Lambda",
+    "Major": "Computer Science with Business Applications",
+    "Year": "Class of 2019",
+    "Photo": "briannaLy.webp"
+  },
+  "bryanLeung": {
+    "Name": "Bryan Leung",
+    "Class": "Delta",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "bryanLeung.webp"
+  },
+  "bryceHeventhal": {
+    "Name": "Bryce Heventhal",
+    "Class": "Founding",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2012",
+    "Photo": "bryceHeventhal.webp"
+  },
+  "calvinCao": {
+    "Name": "Calvin Cao",
+    "Class": "Founding",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2013",
+    "Photo": "calvinCao.webp"
+  },
+  "carltonNguyen": {
+    "Name": "Carlton Nguyen",
+    "Class": "Beta",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2015",
+    "Photo": "carltonNguyen.webp"
+  },
+  "carlyYen": {
+    "Name": "Carly Yen",
+    "Class": "Phi",
+    "Major": "Bioengineering",
+    "Year": "Class of 2026",
+    "Photo": "carlyYen.webp"
+  },
+  "catherineTruong": {
+    "Name": "Catherine Truong",
+    "Class": "Sigma",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2025",
+    "Photo": "catherineTruong.webp"
+  },
+  "celsoLopez": {
+    "Name": "Celso Lopez",
+    "Class": "Psi",
+    "Major": "Computer Science",
+    "Year": "Class of 2028",
+    "Photo": "celsoLopez.webp"
+  },
+  "celynaSu": {
+    "Name": "Celyna Su",
+    "Class": "Lambda",
+    "Major": "Computer Science with Business Applications",
+    "Year": "Class of 2021",
+    "Photo": "celynaSu.webp"
+  },
+  "christopherLee": {
+    "Name": "Christopher Lee",
+    "Class": "Theta",
+    "Major": "Materials Science & Engineering",
+    "Year": "Class of 2016",
+    "Photo": "christopherLee.webp"
+  },
+  "curtisDallas": {
+    "Name": "Curtis Dallas",
+    "Class": "Epsilon",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "curtisDallas.webp"
+  },
+  "daniloNoguera": {
+    "Name": "Danilo Noguera",
+    "Class": "Eta",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2015",
+    "Photo": "daniloNoguera.webp"
+  },
+  "danteJamalO’Hara": {
+    "Name": "Dante Jamal O’Hara",
+    "Class": "Founding",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "danteJamalO’Hara.webp"
+  },
+  "davisKim": {
+    "Name": "Davis Kim",
+    "Class": "Tau",
+    "Major": "Computer Science",
+    "Year": "Class of 2025",
+    "Photo": "davisKim.webp"
+  },
+  "demetriRaynardWilright": {
+    "Name": "Demetri Raynard Wilright",
+    "Class": "Alpha",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "demetriRaynardWilright.webp"
+  },
+  "derrickSy": {
+    "Name": "Derrick Sy",
+    "Class": "Zeta",
+    "Major": "Bioengineering",
+    "Year": "Class of 2017",
+    "Photo": "derrickSy.webp"
+  },
+  "dhruvKanumury": {
+    "Name": "Dhruv Kanumury",
+    "Class": "Chi",
+    "Major": "Bioengineering",
+    "Year": "Class of 2025",
+    "Photo": "dhruvKanumury.webp"
+  },
+  "dilanGuerrero": {
+    "Name": "Dilan Guerrero",
+    "Class": "Sigma",
+    "Major": "Computer Science",
+    "Year": "Class of 2024",
+    "Photo": "dilanGuerrero.webp"
+  },
+  "douglasTran": {
+    "Name": "Douglas Tran",
+    "Class": "Lambda",
+    "Major": "Computer Science",
+    "Year": "Class of 2019",
+    "Photo": "douglasTran.webp"
+  },
+  "dylanSiv": {
+    "Name": "Dylan Siv",
+    "Class": "Iota",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "dylanSiv.webp"
+  },
+  "eduardoZepeda": {
+    "Name": "Eduardo Zepeda",
+    "Class": "Founding",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2013",
+    "Photo": "eduardoZepeda.webp"
+  },
+  "elijahMarchese": {
+    "Name": "Elijah Marchese",
+    "Class": "Theta",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2016",
+    "Photo": "elijahMarchese.webp"
+  },
+  "elizabethFabio": {
+    "Name": "Elizabeth Fabio",
+    "Class": "Beta",
+    "Major": "Bioengineering",
+    "Year": "Class of 2015",
+    "Photo": "elizabethFabio.webp"
+  },
+  "elizabethMende": {
+    "Name": "Elizabeth Mende",
+    "Class": "Alpha",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2014",
+    "Photo": "elizabethMende.webp"
+  },
+  "emilNevarez": {
+    "Name": "Emil Nevarez",
+    "Class": "Alpha",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "emilNevarez.webp"
+  },
+  "emilyChan": {
+    "Name": "Emily Chan",
+    "Class": "Phi",
+    "Major": "Computer Science",
+    "Year": "Class of 2027",
+    "Photo": "emilyChan.webp"
+  },
+  "emilyHuang": {
+    "Name": "Emily Huang",
+    "Class": "Theta",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "emilyHuang.webp"
+  },
+  "ethanYnda": {
+    "Name": "Ethan Ynda",
+    "Class": "Tau",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2026",
+    "Photo": "ethanYnda.webp"
+  },
+  "franklinIppolito": {
+    "Name": "Franklin Ippolito",
+    "Class": "Mu",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2020",
+    "Photo": "franklinIppolito.webp"
+  },
+  "graceChan": {
+    "Name": "Grace Chan",
+    "Class": "Chi",
+    "Major": "Bioengineering",
+    "Year": "Class of 2026",
+    "Photo": "graceChan.webp"
+  },
+  "hansGementera": {
+    "Name": "Hans Gementera",
+    "Class": "Kappa",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2018",
+    "Photo": "hansGementera.webp"
+  },
+  "hayoungIhm": {
+    "Name": "Hayoung Ihm",
+    "Class": "Upsilon",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2026",
+    "Photo": "hayoungIhm.webp"
+  },
+  "heatherYoung": {
+    "Name": "Heather Young",
+    "Class": "Delta",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2017",
+    "Photo": "heatherYoung.webp"
+  },
+  "hectorLopez": {
+    "Name": "Hector Lopez",
+    "Class": "Founding",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2012",
+    "Photo": "hectorLopez.webp"
+  },
+  "herqGementera": {
+    "Name": "Herq Gementera",
+    "Class": "Upsilon",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2025",
+    "Photo": "herqGementera.webp"
+  },
+  "honnahSaheli": {
+    "Name": "Honnah Saheli",
+    "Class": "Upsilon",
+    "Major": "Bioengineering",
+    "Year": "Class of 2026",
+    "Photo": "honnahSaheli.webp"
+  },
+  "humbertoScottSanchez": {
+    "Name": "Humberto Scott Sanchez",
+    "Class": "Alpha",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2015",
+    "Photo": "humbertoScottSanchez.webp"
+  },
+  "iliyanAlibhai": {
+    "Name": "Iliyan Alibhai",
+    "Class": "Chi",
+    "Major": "Computer Science",
+    "Year": "Class of 2026",
+    "Photo": "iliyanAlibhai.webp"
+  },
+  "irisNguyen": {
+    "Name": "Iris Nguyen",
+    "Class": "Rho",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2023",
+    "Photo": "irisNguyen.webp"
+  },
+  "isabellePoon": {
+    "Name": "Isabelle Poon",
+    "Class": "Psi",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2026",
+    "Photo": "isabellePoon.webp"
+  },
+  "ishitaKorde": {
+    "Name": "Ishita Korde",
+    "Class": "Kappa",
+    "Major": "Computer Science",
+    "Year": "Class of 2020",
+    "Photo": "ishitaKorde.webp"
+  },
+  "ivanCahuana": {
+    "Name": "Ivan Cahuana",
+    "Class": "Gamma",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "ivanCahuana.webp"
+  },
+  "ivanIgnacio": {
+    "Name": "Ivan Ignacio",
+    "Class": "Lambda",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2021",
+    "Photo": "ivanIgnacio.webp"
+  },
+  "jacobPoole": {
+    "Name": "Jacob Poole",
+    "Class": "Iota",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "jacobPoole.webp"
+  },
+  "jacobVelasquez": {
+    "Name": "Jacob Velasquez",
+    "Class": "Rho",
+    "Major": "Bioengineering",
+    "Year": "Class of 2023",
+    "Photo": "jacobVelasquez.webp"
+  },
+  "jahanSeifollahi": {
+    "Name": "Jahan Seifollahi",
+    "Class": "Upsilon",
+    "Major": "Physics",
+    "Year": "Class of 2025",
+    "Photo": "jahanSeifollahi.webp"
+  },
+  "jaisonAn": {
+    "Name": "Jaison An",
+    "Class": "Delta",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2017",
+    "Photo": "jaisonAn.webp"
+  },
+  "jamesUng": {
+    "Name": "James Ung",
+    "Class": "Nu",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2021",
+    "Photo": "jamesUng.webp"
+  },
+  "jameskeenMillare": {
+    "Name": "Jameskeen Millare",
+    "Class": "Iota",
+    "Major": "Bioengineering",
+    "Year": "Class of 2016",
+    "Photo": "jameskeenMillare.webp"
+  },
+  "jan\"Howie\"Pascual": {
+    "Name": "Jan \"Howie\" Pascual",
+    "Class": "Gamma",
+    "Major": "Bioengineering",
+    "Year": "Class of 2017",
+    "Photo": "jan\"Howie\"Pascual.webp"
+  },
+  "jaredNagata": {
+    "Name": "Jared Nagata",
+    "Class": "Rho",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2024",
+    "Photo": "jaredNagata.webp"
+  },
+  "jarrenSanJose": {
+    "Name": "Jarren San Jose",
+    "Class": "Beta",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2016",
+    "Photo": "jarrenSanJose.webp"
+  },
+  "jasonBumanglag": {
+    "Name": "Jason Bumanglag",
+    "Class": "Founding",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2012",
+    "Photo": "jasonBumanglag.webp"
+  },
+  "jasonRamirez": {
+    "Name": "Jason Ramirez",
+    "Class": "Founding",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2015",
+    "Photo": "jasonRamirez.webp"
+  },
+  "jeffreyHerrera": {
+    "Name": "Jeffrey Herrera",
+    "Class": "Alpha",
+    "Major": "Material Science Engineering",
+    "Year": "Class of 2013",
+    "Photo": "jeffreyHerrera.webp"
+  },
+  "jenniferLe": {
+    "Name": "Jennifer Le",
+    "Class": "Eta",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2017",
+    "Photo": "jenniferLe.webp"
+  },
+  "jerikaMantuano": {
+    "Name": "Jerika Mantuano",
+    "Class": "Epsilon",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "jerikaMantuano.webp"
+  },
+  "jimmyNghiem": {
+    "Name": "Jimmy Nghiem",
+    "Class": "Founding",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "jimmyNghiem.webp"
+  },
+  "johnPham": {
+    "Name": "John Pham",
+    "Class": "Theta",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2017",
+    "Photo": "johnPham.webp"
+  },
+  "johnReyes": {
+    "Name": "John Reyes",
+    "Class": "Eta",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2015",
+    "Photo": "johnReyes.webp"
+  },
+  "johnShin": {
+    "Name": "John Shin",
+    "Class": "Kappa",
+    "Major": "Computer Science",
+    "Year": "Class of 2020",
+    "Photo": "johnShin.webp"
+  },
+  "johnnyChen": {
+    "Name": "Johnny Chen",
+    "Class": "Pi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2022",
+    "Photo": "johnnyChen.webp"
+  },
+  "jonathanLe": {
+    "Name": "Jonathan Le",
+    "Class": "Lambda",
+    "Major": "Computer Science",
+    "Year": "Class of 2020",
+    "Photo": "jonathanLe.webp"
+  },
+  "jordellRodrigues": {
+    "Name": "Jordell Rodrigues",
+    "Class": "Sigma",
+    "Major": "Computer Science",
+    "Year": "Class of 2023",
+    "Photo": "jordellRodrigues.webp"
+  },
+  "josephMoss": {
+    "Name": "Joseph Moss",
+    "Class": "Beta",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "josephMoss.webp"
+  },
+  "joshuaHall": {
+    "Name": "Joshua Hall",
+    "Class": "Alpha",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2013",
+    "Photo": "joshuaHall.webp"
+  },
+  "joshuaKwon": {
+    "Name": "Joshua Kwon",
+    "Class": "Mu",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2022",
+    "Photo": "joshuaKwon.webp"
+  },
+  "joshuaTorres": {
+    "Name": "Joshua Torres",
+    "Class": "Nu",
+    "Major": "Computer Science",
+    "Year": "Class of 2020",
+    "Photo": "joshuaTorres.webp"
+  },
+  "joshuaZenarosa": {
+    "Name": "Joshua Zenarosa",
+    "Class": "Lambda",
+    "Major": "Computer Science",
+    "Year": "Class of 2019",
+    "Photo": "joshuaZenarosa.webp"
+  },
+  "juanCarlosGuardadoII": {
+    "Name": "Juan Carlos Guardado II",
+    "Class": "Alpha",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "juanCarlosGuardadoII.webp"
+  },
+  "justinChung": {
+    "Name": "Justin Chung",
+    "Class": "Epsilon",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2017",
+    "Photo": "justinChung.webp"
+  },
+  "justinMalunay": {
+    "Name": "Justin Malunay",
+    "Class": "Founding",
+    "Major": "Bioengineering",
+    "Year": "Class of 2014",
+    "Photo": "justinMalunay.webp"
+  },
+  "kadhirashSivakumar": {
+    "Name": "Kadhirash Sivakumar",
+    "Class": "Nu",
+    "Major": "Computer Science",
+    "Year": "Class of 2020",
+    "Photo": "kadhirashSivakumar.webp"
+  },
+  "karaLi": {
+    "Name": "Kara Li",
+    "Class": "Phi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2026",
+    "Photo": "karaLi.webp"
+  },
+  "karenChu": {
+    "Name": "Karen Chu",
+    "Class": "Gamma",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "karenChu.webp"
+  },
+  "katherineWay": {
+    "Name": "Katherine Way",
+    "Class": "Eta",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2019",
+    "Photo": "katherineWay.webp"
+  },
+  "katieTri": {
+    "Name": "Katie Tri",
+    "Class": "Phi",
+    "Major": "Bioengineering",
+    "Year": "Class of 2026",
+    "Photo": "katieTri.webp"
+  },
+  "kelcieLeiAsuncion": {
+    "Name": "Kelcie Lei Asuncion",
+    "Class": "Founding",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2013",
+    "Photo": "kelcieLeiAsuncion.webp"
+  },
+  "kellyCai": {
+    "Name": "Kelly Cai",
+    "Class": "Xi",
+    "Major": "Material Science Engineering",
+    "Year": "Class of 2021",
+    "Photo": "kellyCai.webp"
+  },
+  "kennethCai": {
+    "Name": "Kenneth Cai",
+    "Class": "Beta",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2015",
+    "Photo": "kennethCai.webp"
+  },
+  "kennyThai": {
+    "Name": "Kenny Thai",
+    "Class": "Upsilon",
+    "Major": "Computer Science",
+    "Year": "Class of 2025",
+    "Photo": "kennyThai.webp"
+  },
+  "kevinNguyen": {
+    "Name": "Kevin Nguyen",
+    "Class": "Delta",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "kevinNguyen.webp"
+  },
+  "kevinRoh": {
+    "Name": "Kevin Roh",
+    "Class": "Omicron",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2021",
+    "Photo": "kevinRoh.webp"
+  },
+  "kimHizon": {
+    "Name": "Kim Hizon",
+    "Class": "Sigma",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2023",
+    "Photo": "kimHizon.webp"
+  },
+  "kiranEkanayake": {
+    "Name": "Kiran Ekanayake",
+    "Class": "Omicron",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2023",
+    "Photo": "kiranEkanayake.webp"
+  },
+  "kristinChang": {
+    "Name": "Kristin Chang",
+    "Class": "Sigma",
+    "Major": "Computer Science",
+    "Year": "Class of 2025",
+    "Photo": "kristinChang.webp"
+  },
+  "laurenTomasi": {
+    "Name": "Lauren Tomasi",
+    "Class": "Tau",
+    "Major": "Computer Science",
+    "Year": "Class of 2025",
+    "Photo": "laurenTomasi.webp"
+  },
+  "laurenWong": {
+    "Name": "Lauren Wong",
+    "Class": "Founding",
+    "Major": "Bioengineering",
+    "Year": "Class of 2013",
+    "Photo": "laurenWong.webp"
+  },
+  "laurenXie": {
+    "Name": "Lauren Xie",
+    "Class": "Nu",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2022",
+    "Photo": "laurenXie.webp"
+  },
+  "laurynLui": {
+    "Name": "Lauryn Lui",
+    "Class": "Psi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2028",
+    "Photo": "laurynLui.webp"
+  },
+  "lawrenceYuen": {
+    "Name": "Lawrence Yuen",
+    "Class": "Lambda",
+    "Major": "Computer Science",
+    "Year": "Class of 2019",
+    "Photo": "lawrenceYuen.webp"
+  },
+  "leslieKin": {
+    "Name": "Leslie Kin",
+    "Class": "Phi",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2026",
+    "Photo": "leslieKin.webp"
+  },
+  "lianaOlivas": {
+    "Name": "Liana Olivas",
+    "Class": "Gamma",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2016",
+    "Photo": "lianaOlivas.webp"
+  },
+  "lisaChoi": {
+    "Name": "Lisa Choi",
+    "Class": "Epsilon",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2018",
+    "Photo": "lisaChoi.webp"
+  },
+  "luisCarrasquero": {
+    "Name": "Luis Carrasquero",
+    "Class": "Founding",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2013",
+    "Photo": "luisCarrasquero.webp"
+  },
+  "manishiJayasuriya": {
+    "Name": "Manishi Jayasuriya",
+    "Class": "Psi",
+    "Major": "Bioengineering",
+    "Year": "Class of 2026",
+    "Photo": "manishiJayasuriya.webp"
+  },
+  "manitBishnoi": {
+    "Name": "Manit Bishnoi",
+    "Class": "Pi",
+    "Major": "Computer Science with Business Applications",
+    "Year": "Class of 2023",
+    "Photo": "manitBishnoi.webp"
+  },
+  "marcusJustinCatapang": {
+    "Name": "Marcus Justin Catapang",
+    "Class": "Xi",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2023",
+    "Photo": "marcusJustinCatapang.webp"
+  },
+  "mariamRazak": {
+    "Name": "Mariam Razak",
+    "Class": "Omicron",
+    "Major": "Computer Science",
+    "Year": "Class of 2022",
+    "Photo": "mariamRazak.webp"
+  },
+  "markMcHugh": {
+    "Name": "Mark McHugh",
+    "Class": "Omicron",
+    "Major": "Bioengineering",
+    "Year": "Class of 2021",
+    "Photo": "markMcHugh.webp"
+  },
+  "martinDeGuzman": {
+    "Name": "Martin De Guzman",
+    "Class": "Chi",
+    "Major": "Computer Science",
+    "Year": "Class of 2025",
+    "Photo": "martinDeGuzman.webp"
+  },
+  "matthewWoods": {
+    "Name": "Matthew Woods",
+    "Class": "Mu",
+    "Major": "Bioengineering",
+    "Year": "Class of 2020",
+    "Photo": "matthewWoods.webp"
+  },
+  "melindaChiao": {
+    "Name": "Melinda Chiao",
+    "Class": "Omicron",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2023",
+    "Photo": "melindaChiao.webp"
+  },
+  "memphisHuffV": {
+    "Name": "Memphis Huff V",
+    "Class": "Gamma",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2015",
+    "Photo": "memphisHuffV.webp"
+  },
+  "michaelCollins": {
+    "Name": "Michael Collins",
+    "Class": "Upsilon",
+    "Major": "Computer Science",
+    "Year": "Class of 2026",
+    "Photo": "michaelCollins.webp"
+  },
+  "michaelNathan": {
+    "Name": "Michael Nathan",
+    "Class": "Gamma",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "michaelNathan.webp"
+  },
+  "michellePeralta": {
+    "Name": "Michelle Peralta",
+    "Class": "Delta",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "michellePeralta.webp"
+  },
+  "mickTan": {
+    "Name": "Mick Tan",
+    "Class": "Gamma",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "mickTan.webp"
+  },
+  "minSooKang": {
+    "Name": "Min Soo Kang",
+    "Class": "Nu",
+    "Major": "Computer Science with Business Applications",
+    "Year": "Class of 2022",
+    "Photo": "minSooKang.webp"
+  },
+  "mosesAvila": {
+    "Name": "Moses Avila",
+    "Class": "Psi",
+    "Major": "Computer Science",
+    "Year": "Class of 2026",
+    "Photo": "mosesAvila.webp"
+  },
+  "nanmaPillai": {
+    "Name": "Nanma Pillai",
+    "Class": "Pi",
+    "Major": "Computer Science with Business Applications",
+    "Year": "Class of 2024",
+    "Photo": "nanmaPillai.webp"
+  },
+  "natalieCampos": {
+    "Name": "Natalie Campos",
+    "Class": "Mu",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2021",
+    "Photo": "natalieCampos.webp"
+  },
+  "natalieDuong": {
+    "Name": "Natalie Duong",
+    "Class": "Iota",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "natalieDuong.webp"
+  },
+  "nathalieEmperador": {
+    "Name": "Nathalie Emperador",
+    "Class": "Founding",
+    "Major": "Bioengineering",
+    "Year": "Class of 2013",
+    "Photo": "nathalieEmperador.webp"
+  },
+  "nathanDo": {
+    "Name": "Nathan Do",
+    "Class": "Phi",
+    "Major": "Computer Science",
+    "Year": "Class of 2026",
+    "Photo": "nathanDo.webp"
+  },
+  "nathanTaing": {
+    "Name": "Nathan Taing",
+    "Class": "Psi",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2027",
+    "Photo": "nathanTaing.webp"
+  },
+  "navjotBrar": {
+    "Name": "Navjot Brar",
+    "Class": "Sigma",
+    "Major": "Computer Science with Business Applications",
+    "Year": "Class of 2025",
+    "Photo": "navjotBrar.webp"
+  },
+  "nicholasDao": {
+    "Name": "Nicholas Dao",
+    "Class": "Omicron",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2022",
+    "Photo": "nicholasDao.webp"
+  },
+  "nicoleDibo": {
+    "Name": "Nicole Dibo",
+    "Class": "Psi",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2026",
+    "Photo": "nicoleDibo.webp"
+  },
+  "nishanthBabu": {
+    "Name": "Nishanth Babu",
+    "Class": "Zeta",
+    "Major": "Computer Science",
+    "Year": "Class of 2018",
+    "Photo": "nishanthBabu.webp"
+  },
+  "nivedhaKarthikeyan": {
+    "Name": "Nivedha Karthikeyan",
+    "Class": "Kappa",
+    "Major": "Computer Science with Business Applications",
+    "Year": "Class of 2020",
+    "Photo": "nivedhaKarthikeyan.webp"
+  },
+  "nuhaRahman": {
+    "Name": "Nuha Rahman",
+    "Class": "Sigma",
+    "Major": "Computer Science",
+    "Year": "Class of 2023",
+    "Photo": "nuhaRahman.webp"
+  },
+  "pabloHernandez": {
+    "Name": "Pablo Hernandez",
+    "Class": "Zeta",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2017",
+    "Photo": "pabloHernandez.webp"
+  },
+  "patrickLy-Vo": {
+    "Name": "Patrick Ly-Vo",
+    "Class": "Alpha",
+    "Major": "Computer Science",
+    "Year": "Class of 2014",
+    "Photo": "patrickLy-Vo.webp"
+  },
+  "paulSchneider": {
+    "Name": "Paul Schneider",
+    "Class": "Kappa",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2019",
+    "Photo": "paulSchneider.webp"
+  },
+  "paulTran": {
+    "Name": "Paul Tran",
+    "Class": "Founding",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "paulTran.webp"
+  },
+  "peterNguyen": {
+    "Name": "Peter Nguyen",
+    "Class": "Lambda",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2019",
+    "Photo": "peterNguyen.webp"
+  },
+  "phillipNguyen": {
+    "Name": "Phillip Nguyen",
+    "Class": "Founding",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "phillipNguyen.webp"
+  },
+  "phyllisChen": {
+    "Name": "Phyllis Chen",
+    "Class": "Nu",
+    "Major": "Computer Science with Business Applications",
+    "Year": "Class of 2021",
+    "Photo": "phyllisChen.webp"
+  },
+  "prathikAnkala": {
+    "Name": "Prathik Ankala",
+    "Class": "Psi",
+    "Major": "Bioengineering",
+    "Year": "Class of 2028",
+    "Photo": "prathikAnkala.webp"
+  },
+  "rafaelPonceDeLeon": {
+    "Name": "Rafael Ponce De Leon",
+    "Class": "Tau",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2026",
+    "Photo": "rafaelPonceDeLeon.webp"
+  },
+  "rahulAgarwal": {
+    "Name": "Rahul Agarwal",
+    "Class": "Lambda",
+    "Major": "Bioengineering",
+    "Year": "Class of 2019",
+    "Photo": "rahulAgarwal.webp"
+  },
+  "rashadTambi": {
+    "Name": "Rashad Tambi",
+    "Class": "Xi",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2020",
+    "Photo": "rashadTambi.webp"
+  },
+  "raymondNguyen": {
+    "Name": "Raymond Nguyen",
+    "Class": "Mu",
+    "Major": "Materials Science and Engineering",
+    "Year": "Class of 2020",
+    "Photo": "raymondNguyen.webp"
+  },
+  "rebeccahLuu": {
+    "Name": "Rebeccah Luu",
+    "Class": "Beta",
+    "Major": "Bioengineering",
+    "Year": "Class of 2016",
+    "Photo": "rebeccahLuu.webp"
+  },
+  "richardKim": {
+    "Name": "Richard Kim",
+    "Class": "Delta",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2017",
+    "Photo": "richardKim.webp"
+  },
+  "richelLeung": {
+    "Name": "Richel Leung",
+    "Class": "Theta",
+    "Major": "Computer Science",
+    "Year": "Class of 2017",
+    "Photo": "richelLeung.webp"
+  },
+  "robertChavarria": {
+    "Name": "Robert Chavarria",
+    "Class": "Iota",
+    "Major": "Bioengineering",
+    "Year": "Class of 2016",
+    "Photo": "robertChavarria.webp"
+  },
+  "robertSaylor": {
+    "Name": "Robert Saylor",
+    "Class": "Lambda",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2021",
+    "Photo": "robertSaylor.webp"
+  },
+  "robertYee": {
+    "Name": "Robert Yee",
+    "Class": "Iota",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "robertYee.webp"
+  },
+  "rogerLuu": {
+    "Name": "Roger Luu",
+    "Class": "Psi",
+    "Major": "Material Science Engineering",
+    "Year": "Class of 2026",
+    "Photo": "rogerLuu.webp"
+  },
+  "rosaZheng": {
+    "Name": "Rosa Zheng",
+    "Class": "Iota",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2016",
+    "Photo": "rosaZheng.webp"
+  },
+  "ryanBissiri": {
+    "Name": "Ryan Bissiri",
+    "Class": "Alpha",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2014",
+    "Photo": "ryanBissiri.webp"
+  },
+  "ryanPoon": {
+    "Name": "Ryan Poon",
+    "Class": "Xi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2022",
+    "Photo": "ryanPoon.webp"
+  },
+  "saiKarthikMunjeti": {
+    "Name": "Sai Karthik Munjeti",
+    "Class": "Eta",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2018",
+    "Photo": "saiKarthikMunjeti.webp"
+  },
+  "samuelHwang": {
+    "Name": "Samuel Hwang",
+    "Class": "Eta",
+    "Major": "Computer Science",
+    "Year": "Class of 2015",
+    "Photo": "samuelHwang.webp"
+  },
+  "samuelPainter": {
+    "Name": "Samuel Painter",
+    "Class": "Delta",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "samuelPainter.webp"
+  },
+  "sebastianGomez": {
+    "Name": "Sebastian Gomez",
+    "Class": "Theta",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "sebastianGomez.webp"
+  },
+  "sebastianSepulveda": {
+    "Name": "Sebastian Sepulveda",
+    "Class": "Phi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2027",
+    "Photo": "sebastianSepulveda.webp"
+  },
+  "sergioMendez": {
+    "Name": "Sergio Mendez",
+    "Class": "Alpha",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2014",
+    "Photo": "sergioMendez.webp"
+  },
+  "shreyasDeshpande": {
+    "Name": "Shreyas Deshpande",
+    "Class": "Sigma",
+    "Major": "Computer Science",
+    "Year": "Class of 2025",
+    "Photo": "shreyasDeshpande.webp"
+  },
+  "shrinaKurani": {
+    "Name": "Shrina Kurani",
+    "Class": "Founding",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2013",
+    "Photo": "shrinaKurani.webp"
+  },
+  "spencerSzu": {
+    "Name": "Spencer Szu",
+    "Class": "Lambda",
+    "Major": "Bioengineering",
+    "Year": "Class of 2020",
+    "Photo": "spencerSzu.webp"
+  },
+  "stacyEang": {
+    "Name": "Stacy Eang",
+    "Class": "Lambda",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2019",
+    "Photo": "stacyEang.webp"
+  },
+  "stanleyChang": {
+    "Name": "Stanley Chang",
+    "Class": "Beta",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "stanleyChang.webp"
+  },
+  "stefhanyTorres": {
+    "Name": "Stefhany Torres",
+    "Class": "Epsilon",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2017",
+    "Photo": "stefhanyTorres.webp"
+  },
+  "stephanieQian": {
+    "Name": "Stephanie Qian",
+    "Class": "Iota",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "stephanieQian.webp"
+  },
+  "stevenEspinoza": {
+    "Name": "Steven Espinoza",
+    "Class": "Iota",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "stevenEspinoza.webp"
+  },
+  "suchithUllagaddi": {
+    "Name": "Suchith Ullagaddi",
+    "Class": "Xi",
+    "Major": "Business",
+    "Year": "Class of 2021",
+    "Photo": "suchithUllagaddi.webp"
+  },
+  "taimaruProvensal": {
+    "Name": "Taimaru Provensal",
+    "Class": "Theta",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "taimaruProvensal.webp"
+  },
+  "terenceMui": {
+    "Name": "Terence Mui",
+    "Class": "Pi",
+    "Major": "Computer Science",
+    "Year": "Class of 2024",
+    "Photo": "terenceMui.webp"
+  },
+  "teriDelRosario": {
+    "Name": "Teri Del Rosario",
+    "Class": "Xi",
+    "Major": "Bioengineering",
+    "Year": "Class of 2022",
+    "Photo": "teriDelRosario.webp"
+  },
+  "terryChiang": {
+    "Name": "Terry Chiang",
+    "Class": "Delta",
+    "Major": "Business Informatics",
+    "Year": "Class of 2016",
+    "Photo": "terryChiang.webp"
+  },
+  "thanhNguyen": {
+    "Name": "Thanh Nguyen",
+    "Class": "Omicron",
+    "Major": "Material Science Engineering",
+    "Year": "Class of 2023",
+    "Photo": "thanhNguyen.webp"
+  },
+  "thanhVyNguyen": {
+    "Name": "Thanh Vy Nguyen",
+    "Class": "Nu",
+    "Major": "Bioengineering",
+    "Year": "Class of 2022",
+    "Photo": "thanhVyNguyen.webp"
+  },
+  "thomasChin": {
+    "Name": "Thomas Chin",
+    "Class": "Kappa",
+    "Major": "Computer Engineering",
+    "Year": "Class of 2020",
+    "Photo": "thomasChin.webp"
+  },
+  "tiffanyHu": {
+    "Name": "Tiffany Hu",
+    "Class": "Psi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2028",
+    "Photo": "tiffanyHu.webp"
+  },
+  "tiffanyYeh": {
+    "Name": "Tiffany Yeh",
+    "Class": "Alpha",
+    "Major": "Environmental Engineering",
+    "Year": "Class of 2014",
+    "Photo": "tiffanyYeh.webp"
+  },
+  "timothyWon": {
+    "Name": "Timothy Won",
+    "Class": "Zeta",
+    "Major": "Business Finance",
+    "Year": "Class of 2018",
+    "Photo": "timothyWon.webp"
+  },
+  "toddWilley": {
+    "Name": "Todd Willey",
+    "Class": "Delta",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "toddWilley.webp"
+  },
+  "troyQuach": {
+    "Name": "Troy Quach",
+    "Class": "Sigma",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2025",
+    "Photo": "troyQuach.webp"
+  },
+  "tylerHuynh": {
+    "Name": "Tyler Huynh",
+    "Class": "Phi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2027",
+    "Photo": "tylerHuynh.webp"
+  },
+  "valerieChiou": {
+    "Name": "Valerie Chiou",
+    "Class": "Zeta",
+    "Major": "Computer Science",
+    "Year": "Class of 2017",
+    "Photo": "valerieChiou.webp"
+  },
+  "vanessaCoria": {
+    "Name": "Vanessa Coria",
+    "Class": "Iota",
+    "Major": "Chemical Engineering",
+    "Year": "Class of 2016",
+    "Photo": "vanessaCoria.webp"
+  },
+  "vincentChao": {
+    "Name": "Vincent Chao",
+    "Class": "Delta",
+    "Major": "Chemistry",
+    "Year": "Class of 2016",
+    "Photo": "vincentChao.webp"
+  },
+  "vincentDang": {
+    "Name": "Vincent Dang",
+    "Class": "Phi",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2027",
+    "Photo": "vincentDang.webp"
+  },
+  "vinciEdwinJesusNoelEnriquesSevillaJr.": {
+    "Name": "Vinci Sevilla Jr.",
+    "Class": "Founding",
+    "Major": "Electrical Engineering",
+    "Year": "Class of 2013",
+    "Photo": "vinciEdwinJesusNoelEnriquesSevillaJr..webp"
+  },
+  "vinhNguyen": {
+    "Name": "Vinh Nguyen",
+    "Class": "Gamma",
+    "Major": "Bioengineering",
+    "Year": "Class of 2016",
+    "Photo": "vinhNguyen.webp"
+  },
+  "vishalBhupathiraju": {
+    "Name": "Vishal Bhupathiraju",
+    "Class": "Zeta",
+    "Major": "Computer Science",
+    "Year": "Class of 2018",
+    "Photo": "vishalBhupathiraju.webp"
+  },
+  "vynaTon": {
+    "Name": "Vyna Ton",
+    "Class": "Pi",
+    "Major": "Bioengineering",
+    "Year": "Class of 2023",
+    "Photo": "vynaTon.webp"
+  },
+  "wendyNawa": {
+    "Name": "Wendy Nawa",
+    "Class": "Omicron",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2024",
+    "Photo": "wendyNawa.webp"
+  },
+  "wilburWong": {
+    "Name": "Wilbur Wong",
+    "Class": "Beta",
+    "Major": "Bioengineering",
+    "Year": "Class of 2014",
+    "Photo": "wilburWong.webp"
+  },
+  "williamAndrewHindsonXIV": {
+    "Name": "William Andrew Hindson XIV",
+    "Class": "Mu",
+    "Major": "Mechanical Engineering",
+    "Year": "Class of 2020",
+    "Photo": "williamAndrewHindsonXIV.webp"
+  },
+  "winrichAllenChuaSy": {
+    "Name": "Winrich Allen Chua Sy",
+    "Class": "Alpha",
+    "Major": "Computer Science",
+    "Year": "Class of 2014",
+    "Photo": "winrichAllenChuaSy.webp"
+  },
+  "yvetteWu": {
+    "Name": "Yvette Wu",
+    "Class": "Delta",
+    "Major": "Interior Design",
+    "Year": "Class of 2017",
+    "Photo": "yvetteWu.webp"
+  },
+  "zaireMarin": {
+    "Name": "Zaire Marin",
+    "Class": "Zeta",
+    "Major": "Economics/ Administrative Studies",
+    "Year": "Class of 2018",
+    "Photo": "zaireMarin.webp"
+  },
+  "zayNaing": {
+    "Name": "Zay Naing",
+    "Class": "Theta",
+    "Major": "Computer Science",
+    "Year": "Class of 2016",
+    "Photo": "zayNaing.webp"
+  }
+}
