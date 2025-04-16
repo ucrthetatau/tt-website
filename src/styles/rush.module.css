@@ -259,6 +259,22 @@
 	margin-bottom: 0;
 }
 
+.textContainer {
+	width: 80%;
+	margin: 0 auto 3em auto;
+	padding: 2em;
+	background-color: #f5f5f5;
+	border-radius: 8px;
+  border: 1px solid lightgray;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 1.6;
+	color: #555;
+	text-align: justify;
+}
+
 @media screen and (max-width: 700px) {
     .section {
 		padding-bottom: 1em;

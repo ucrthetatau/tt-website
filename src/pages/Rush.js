@@ -3,28 +3,42 @@ import styles from "../styles/rush.module.css"
 // import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Rush = () => {
-
-	const timelineRef = useRef(null);
-	const graphicContainerRef = useRef(null);
+	const timelineRef = useRef(null)
+	const graphicContainerRef = useRef(null)
 
 	useEffect(() => {
-        const handleResize = () => {
-            if (timelineRef.current && graphicContainerRef.current) {
-                const timelineHeight = timelineRef.current.offsetHeight;
-				document.documentElement.style.setProperty('--graphic-height', `${timelineHeight}px`);
+		const handleResize = () => {
+			if (timelineRef.current && graphicContainerRef.current) {
+				const timelineHeight = timelineRef.current.offsetHeight
+				document.documentElement.style.setProperty(
+					"--graphic-height",
+					`${timelineHeight}px`
+				)
 				console.log(timelineHeight)
-            }
-        };
-        handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+			}
+		}
+		handleResize()
+		window.addEventListener("resize", handleResize)
+		return () => {
+			window.removeEventListener("resize", handleResize)
+		}
+	}, [])
 
 	return (
 		<div className={styles.rush}>
-			<h1 className={styles.section}>Recruitment Schedule</h1>
+			<h1 className={styles.section}>Recruitment Process</h1>
+
+			<div className={styles.textContainer}>
+				<p className={styles.text}>
+					Thank you for your interest in our fraternity. Although
+					recruitment for this quarter has ended, we invite you to
+					join us for our Fall 2025 recruitment events. Keep an eye on
+					our website and Instagram for more updates about
+					upcoming opportunities!
+				</p>
+			</div>
+
+			{/* <h1 className={styles.section}>Recruitment Schedule</h1>
 			<div className={styles.timelineContainer}>
 				<div className={styles.timeline}>
 					<div className={styles.event}>
@@ -106,9 +120,10 @@ const Rush = () => {
 				</div>
 			</div>
 			<div className={styles.buttonContainer}>
-				{/* <a href="" target="_blank" rel="noopener noreferrer" className={styles.button}>Interest Form</a> */}
+				{/* <a href="" target="_blank" rel="noopener noreferrer" className={styles.button}>Interest Form</a> 
 				<a href="https://discord.com/invite/dBWhZNjgEP" target="_blank" rel="noopener noreferrer" className={styles.button}>Discord Link</a>
-			</div>
+			</div> */}
+
 			{/* <h1 className={styles.section}>
 				<span className={styles.fullTitle}>Frequently Asked Questions</span>
 				<span className={styles.shortTitle}>FAQs</span>
@@ -280,7 +295,7 @@ const Rush = () => {
 				</div>
 			</div> */}
 		</div>
-	);
-};
+	)
+}
 
 export default Rush
