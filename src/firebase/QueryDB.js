@@ -45,4 +45,4 @@ populateClassMap();
 populateYearMap();
 populateNameMap();
 
-export { brothers, officers, classes, classMap, yearMap, nameMap, years };
+export { classMap, yearMap, nameMap, classes, years, brothers, officers };
