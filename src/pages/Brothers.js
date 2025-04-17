@@ -19,7 +19,7 @@ const Brothers = () => {
 				width: Math.round(elementRect.width),
 			});
 		}
-	}, [category]);
+	}, [category]);	
 
 	return (
 		<div className={styles.brothers}>
@@ -73,14 +73,10 @@ const Brothers = () => {
 				<div key={currentTerm} className={styles.Group}>
 					<h1 className={styles.Title}>{currentTerm}</h1>
 					<div className={styles.Members}>
-						{Object.entries(positions).sort(([roleA], [roleB]) => {
-							const numA = parseInt(roleA.match(/^\d+/)[0]);
-							const numB = parseInt(roleB.match(/^\d+/)[0]);
-							return numA - numB; 
-						}).map(([role, brotherId]) => (
+						{Object.entries(positions).map(([role, brotherId]) => (
 							<div key={role} className={styles.boardMember}>
 								<BrotherCard brotherId={brotherId} />
-								<h2 className={styles.role}>{role.slice(1)}</h2>
+								<h2 className={styles.role}>{role}</h2>
 							</div>
 						))}
 					</div>
