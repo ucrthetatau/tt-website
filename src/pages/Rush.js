@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 import styles from "../styles/rush.module.css"
-// import { FaPlus, FaMinus } from "react-icons/fa6";
+import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const Rush = () => {
 	const timelineRef = useRef(null)
@@ -38,7 +38,7 @@ const Rush = () => {
 				</p>
 			</div>
 
-			{/* <h1 className={styles.section}>Recruitment Schedule</h1>
+			<h1 className={styles.section}>Recruitment Schedule</h1>
 			<div className={styles.timelineContainer}>
 				<div className={styles.timeline}>
 					<div className={styles.event}>
@@ -119,12 +119,12 @@ const Rush = () => {
 					</div>
 				</div>
 			</div>
-			<div className={styles.buttonContainer}>
-				{/* <a href="" target="_blank" rel="noopener noreferrer" className={styles.button}>Interest Form</a> 
+			{/* <div className={styles.buttonContainer}>
+				<a href="" target="_blank" rel="noopener noreferrer" className={styles.button}>Interest Form</a> 
 				<a href="https://discord.com/invite/dBWhZNjgEP" target="_blank" rel="noopener noreferrer" className={styles.button}>Discord Link</a>
 			</div> */}
 
-			{/* <h1 className={styles.section}>
+			<h1 className={styles.section}>
 				<span className={styles.fullTitle}>Frequently Asked Questions</span>
 				<span className={styles.shortTitle}>FAQs</span>
 			</h1>
@@ -163,7 +163,11 @@ const Rush = () => {
 										<li> Unfortunately we cannot accept Data Science nor Robotics majors as those programs are not ABET Accredited at UCR yet.</li>
 									</ul>
 								</li>
-								<li>You must have a minimum cumulative GPA of 2.5.</li>
+								<li>A minimum cumulative GPA of 2.5 is required, along with a GPA of at least 2.0 for your most recent academic quarter, excluding summer.
+									<ul>
+										<li>First-year students enrolled during the Fall quarter are exempt from this requirement.</li>
+									</ul>
+								</li>
 								<li>You must not be in your last quarter of instruction at UCR.
 									<ul>
 										<li>Graduate students are welcome, but are still restricted by this policy.</li>
@@ -173,7 +177,7 @@ const Rush = () => {
 						</p>
 					</div>
 				</div>
-				<div className={styles.faq}>
+				{/* <div className={styles.faq}>
 					<input type="checkbox" id="faq3" className={styles.faqToggle} />
 					<label htmlFor="faq3" className={styles.question}>
 						<div className={styles.questionText}>
@@ -187,7 +191,7 @@ const Rush = () => {
 					<div className={styles.answer}>
 						<p>Yes, Theta Tau is a co-ed professional fraternity. We welcome qualified candidates regardless of gender identity. Our chapter is committed to fostering a diverse and inclusive environment where all members can thrive professionally and personally.</p>
 					</div>
-				</div>
+				</div> */}
 				<div className={styles.faq}>
 					<input type="checkbox" id="faq4" className={styles.faqToggle} />
 					<label htmlFor="faq4" className={styles.question}>
@@ -218,7 +222,7 @@ const Rush = () => {
 						<p>Our recruitment process is selective but fair. We look for candidates who demonstrate academic excellence, professional ambition, leadership potential, and a genuine interest in brotherhood. We evaluate each candidate holistically, considering their technical skills, interpersonal abilities, and alignment with our fraternity values.</p>
 					</div>
 				</div>
-				<div className={styles.faq}>
+				{/* <div className={styles.faq}>
 					<input type="checkbox" id="faq6" className={styles.faqToggle} />
 					<label htmlFor="faq6" className={styles.question}>
 						<div className={styles.questionText}>
@@ -232,7 +236,7 @@ const Rush = () => {
 					<div className={styles.answer}>
 						<p>The best way to prepare is to attend our rush events, be yourself, and engage with brothers.</p>
 					</div>
-				</div>
+				</div> */}
 				<div className={styles.faq}>
 					<input type="checkbox" id="faq7" className={styles.faqToggle} />
 					<label htmlFor="faq7" className={styles.question}>
@@ -245,7 +249,7 @@ const Rush = () => {
 						</div>
 					</label>
 					<div className={styles.answer}>
-						<p>The new member education process typically requires the effort of a part-time job. We understand that academics come first, and we work to ensure that fraternity commitments will complement rather than compete with your studies.</p>
+						<p>The New Member Education process typically requires the effort of a part-time job. We understand that academics come first, and we work to ensure that fraternity commitments will complement rather than compete with your studies.</p>
 					</div>
 				</div>
 				<div className={styles.faq}>
@@ -260,7 +264,7 @@ const Rush = () => {
 						</div>
 					</label>
 					<div className={styles.answer}>
-						<p>Theta Tau has a strict anti-hazing policy. This is enforced by national and univeristy policies. Our process focuses on professional development, brotherhood, and personal growth in a supportive environment.</p>
+						<p>Theta Tau has a strict anti-hazing policy. This is enforced by national and university policies. Our process focuses on professional development, brotherhood, and personal growth in a supportive environment.</p>
 					</div>
 				</div>
 				<div className={styles.faq}>
@@ -275,7 +279,7 @@ const Rush = () => {
 						</div>
 					</label>
 					<div className={styles.answer}>
-						<p>Membership fees vary by quarter so attend rush events to find out more. These fees cover national fees, chapter operations, professional events, brotherhood activities, and other fraternity expenses. We offer payment plans and can work with members who have financial concerns.</p>
+						<p>Membership fees vary by quarter. These fees cover national fees, chapter operations, professional events, brotherhood activities, and other fraternity expenses. We offer payment plans and can work with members who have financial concerns.</p>
 					</div>
 				</div>
 				<div className={styles.faq}>
@@ -290,10 +294,10 @@ const Rush = () => {
 						</div>
 					</label>
 					<div className={styles.answer}>
-						<p>Shoot us an email at <a href="mailto:thetatauucr@gmail.com">thetatauucr@gmail.com</a> or check out our social media pages for upcoming events and information.</p>
+						<p>Send us an email at <a href="mailto:thetatauucr@gmail.com">thetatauucr@gmail.com</a> or check out our social media pages for upcoming events and information.</p>
 					</div>
 				</div>
-			</div> */}
+			</div>
 		</div>
 	)
 }
