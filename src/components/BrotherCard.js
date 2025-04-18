@@ -13,7 +13,7 @@ const BrotherCard = ({ brotherId }) => {
     const major = brothers[brotherId]["Major"]
     const year = brothers[brotherId]["Year"]
     const pic = brothers[brotherId]["Photo"]
-    const imagePath = require(`../data/headshots/${pic}`);
+    const imagePath = require(`../data/optimized-headshots/${pic}`);
 
     function flipCard(event) {
         event.target.classList.toggle(styles.flipCard);        
